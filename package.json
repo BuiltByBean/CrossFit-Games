@@ -1,0 +1,33 @@
+{
+  "name": "crossfit-games-history",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Every CrossFit Games event since 2011, tagged by fitness domain, with a cross-era GOAT analysis for Individual Men.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "fetch": "node scripts/fetch-games.mjs",
+    "tag": "node scripts/tag-domains.mjs",
+    "analyze": "node scripts/analyze.mjs",
+    "build:data": "npm run fetch && npm run tag && npm run analyze",
+    "db:push": "prisma db push",
+    "db:seed": "node scripts/seed.mjs",
+    "db:setup": "npm run db:push && npm run db:seed"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "6.3.1",
+    "@types/node": "22.13.1",
+    "@types/react": "19.0.8",
+    "prisma": "6.3.1",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

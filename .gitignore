@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+build/
+.env
+.env*.local
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+
+# Raw API payloads are reproducible with `npm run fetch` and just bloat the repo.
+data/raw/

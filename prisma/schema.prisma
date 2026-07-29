@@ -1,0 +1,113 @@
+// Railway Postgres schema.
+//
+// Two shapes are stored deliberately:
+//   * relational tables (Year/Event/Athlete/Season/EventResult) for querying —
+//     "every swim event since 2011", "Vellner's placings in gymnastics events"
+//   * AnalysisSnapshot, one row holding the whole computed analysis, which is
+//     what the site reads so a page render is a single query rather than a join
+//     across 30k result rows.
+//
+//   npm run db:push && npm run db:seed
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Year {
+  year       Int      @id
+  fieldSize  Int
+  eventCount Int
+  champion   String?
+  domainMix  Json
+  events     Event[]
+  seasons    Season[]
+}
+
+model Event {
+  id            Int           @id @default(autoincrement())
+  year          Int
+  ordinal       Int
+  name          String
+  scoreFormat   String
+  medianSeconds Float?
+  domains       Json
+  tagSource     String
+  note          String?
+  excluded      Boolean       @default(false)
+  winner        String?
+  yearRef       Year          @relation(fields: [year], references: [year], onDelete: Cascade)
+  results       EventResult[]
+
+  @@unique([year, ordinal])
+  @@index([name])
+}
+
+model Athlete {
+  competitorId String   @id
+  name         String
+  country      String?
+  countryCode  String?
+  affiliate    String?
+  heightIn     Float?
+  weightLb     Float?
+  appearances  Int
+  titles       Int
+  podiums      Int
+  eventWins    Int
+  bestFinish   Int
+  goatRank     Int?
+  // consensus + per-model ranks, and the career domain profile
+  meanPercentile Float
+  domains        Json
+  seasons        Season[]
+
+  @@index([goatRank])
+  @@index([name])
+}
+
+model Season {
+  id              Int           @id @default(autoincrement())
+  competitorId    String
+  year            Int
+  finish          Int?
+  fieldSize       Int
+  officialPoints  Float?
+  percentileScore Float
+  officialScore   Float
+  zScore          Float
+  eventWins       Int
+  domains         Json
+  athlete         Athlete       @relation(fields: [competitorId], references: [competitorId], onDelete: Cascade)
+  yearRef         Year          @relation(fields: [year], references: [year], onDelete: Cascade)
+  results         EventResult[]
+
+  @@unique([competitorId, year])
+  @@index([year])
+}
+
+model EventResult {
+  id           Int     @id @default(autoincrement())
+  seasonId     Int
+  eventId      Int
+  rank         Int?
+  display      String?
+  percentile   Float
+  z            Float
+  season       Season  @relation(fields: [seasonId], references: [id], onDelete: Cascade)
+  event        Event   @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@unique([seasonId, eventId])
+  @@index([eventId])
+}
+
+model AnalysisSnapshot {
+  id          Int      @id @default(autoincrement())
+  generatedAt DateTime
+  division    String
+  payload     Json
+}
