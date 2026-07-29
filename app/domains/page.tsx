@@ -16,7 +16,8 @@ export default async function DomainsPage() {
       .sort((x, y) => (y.domains[d] ?? 0) - (x.domains[d] ?? 0))
       .slice(0, 3);
     const totalShare = byYear.reduce((n, b) => n + b.share, 0) / byYear.length;
-    return { key: d as DomainKey, byYear, ranked, totalShare };
+    const peak = byYear.reduce((best, b) => (b.share > best.share ? b : best), byYear[0]);
+    return { key: d as DomainKey, byYear, ranked, totalShare, peak };
   });
 
   const maxShare = Math.max(...perDomain.flatMap((p) => p.byYear.map((b) => b.share)));
@@ -29,8 +30,14 @@ export default async function DomainsPage() {
           <h1>The eleven domains</h1>
           <p className="lede">
             Every event is decomposed into the domains it tests, with weights summing to one. That is
-            what makes a 2011 sandbag carry and a 2024 machine interval comparable: they are not the
+            what makes a 2011 sandbag carry and a 2026 machine interval comparable: they are not the
             same event, but they draw on measurable proportions of the same underlying qualities.
+          </p>
+          <p className="lede">
+            Each chart below shows what share of that year&apos;s test the domain made up. All eleven
+            are drawn on the <strong>same {Math.round(maxShare * 100)}% axis</strong>, so the cards can
+            be read against each other — a short bar really is a small share, not a rescaled one. The
+            dashed line is that domain&apos;s own all-time average.
           </p>
         </div>
       </section>
@@ -51,26 +58,45 @@ export default async function DomainsPage() {
                   {a.domains[p.key]?.blurb}
                 </p>
 
-                <div className="faint" style={{ marginBottom: '0.3rem' }}>
-                  Share of the test by year
+                <div className="spark-head faint">
+                  <span>Share of the test by year</span>
+                  <span>
+                    peak {(p.peak.share * 100).toFixed(0)}% in {p.peak.year}
+                  </span>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'flex-end', gap: 3, height: 46 }}>
-                  {p.byYear.map((b) => (
+
+                <div className="spark">
+                  <div className="spark-axis faint">
+                    <span>{Math.round(maxShare * 100)}%</span>
+                    <span>0</span>
+                  </div>
+                  <div className="spark-plot">
+                    {/* dashed line marks this domain's own all-time average */}
                     <div
-                      key={b.year}
-                      title={`${b.year}: ${(b.share * 100).toFixed(0)}% of the year's test`}
-                      style={{
-                        flex: 1,
-                        height: `${Math.max(2, (b.share / maxShare) * 100)}%`,
-                        background: domainColor(p.key),
-                        opacity: b.share > 0 ? 0.85 : 0.15,
-                        borderRadius: 2,
-                      }}
+                      className="spark-avg"
+                      style={{ bottom: `${(p.totalShare / maxShare) * 100}%` }}
+                      title={`All-time average ${(p.totalShare * 100).toFixed(1)}% of a year's test`}
                     />
-                  ))}
+                    <div className="spark-bars">
+                      {p.byYear.map((b) => (
+                        <div
+                          key={b.year}
+                          className="spark-bar"
+                          title={`${b.year}: ${(b.share * 100).toFixed(1)}% of that year's test`}
+                          style={{
+                            height: `${Math.max(1.5, (b.share / maxShare) * 100)}%`,
+                            background: domainColor(p.key),
+                            opacity: b.share > 0 ? 0.85 : 0.18,
+                          }}
+                        />
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }} className="faint">
+
+                <div className="spark-foot faint">
                   <span>{a.years[0].year}</span>
+                  <span className="spark-avg-key">— — average {(p.totalShare * 100).toFixed(1)}%</span>
                   <span>{a.years[a.years.length - 1].year}</span>
                 </div>
 

@@ -123,6 +123,15 @@ export default async function MethodologyPage() {
             It has no model of form, injury, tactics, heat structure, or the cut formats that ended some
             athletes&apos; competitions early.
           </p>
+          <p className="muted" style={{ maxWidth: '70ch' }}>
+            That projection is computed <strong>one athlete at a time</strong>, which means two men who
+            would each have beaten everyone who actually competed both come out first — they are never
+            measured against each other. To rank them properly, a second pass puts the top{' '}
+            {a.methodology.transplant.cohort} careers in the same year simultaneously, against whatever
+            remains of that year&apos;s real field, so exactly one athlete can win it. Both numbers are
+            shown; the solo one is the better read on era fit, the head-to-head the better read on who
+            beats whom.
+          </p>
         </div>
       </section>
 

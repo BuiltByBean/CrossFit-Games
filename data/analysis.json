@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T18:07:52.553Z",
+  "generatedAt": "2026-07-29T18:57:49.612Z",
   "source": "games.crossfit.com (c3po public API)",
   "division": {
     "id": 1,
@@ -63,7 +63,12 @@
       "hardware": 0.2
     },
     "minAppearances": 2,
-    "consensus": "Mean of the three model ranks; ties broken by mean model score."
+    "consensus": "Mean of the three model ranks; ties broken by mean model score.",
+    "transplant": {
+      "cohort": 25,
+      "solo": "One athlete swapped into that year's real field. Independent per athlete, so two who would both beat the actual field each show first.",
+      "headToHead": "The whole cohort competing in that year at once, against the remainder of the real field. Exactly one athlete wins each year."
+    }
   },
   "years": [
     {
@@ -5404,7 +5409,9 @@
               "name": "Beach",
               "projected": 0.8233
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -5442,7 +5449,9 @@
               "name": "Obstacle Course",
               "projected": 0.796
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -5480,7 +5489,9 @@
               "name": "Sprint Chipper",
               "projected": 0.789
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -5518,7 +5529,9 @@
               "name": "Sprint Carry",
               "projected": 0.7514
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -5556,7 +5569,9 @@
               "name": "Pier Paddle",
               "projected": 0.762
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -5594,7 +5609,9 @@
               "name": "100%",
               "projected": 0.7651
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -5632,7 +5649,9 @@
               "name": "Run Swim Run",
               "projected": 0.8174
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -5670,7 +5689,9 @@
               "name": "CrossFit Total",
               "projected": 0.8671
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -5708,7 +5729,9 @@
               "name": "Swim Paddle",
               "projected": 0.762
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -5746,7 +5769,9 @@
               "name": "Swim 'N' Stuff",
               "projected": 0.7772
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -5784,7 +5809,9 @@
               "name": "Event 9",
               "projected": 0.859
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -5822,7 +5849,9 @@
               "name": "Echo Press",
               "projected": 0.8455
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -5860,7 +5889,9 @@
               "name": "Ride",
               "projected": 0.8609
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -5898,7 +5929,9 @@
               "name": "Firestorm",
               "projected": 0.7882
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -5936,7 +5969,9 @@
               "name": "Running Isabel",
               "projected": 0.8507
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -5974,7 +6009,9 @@
               "name": "3D Throw",
               "projected": 0.7571
             }
-          ]
+          ],
+          "headToHeadFinish": 1,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -5982,7 +6019,10 @@
         "bestYear": 2011,
         "worstYear": 2013,
         "wouldWin": 10,
-        "wouldPodium": 16
+        "wouldPodium": 16,
+        "meanHeadToHead": 1,
+        "h2hWins": 16,
+        "h2hPodiums": 16
       }
     },
     {
@@ -6958,7 +6998,9 @@
               "name": "The End 1",
               "projected": 0.8364
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -6996,7 +7038,9 @@
               "name": "Pendleton 2",
               "projected": 0.7565
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -7034,7 +7078,9 @@
               "name": "Row 1",
               "projected": 0.7807
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -7072,7 +7118,9 @@
               "name": "Sprint Sled-1",
               "projected": 0.7654
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -7110,7 +7158,9 @@
               "name": "Sprint Course 1",
               "projected": 0.7847
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -7148,7 +7198,9 @@
               "name": "Suicide Sprint",
               "projected": 0.7402
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -7186,7 +7238,9 @@
               "name": "Cyclocross",
               "projected": 0.7839
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -7224,7 +7278,9 @@
               "name": "CRIT",
               "projected": 0.7839
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -7262,7 +7318,9 @@
               "name": "Ruck",
               "projected": 0.7465
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -7300,7 +7358,9 @@
               "name": "Sprint Sled Sprint",
               "projected": 0.7654
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -7338,7 +7398,9 @@
               "name": "Event 10",
               "projected": 0.7945
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -7376,7 +7438,9 @@
               "name": "Rinse 'N' Repeat",
               "projected": 0.7851
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -7414,7 +7478,9 @@
               "name": "Ski-Bag",
               "projected": 0.7845
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -7452,7 +7518,9 @@
               "name": "Chad",
               "projected": 0.7638
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -7490,7 +7558,9 @@
               "name": "Throttle Up",
               "projected": 0.8107
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -7528,7 +7598,9 @@
               "name": "Grass Track Race",
               "projected": 0.7272
             }
-          ]
+          ],
+          "headToHeadFinish": 2,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -7536,7 +7608,10 @@
         "bestYear": 2014,
         "worstYear": 2022,
         "wouldWin": 6,
-        "wouldPodium": 16
+        "wouldPodium": 16,
+        "meanHeadToHead": 2,
+        "h2hWins": 0,
+        "h2hPodiums": 16
       }
     },
     {
@@ -9775,7 +9850,9 @@
               "name": "The End 1",
               "projected": 0.7204
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -9813,7 +9890,9 @@
               "name": "Sprint",
               "projected": 0.6553
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -9851,7 +9930,9 @@
               "name": "Row 1",
               "projected": 0.634
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -9889,7 +9970,9 @@
               "name": "Overhead Squat",
               "projected": 0.655
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -9927,7 +10010,9 @@
               "name": "PTTM 1",
               "projected": 0.6829
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -9965,7 +10050,9 @@
               "name": "Suicide Sprint",
               "projected": 0.6619
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -10003,7 +10090,9 @@
               "name": "1RM Snatch",
               "projected": 0.6583
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -10041,7 +10130,9 @@
               "name": "CrossFit Total",
               "projected": 0.6452
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -10079,7 +10170,9 @@
               "name": "Sprint",
               "projected": 0.6619
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -10117,7 +10210,9 @@
               "name": "Bike Repeater",
               "projected": 0.6318
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -10155,7 +10250,9 @@
               "name": "Event 7",
               "projected": 0.6523
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -10193,7 +10290,9 @@
               "name": "Bike to Work",
               "projected": 0.6318
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -10231,7 +10330,9 @@
               "name": "Olympic Total",
               "projected": 0.6583
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -10269,7 +10370,9 @@
               "name": "Clean Ladder",
               "projected": 0.655
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -10307,7 +10410,9 @@
               "name": "Throttle Up",
               "projected": 0.666
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -10345,7 +10450,9 @@
               "name": "Grass Track Race",
               "projected": 0.6196
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -10353,7 +10460,10 @@
         "bestYear": 2020,
         "worstYear": 2024,
         "wouldWin": 0,
-        "wouldPodium": 2
+        "wouldPodium": 2,
+        "meanHeadToHead": 9.69,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -12356,7 +12466,9 @@
               "name": "Dog Sled",
               "projected": 0.6395
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -12394,7 +12506,9 @@
               "name": "Obstacle Course",
               "projected": 0.6434
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -12432,7 +12546,9 @@
               "name": "Sprint Chipper",
               "projected": 0.6317
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -12470,7 +12586,9 @@
               "name": "Sprint Carry",
               "projected": 0.6284
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -12508,7 +12626,9 @@
               "name": "PTTM 1",
               "projected": 0.6414
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -12546,7 +12666,9 @@
               "name": "The Plow",
               "projected": 0.6373
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -12584,7 +12706,9 @@
               "name": "Cyclocross",
               "projected": 0.6415
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -12622,7 +12746,9 @@
               "name": "Bicouplet 1",
               "projected": 0.6457
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -12660,7 +12786,9 @@
               "name": "Ringer 1",
               "projected": 0.6338
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -12698,7 +12826,9 @@
               "name": "Corn Sack Sprint",
               "projected": 0.6329
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -12736,7 +12866,9 @@
               "name": "Event 13",
               "projected": 0.6528
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -12774,7 +12906,9 @@
               "name": "Echo Press",
               "projected": 0.6411
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -12812,7 +12946,9 @@
               "name": "Intervals",
               "projected": 0.6445
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -12850,7 +12986,9 @@
               "name": "Push Pull 2.0",
               "projected": 0.664
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -12888,7 +13026,9 @@
               "name": "All Crossed Up",
               "projected": 0.6622
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -12926,7 +13066,9 @@
               "name": "Echo Thruster",
               "projected": 0.6442
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -12934,7 +13076,10 @@
         "bestYear": 2020,
         "worstYear": 2023,
         "wouldWin": 0,
-        "wouldPodium": 1
+        "wouldPodium": 1,
+        "meanHeadToHead": 12.94,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -14695,7 +14840,9 @@
               "name": "The End 1",
               "projected": 0.6748
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -14733,7 +14880,9 @@
               "name": "Clean Ladder",
               "projected": 0.6482
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -14771,7 +14920,9 @@
               "name": "Sprint Chipper",
               "projected": 0.6497
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -14809,7 +14960,9 @@
               "name": "Sprint Carry",
               "projected": 0.639
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -14847,7 +15000,9 @@
               "name": "Clean and Jerk",
               "projected": 0.6482
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -14885,7 +15040,9 @@
               "name": "Ranch Deadlift Ladder",
               "projected": 0.6539
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -14923,7 +15080,9 @@
               "name": "Assault Banger",
               "projected": 0.6792
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -14961,7 +15120,9 @@
               "name": "Marathon Row",
               "projected": 0.6962
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -14999,7 +15160,9 @@
               "name": "Clean",
               "projected": 0.6482
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -15037,7 +15200,9 @@
               "name": "Sprint Sled Sprint",
               "projected": 0.639
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -15075,7 +15240,9 @@
               "name": "Event 6",
               "projected": 0.6795
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -15113,7 +15280,9 @@
               "name": "Hat Trick",
               "projected": 0.6801
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -15151,7 +15320,9 @@
               "name": "Cross-Country 5K",
               "projected": 0.6929
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -15189,7 +15360,9 @@
               "name": "Firestorm",
               "projected": 0.6483
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -15227,7 +15400,9 @@
               "name": "Hammer Down",
               "projected": 0.6718
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -15265,7 +15440,9 @@
               "name": "CrossFit Total: Press",
               "projected": 0.6372
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -15273,7 +15450,10 @@
         "bestYear": 2020,
         "worstYear": 2021,
         "wouldWin": 0,
-        "wouldPodium": 1
+        "wouldPodium": 1,
+        "meanHeadToHead": 8.88,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -17729,7 +17909,9 @@
               "name": "The End 1",
               "projected": 0.6727
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -17767,7 +17949,9 @@
               "name": "Double Banger",
               "projected": 0.6524
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -17805,7 +17989,9 @@
               "name": "Sprint Chipper",
               "projected": 0.6694
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -17843,7 +18029,9 @@
               "name": "Sprint Sled-1",
               "projected": 0.6425
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -17881,7 +18069,9 @@
               "name": "Heavy DT",
               "projected": 0.6249
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -17919,7 +18109,9 @@
               "name": "The Plow",
               "projected": 0.6424
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -17957,7 +18149,9 @@
               "name": "Strongman's Fear",
               "projected": 0.6453
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -17995,7 +18189,9 @@
               "name": "Two-Stroke Pull",
               "projected": 0.6655
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -18033,7 +18229,9 @@
               "name": "Sprint",
               "projected": 0.6582
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -18071,7 +18269,9 @@
               "name": "Snatch Speed Triple",
               "projected": 0.5912
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -18109,7 +18309,9 @@
               "name": "Event 7",
               "projected": 0.6293
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -18147,7 +18349,9 @@
               "name": "Echo Press",
               "projected": 0.6642
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -18185,7 +18389,9 @@
               "name": "Pig Chipper",
               "projected": 0.6643
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -18223,7 +18429,9 @@
               "name": "Firestorm",
               "projected": 0.6644
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -18261,7 +18469,9 @@
               "name": "Running Isabel",
               "projected": 0.6628
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -18299,7 +18509,9 @@
               "name": "CrossFit Total: Deadlift",
               "projected": 0.5321
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -18307,7 +18519,10 @@
         "bestYear": 2020,
         "worstYear": 2023,
         "wouldWin": 0,
-        "wouldPodium": 1
+        "wouldPodium": 1,
+        "meanHeadToHead": 13.13,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -20224,7 +20439,9 @@
               "name": "Triplet Sprint",
               "projected": 0.6713
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -20262,7 +20479,9 @@
               "name": "Ball Toss",
               "projected": 0.6628
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -20300,7 +20519,9 @@
               "name": "Sprint Chipper",
               "projected": 0.6745
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -20338,7 +20559,9 @@
               "name": "Double Grace",
               "projected": 0.6746
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -20376,7 +20599,9 @@
               "name": "Heavy DT",
               "projected": 0.6586
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -20414,7 +20639,9 @@
               "name": "Handstand Walk",
               "projected": 0.6555
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -20452,7 +20679,9 @@
               "name": "Fibonacci Final",
               "projected": 0.6567
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -20490,7 +20719,9 @@
               "name": "Handstand Walk",
               "projected": 0.6555
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -20528,7 +20759,9 @@
               "name": "Second Cut",
               "projected": 0.6761
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -20566,7 +20799,9 @@
               "name": "Snatch Speed Triple",
               "projected": 0.6375
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -20604,7 +20839,9 @@
               "name": "Event 8",
               "projected": 0.6555
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -20642,7 +20879,9 @@
               "name": "Elizabeth Elevated",
               "projected": 0.6612
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -20680,7 +20919,9 @@
               "name": "Helena",
               "projected": 0.684
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -20718,7 +20959,9 @@
               "name": "Firestorm",
               "projected": 0.6747
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -20756,7 +20999,9 @@
               "name": "All Crossed Up",
               "projected": 0.6725
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -20794,7 +21039,9 @@
               "name": "CrossFit Total: Deadlift",
               "projected": 0.6162
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -20802,7 +21049,10 @@
         "bestYear": 2020,
         "worstYear": 2021,
         "wouldWin": 0,
-        "wouldPodium": 1
+        "wouldPodium": 1,
+        "meanHeadToHead": 8.44,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -22969,7 +23219,9 @@
               "name": "The End 3",
               "projected": 0.6693
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -23007,7 +23259,9 @@
               "name": "Track Triplet",
               "projected": 0.5966
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -23045,7 +23299,9 @@
               "name": "Row 2",
               "projected": 0.6048
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -23083,7 +23339,9 @@
               "name": "Muscle-up Biathlon",
               "projected": 0.6308
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -23121,7 +23379,9 @@
               "name": "Sandbag 2015",
               "projected": 0.6339
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -23159,7 +23419,9 @@
               "name": "Suicide Sprint",
               "projected": 0.6178
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -23197,7 +23459,9 @@
               "name": "Assault Banger",
               "projected": 0.6319
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -23235,7 +23499,9 @@
               "name": "CRIT",
               "projected": 0.6067
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -23273,7 +23539,9 @@
               "name": "Sprint",
               "projected": 0.6178
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -23311,7 +23579,9 @@
               "name": "Bike Repeater",
               "projected": 0.6067
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -23349,7 +23619,9 @@
               "name": "Event 10",
               "projected": 0.6152
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -23387,7 +23659,9 @@
               "name": "Rinse 'N' Repeat",
               "projected": 0.6087
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -23425,7 +23699,9 @@
               "name": "Ski-Bag",
               "projected": 0.6288
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -23463,7 +23739,9 @@
               "name": "Chad",
               "projected": 0.5969
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -23501,7 +23779,9 @@
               "name": "Throttle Up",
               "projected": 0.6598
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -23539,7 +23819,9 @@
               "name": "Swim Standard",
               "projected": 0.569
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -23547,7 +23829,10 @@
         "bestYear": 2020,
         "worstYear": 2023,
         "wouldWin": 0,
-        "wouldPodium": 1
+        "wouldPodium": 1,
+        "meanHeadToHead": 12.38,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -25990,7 +26275,9 @@
               "name": "The End 2",
               "projected": 0.6385
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -26028,7 +26315,9 @@
               "name": "Pendleton 1",
               "projected": 0.6326
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -26066,7 +26355,9 @@
               "name": "Row 2",
               "projected": 0.5664
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -26104,7 +26395,9 @@
               "name": "Triple-3",
               "projected": 0.6077
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -26142,7 +26435,9 @@
               "name": "Snatch Speed Ladder",
               "projected": 0.5995
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -26180,7 +26475,9 @@
               "name": "The Plow",
               "projected": 0.6198
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -26218,7 +26515,9 @@
               "name": "Assault Banger",
               "projected": 0.5828
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -26256,7 +26555,9 @@
               "name": "Marathon Row",
               "projected": 0.5664
             }
-          ]
+          ],
+          "headToHeadFinish": 18,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -26294,7 +26595,9 @@
               "name": "Second Cut",
               "projected": 0.6264
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -26332,7 +26635,9 @@
               "name": "Bike Repeater",
               "projected": 0.5593
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -26370,7 +26675,9 @@
               "name": "Event 6",
               "projected": 0.6053
             }
-          ]
+          ],
+          "headToHeadFinish": 20,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -26408,7 +26715,9 @@
               "name": "Sandbag Ladder",
               "projected": 0.576
             }
-          ]
+          ],
+          "headToHeadFinish": 20,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -26446,7 +26755,9 @@
               "name": "Ride",
               "projected": 0.5672
             }
-          ]
+          ],
+          "headToHeadFinish": 21,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -26484,7 +26795,9 @@
               "name": "Track and Field",
               "projected": 0.6593
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -26522,7 +26835,9 @@
               "name": "Atlas",
               "projected": 0.6005
             }
-          ]
+          ],
+          "headToHeadFinish": 18,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -26560,7 +26875,9 @@
               "name": "CrossFit Total: Deadlift",
               "projected": 0.5337
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -26568,7 +26885,10 @@
         "bestYear": 2020,
         "worstYear": 2023,
         "wouldWin": 0,
-        "wouldPodium": 1
+        "wouldPodium": 1,
+        "meanHeadToHead": 17.38,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -27800,7 +28120,9 @@
               "name": "Killer Kage",
               "projected": 0.6779
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -27838,7 +28160,9 @@
               "name": "Obstacle Course",
               "projected": 0.6633
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -27876,7 +28200,9 @@
               "name": "Legless",
               "projected": 0.7007
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -27914,7 +28240,9 @@
               "name": "Thick 'N Quick",
               "projected": 0.728
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -27952,7 +28280,9 @@
               "name": "Sprint Course 1",
               "projected": 0.6729
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -27990,7 +28320,9 @@
               "name": "Squat Clean Pyramid",
               "projected": 0.694
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -28028,7 +28360,9 @@
               "name": "Muscle-up Clean Ladder",
               "projected": 0.6818
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -28066,7 +28400,9 @@
               "name": "Handstand Walk",
               "projected": 0.6731
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -28104,7 +28440,9 @@
               "name": "Mary",
               "projected": 0.7119
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -28142,7 +28480,9 @@
               "name": "Snatch Speed Triple",
               "projected": 0.6461
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -28180,7 +28520,9 @@
               "name": "Event 8",
               "projected": 0.6731
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -28218,7 +28560,9 @@
               "name": "Back Nine",
               "projected": 0.7086
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -28256,7 +28600,9 @@
               "name": "Parallel-bar Pull",
               "projected": 0.7317
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -28294,7 +28640,9 @@
               "name": "Firestorm",
               "projected": 0.7081
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -28332,7 +28680,9 @@
               "name": "Hammer Down",
               "projected": 0.714
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -28370,7 +28720,9 @@
               "name": "CrossFit Total: Deadlift",
               "projected": 0.5963
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -28378,7 +28730,10 @@
         "bestYear": 2012,
         "worstYear": 2025,
         "wouldWin": 0,
-        "wouldPodium": 4
+        "wouldPodium": 4,
+        "meanHeadToHead": 4.19,
+        "h2hWins": 0,
+        "h2hPodiums": 3
       }
     },
     {
@@ -29591,7 +29946,9 @@
               "name": "Beach",
               "projected": 0.713
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -29629,7 +29986,9 @@
               "name": "Pendleton 2",
               "projected": 0.6919
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -29667,7 +30026,9 @@
               "name": "Zigzag Sprint",
               "projected": 0.7002
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -29705,7 +30066,9 @@
               "name": "The Beach",
               "projected": 0.7167
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -29743,7 +30106,9 @@
               "name": "Sprint Course 2",
               "projected": 0.7013
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -29781,7 +30146,9 @@
               "name": "Murph",
               "projected": 0.6904
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -29819,7 +30186,9 @@
               "name": "Run Swim Run",
               "projected": 0.7019
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -29857,7 +30226,9 @@
               "name": "Fibonacci",
               "projected": 0.7147
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -29895,7 +30266,9 @@
               "name": "Sprint Couplet",
               "projected": 0.7108
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -29933,7 +30306,9 @@
               "name": "Nasty Nancy",
               "projected": 0.6853
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -29971,7 +30346,9 @@
               "name": "Event 6",
               "projected": 0.6945
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -30009,7 +30386,9 @@
               "name": "Skill Speed Medley",
               "projected": 0.7041
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -30047,7 +30426,9 @@
               "name": "Ride",
               "projected": 0.7172
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -30085,7 +30466,9 @@
               "name": "Firestorm",
               "projected": 0.7132
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -30123,7 +30506,9 @@
               "name": "Throttle Up",
               "projected": 0.715
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -30161,7 +30546,9 @@
               "name": "500 Run",
               "projected": 0.6588
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -30169,7 +30556,10 @@
         "bestYear": 2020,
         "worstYear": 2021,
         "wouldWin": 0,
-        "wouldPodium": 3
+        "wouldPodium": 3,
+        "meanHeadToHead": 5.56,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -31153,7 +31543,9 @@
               "name": "Killer Kage",
               "projected": 0.7133
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -31191,7 +31583,9 @@
               "name": "Obstacle Course",
               "projected": 0.7149
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -31229,7 +31623,9 @@
               "name": "The Cinco 2",
               "projected": 0.7241
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -31267,7 +31663,9 @@
               "name": "Midline March",
               "projected": 0.7343
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -31305,7 +31703,9 @@
               "name": "Heavy DT",
               "projected": 0.688
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -31343,7 +31743,9 @@
               "name": "Handstand Walk",
               "projected": 0.676
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -31381,7 +31783,9 @@
               "name": "Fibonacci Final",
               "projected": 0.6969
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -31419,7 +31823,9 @@
               "name": "Handstand Walk",
               "projected": 0.676
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -31457,7 +31863,9 @@
               "name": "Second Cut",
               "projected": 0.7126
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -31495,7 +31903,9 @@
               "name": "Snatch Speed Triple",
               "projected": 0.5926
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -31533,7 +31943,9 @@
               "name": "Event 8",
               "projected": 0.676
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -31571,7 +31983,9 @@
               "name": "Skill Speed Medley",
               "projected": 0.6715
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -31609,7 +32023,9 @@
               "name": "The Alpaca Redux",
               "projected": 0.7264
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -31647,7 +32063,9 @@
               "name": "Push Pull 2.0",
               "projected": 0.7382
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -31685,7 +32103,9 @@
               "name": "All Crossed Up",
               "projected": 0.7332
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -31723,7 +32143,9 @@
               "name": "CrossFit Total: Deadlift",
               "projected": 0.4751
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -31731,7 +32153,10 @@
         "bestYear": 2012,
         "worstYear": 2018,
         "wouldWin": 0,
-        "wouldPodium": 2
+        "wouldPodium": 2,
+        "meanHeadToHead": 5.44,
+        "h2hWins": 0,
+        "h2hPodiums": 2
       }
     },
     {
@@ -32707,7 +33132,9 @@
               "name": "Killer Kage",
               "projected": 0.6276
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -32745,7 +33172,9 @@
               "name": "Broad Jump",
               "projected": 0.588
             }
-          ]
+          ],
+          "headToHeadFinish": 7,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -32783,7 +33212,9 @@
               "name": "Sprint Chipper",
               "projected": 0.6815
             }
-          ]
+          ],
+          "headToHeadFinish": 5,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -32821,7 +33252,9 @@
               "name": "Triple-3",
               "projected": 0.69
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -32859,7 +33292,9 @@
               "name": "Murph",
               "projected": 0.6791
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -32897,7 +33332,9 @@
               "name": "Ranch Trail Run",
               "projected": 0.6336
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -32935,7 +33372,9 @@
               "name": "Fibonacci Final",
               "projected": 0.6915
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -32973,7 +33412,9 @@
               "name": "Madison Triplus",
               "projected": 0.6958
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -33011,7 +33452,9 @@
               "name": "Mary",
               "projected": 0.6798
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -33049,7 +33492,9 @@
               "name": "Handstand Hold",
               "projected": 0.6631
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -33087,7 +33532,9 @@
               "name": "Event 11",
               "projected": 0.6611
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -33125,7 +33572,9 @@
               "name": "Back Nine",
               "projected": 0.6815
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -33163,7 +33612,9 @@
               "name": "Parallel-bar Pull",
               "projected": 0.7298
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -33201,7 +33652,9 @@
               "name": "Lake Day",
               "projected": 0.6871
             }
-          ]
+          ],
+          "headToHeadFinish": 6,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -33239,7 +33692,9 @@
               "name": "Hammer Down",
               "projected": 0.7089
             }
-          ]
+          ],
+          "headToHeadFinish": 4,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -33277,7 +33732,9 @@
               "name": "Handstand Sprint",
               "projected": 0.6139
             }
-          ]
+          ],
+          "headToHeadFinish": 3,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -33285,7 +33742,10 @@
         "bestYear": 2015,
         "worstYear": 2025,
         "wouldWin": 0,
-        "wouldPodium": 5
+        "wouldPodium": 5,
+        "meanHeadToHead": 4.5,
+        "h2hWins": 0,
+        "h2hPodiums": 8
       }
     },
     {
@@ -34631,7 +35091,9 @@
               "name": "Triplet Sprint",
               "projected": 0.6338
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -34669,7 +35131,9 @@
               "name": "Ball Toss",
               "projected": 0.6282
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -34707,7 +35171,9 @@
               "name": "Sprint Chipper",
               "projected": 0.6348
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -34745,7 +35211,9 @@
               "name": "Double Grace",
               "projected": 0.6583
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -34783,7 +35251,9 @@
               "name": "Heavy DT",
               "projected": 0.6126
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -34821,7 +35291,9 @@
               "name": "Handstand Walk",
               "projected": 0.6342
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -34859,7 +35331,9 @@
               "name": "Sprint O-Course",
               "projected": 0.6313
             }
-          ]
+          ],
+          "headToHeadFinish": 10,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -34897,7 +35371,9 @@
               "name": "Fibonacci",
               "projected": 0.6341
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -34935,7 +35411,9 @@
               "name": "Mary",
               "projected": 0.6415
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -34973,7 +35451,9 @@
               "name": "Snatch Speed Triple",
               "projected": 0.5534
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -35011,7 +35491,9 @@
               "name": "Event 8",
               "projected": 0.6342
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -35049,7 +35531,9 @@
               "name": "Elizabeth Elevated",
               "projected": 0.634
             }
-          ]
+          ],
+          "headToHeadFinish": 8,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -35087,7 +35571,9 @@
               "name": "Helena",
               "projected": 0.6913
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -35125,7 +35611,9 @@
               "name": "Firestorm",
               "projected": 0.6338
             }
-          ]
+          ],
+          "headToHeadFinish": 9,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -35163,7 +35651,9 @@
               "name": "Climbing Couplet",
               "projected": 0.6656
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -35201,7 +35691,9 @@
               "name": "CrossFit Total: Deadlift",
               "projected": 0.4826
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -35209,7 +35701,10 @@
         "bestYear": 2020,
         "worstYear": 2025,
         "wouldWin": 0,
-        "wouldPodium": 1
+        "wouldPodium": 1,
+        "meanHeadToHead": 10.19,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -36673,7 +37168,9 @@
               "name": "Killer Kage",
               "projected": 0.5646
             }
-          ]
+          ],
+          "headToHeadFinish": 25,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -36711,7 +37208,9 @@
               "name": "Double Banger",
               "projected": 0.6154
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -36749,7 +37248,9 @@
               "name": "Row 2",
               "projected": 0.6176
             }
-          ]
+          ],
+          "headToHeadFinish": 18,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -36787,7 +37288,9 @@
               "name": "Muscle-up Biathlon",
               "projected": 0.6267
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -36825,7 +37328,9 @@
               "name": "PTTM 1",
               "projected": 0.6264
             }
-          ]
+          ],
+          "headToHeadFinish": 18,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -36863,7 +37368,9 @@
               "name": "Rope Chipper",
               "projected": 0.5932
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -36901,7 +37408,9 @@
               "name": "Cyclocross",
               "projected": 0.6142
             }
-          ]
+          ],
+          "headToHeadFinish": 18,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -36939,7 +37448,9 @@
               "name": "30 Muscle-Ups",
               "projected": 0.6013
             }
-          ]
+          ],
+          "headToHeadFinish": 20,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -36977,7 +37488,9 @@
               "name": "Swim Paddle",
               "projected": 0.6015
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -37015,7 +37528,9 @@
               "name": "Swim 'N' Stuff",
               "projected": 0.6056
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -37053,7 +37568,9 @@
               "name": "Event 14",
               "projected": 0.5876
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -37091,7 +37608,9 @@
               "name": "Bike to Work",
               "projected": 0.6142
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -37129,7 +37648,9 @@
               "name": "Muscle-up Logs",
               "projected": 0.6172
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -37167,7 +37688,9 @@
               "name": "Push Pull 2.0",
               "projected": 0.6364
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -37205,7 +37728,9 @@
               "name": "Going Dark",
               "projected": 0.6383
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -37243,7 +37768,9 @@
               "name": "Fibonacci Final",
               "projected": 0.5757
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -37251,7 +37778,10 @@
         "bestYear": 2020,
         "worstYear": 2021,
         "wouldWin": 0,
-        "wouldPodium": 1
+        "wouldPodium": 1,
+        "meanHeadToHead": 18.19,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -38447,7 +38977,9 @@
               "name": "The End 3",
               "projected": 0.6366
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -38485,7 +39017,9 @@
               "name": "Track Triplet",
               "projected": 0.5999
             }
-          ]
+          ],
+          "headToHeadFinish": 13,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -38523,7 +39057,9 @@
               "name": "Naughty Nancy",
               "projected": 0.6251
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -38561,7 +39097,9 @@
               "name": "Midline March",
               "projected": 0.6182
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -38599,7 +39137,9 @@
               "name": "Soccer Chipper",
               "projected": 0.638
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -38637,7 +39177,9 @@
               "name": "The Plow",
               "projected": 0.602
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -38675,7 +39217,9 @@
               "name": "Assault Banger",
               "projected": 0.6107
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -38713,7 +39257,9 @@
               "name": "CRIT",
               "projected": 0.5947
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -38751,7 +39297,9 @@
               "name": "Clean",
               "projected": 0.6476
             }
-          ]
+          ],
+          "headToHeadFinish": 11,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -38789,7 +39337,9 @@
               "name": "Atalanta",
               "projected": 0.615
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -38827,7 +39377,9 @@
               "name": "Event 13",
               "projected": 0.5998
             }
-          ]
+          ],
+          "headToHeadFinish": 18,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -38865,7 +39417,9 @@
               "name": "Bike to Work",
               "projected": 0.5947
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -38903,7 +39457,9 @@
               "name": "Ride",
               "projected": 0.5908
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -38941,7 +39497,9 @@
               "name": "Clean Ladder",
               "projected": 0.6476
             }
-          ]
+          ],
+          "headToHeadFinish": 12,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -38979,7 +39537,9 @@
               "name": "Run Row Run",
               "projected": 0.5785
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -39017,7 +39577,9 @@
               "name": "Grass Track Race",
               "projected": 0.5637
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -39025,7 +39587,10 @@
         "bestYear": 2020,
         "worstYear": 2023,
         "wouldWin": 0,
-        "wouldPodium": 1
+        "wouldPodium": 1,
+        "meanHeadToHead": 15,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -40638,7 +41203,9 @@
               "name": "Beach",
               "projected": 0.562
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -40676,7 +41243,9 @@
               "name": "Track Triplet",
               "projected": 0.5522
             }
-          ]
+          ],
+          "headToHeadFinish": 25,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -40714,7 +41283,9 @@
               "name": "Naughty Nancy",
               "projected": 0.5783
             }
-          ]
+          ],
+          "headToHeadFinish": 26,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -40752,7 +41323,9 @@
               "name": "Muscle-up Biathlon",
               "projected": 0.5513
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -40790,7 +41363,9 @@
               "name": "Snatch Speed Ladder",
               "projected": 0.5525
             }
-          ]
+          ],
+          "headToHeadFinish": 24,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -40828,7 +41403,9 @@
               "name": "Ocean Swim",
               "projected": 0.5387
             }
-          ]
+          ],
+          "headToHeadFinish": 24,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -40866,7 +41443,9 @@
               "name": "Muscle-up Clean Ladder",
               "projected": 0.5543
             }
-          ]
+          ],
+          "headToHeadFinish": 24,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -40904,7 +41483,9 @@
               "name": "Clean & Jerk Speed Ladder",
               "projected": 0.5525
             }
-          ]
+          ],
+          "headToHeadFinish": 26,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -40942,7 +41523,9 @@
               "name": "Swim Paddle",
               "projected": 0.5459
             }
-          ]
+          ],
+          "headToHeadFinish": 29,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -40980,7 +41563,9 @@
               "name": "Handstand Sprint",
               "projected": 0.5285
             }
-          ]
+          ],
+          "headToHeadFinish": 23,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -41018,7 +41603,9 @@
               "name": "Event 12",
               "projected": 0.5383
             }
-          ]
+          ],
+          "headToHeadFinish": 31,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -41056,7 +41643,9 @@
               "name": "The Capitol",
               "projected": 0.5593
             }
-          ]
+          ],
+          "headToHeadFinish": 24,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -41094,7 +41683,9 @@
               "name": "Cross-Country 5K",
               "projected": 0.5515
             }
-          ]
+          ],
+          "headToHeadFinish": 26,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -41132,7 +41723,9 @@
               "name": "Push Pull 2.0",
               "projected": 0.578
             }
-          ]
+          ],
+          "headToHeadFinish": 28,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -41170,7 +41763,9 @@
               "name": "Going Dark",
               "projected": 0.5787
             }
-          ]
+          ],
+          "headToHeadFinish": 20,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -41208,7 +41803,9 @@
               "name": "CrossFit Total: Deadlift",
               "projected": 0.5189
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -41216,7 +41813,10 @@
         "bestYear": 2020,
         "worstYear": 2021,
         "wouldWin": 0,
-        "wouldPodium": 0
+        "wouldPodium": 0,
+        "meanHeadToHead": 25.06,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -42813,7 +43413,9 @@
               "name": "Triplet Sprint",
               "projected": 0.6124
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -42851,7 +43453,9 @@
               "name": "Broad Jump",
               "projected": 0.5963
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -42889,7 +43493,9 @@
               "name": "Clean and Jerk",
               "projected": 0.5647
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -42927,7 +43533,9 @@
               "name": "Sprint Carry",
               "projected": 0.553
             }
-          ]
+          ],
+          "headToHeadFinish": 21,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -42965,7 +43573,9 @@
               "name": "Sandbag 2015",
               "projected": 0.5807
             }
-          ]
+          ],
+          "headToHeadFinish": 20,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -43003,7 +43613,9 @@
               "name": "Ranch Deadlift Ladder",
               "projected": 0.5662
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -43041,7 +43653,9 @@
               "name": "Strongman's Fear",
               "projected": 0.5698
             }
-          ]
+          ],
+          "headToHeadFinish": 20,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -43079,7 +43693,9 @@
               "name": "The Battleground",
               "projected": 0.6029
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -43117,7 +43733,9 @@
               "name": "Ringer 1",
               "projected": 0.5946
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -43155,7 +43773,9 @@
               "name": "1RM Front Squat",
               "projected": 0.553
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -43193,7 +43813,9 @@
               "name": "Event 9",
               "projected": 0.5934
             }
-          ]
+          ],
+          "headToHeadFinish": 24,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -43231,7 +43853,9 @@
               "name": "Rinse 'N' Repeat",
               "projected": 0.5953
             }
-          ]
+          ],
+          "headToHeadFinish": 21,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -43269,7 +43893,9 @@
               "name": "Pig Chipper",
               "projected": 0.5926
             }
-          ]
+          ],
+          "headToHeadFinish": 24,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -43307,7 +43933,9 @@
               "name": "Firestorm",
               "projected": 0.6045
             }
-          ]
+          ],
+          "headToHeadFinish": 20,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -43345,7 +43973,9 @@
               "name": "Atlas",
               "projected": 0.5956
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -43383,7 +44013,9 @@
               "name": "CrossFit Total: Press",
               "projected": 0.553
             }
-          ]
+          ],
+          "headToHeadFinish": 18,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -43391,7 +44023,10 @@
         "bestYear": 2020,
         "worstYear": 2021,
         "wouldWin": 0,
-        "wouldPodium": 0
+        "wouldPodium": 0,
+        "meanHeadToHead": 20.38,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -45247,7 +45882,9 @@
               "name": "Killer Kage",
               "projected": 0.519
             }
-          ]
+          ],
+          "headToHeadFinish": 34,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -45285,7 +45922,9 @@
               "name": "Obstacle Course",
               "projected": 0.4783
             }
-          ]
+          ],
+          "headToHeadFinish": 32,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -45323,7 +45962,9 @@
               "name": "Sprint Chipper",
               "projected": 0.52
             }
-          ]
+          ],
+          "headToHeadFinish": 30,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -45361,7 +46002,9 @@
               "name": "Sprint Carry",
               "projected": 0.531
             }
-          ]
+          ],
+          "headToHeadFinish": 26,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -45399,7 +46042,9 @@
               "name": "Pier Paddle",
               "projected": 0.4746
             }
-          ]
+          ],
+          "headToHeadFinish": 26,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -45437,7 +46082,9 @@
               "name": "Suicide Sprint",
               "projected": 0.5109
             }
-          ]
+          ],
+          "headToHeadFinish": 28,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -45475,7 +46122,9 @@
               "name": "Amanda .45",
               "projected": 0.5668
             }
-          ]
+          ],
+          "headToHeadFinish": 25,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -45513,7 +46162,9 @@
               "name": "30 Muscle-Ups",
               "projected": 0.5558
             }
-          ]
+          ],
+          "headToHeadFinish": 21,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -45551,7 +46202,9 @@
               "name": "Sprint Couplet",
               "projected": 0.517
             }
-          ]
+          ],
+          "headToHeadFinish": 40,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -45589,7 +46242,9 @@
               "name": "Sprint Sled Sprint",
               "projected": 0.531
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -45627,7 +46282,9 @@
               "name": "Event 3",
               "projected": 0.5211
             }
-          ]
+          ],
+          "headToHeadFinish": 29,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -45665,7 +46322,9 @@
               "name": "Hat Trick",
               "projected": 0.5415
             }
-          ]
+          ],
+          "headToHeadFinish": 23,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -45703,7 +46362,9 @@
               "name": "Parallel-bar Pull",
               "projected": 0.5748
             }
-          ]
+          ],
+          "headToHeadFinish": 25,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -45741,7 +46402,9 @@
               "name": "Final 2421",
               "projected": 0.5385
             }
-          ]
+          ],
+          "headToHeadFinish": 33,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -45779,7 +46442,9 @@
               "name": "All Crossed Up",
               "projected": 0.5805
             }
-          ]
+          ],
+          "headToHeadFinish": 23,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -45817,7 +46482,9 @@
               "name": "Handstand Sprint",
               "projected": 0.499
             }
-          ]
+          ],
+          "headToHeadFinish": 21,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -45825,7 +46492,10 @@
         "bestYear": 2020,
         "worstYear": 2019,
         "wouldWin": 0,
-        "wouldPodium": 0
+        "wouldPodium": 0,
+        "meanHeadToHead": 27.38,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -47745,7 +48415,9 @@
               "name": "Dog Sled",
               "projected": 0.562
             }
-          ]
+          ],
+          "headToHeadFinish": 32,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -47783,7 +48455,9 @@
               "name": "Medball-HSPU",
               "projected": 0.5493
             }
-          ]
+          ],
+          "headToHeadFinish": 28,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -47821,7 +48495,9 @@
               "name": "Sprint Chipper",
               "projected": 0.5553
             }
-          ]
+          ],
+          "headToHeadFinish": 31,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -47859,7 +48535,9 @@
               "name": "21-15-9 Complex",
               "projected": 0.5567
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -47897,7 +48575,9 @@
               "name": "Soccer Chipper",
               "projected": 0.5592
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -47935,7 +48615,9 @@
               "name": "Handstand Walk",
               "projected": 0.5575
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -47973,7 +48655,9 @@
               "name": "Heavy 17.5",
               "projected": 0.5509
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -48011,7 +48695,9 @@
               "name": "Fibonacci",
               "projected": 0.5473
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -48049,7 +48735,9 @@
               "name": "Ringer 2",
               "projected": 0.5505
             }
-          ]
+          ],
+          "headToHeadFinish": 35,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -48087,7 +48775,9 @@
               "name": "Toes-to-Bar/Lunge",
               "projected": 0.5477
             }
-          ]
+          ],
+          "headToHeadFinish": 24,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -48125,7 +48815,9 @@
               "name": "Event 13",
               "projected": 0.5553
             }
-          ]
+          ],
+          "headToHeadFinish": 32,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -48163,7 +48855,9 @@
               "name": "Hat Trick",
               "projected": 0.5476
             }
-          ]
+          ],
+          "headToHeadFinish": 26,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -48201,7 +48895,9 @@
               "name": "Pig Chipper",
               "projected": 0.5472
             }
-          ]
+          ],
+          "headToHeadFinish": 30,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -48239,7 +48935,9 @@
               "name": "Final 2421",
               "projected": 0.5535
             }
-          ]
+          ],
+          "headToHeadFinish": 32,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -48277,7 +48975,9 @@
               "name": "Climbing Couplet",
               "projected": 0.5566
             }
-          ]
+          ],
+          "headToHeadFinish": 24,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -48315,7 +49015,9 @@
               "name": "Roll to Support AMRAP",
               "projected": 0.5497
             }
-          ]
+          ],
+          "headToHeadFinish": 20,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -48323,7 +49025,10 @@
         "bestYear": 2020,
         "worstYear": 2021,
         "wouldWin": 0,
-        "wouldPodium": 0
+        "wouldPodium": 0,
+        "meanHeadToHead": 28.06,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -50693,7 +51398,9 @@
               "name": "The End 1",
               "projected": 0.5855
             }
-          ]
+          ],
+          "headToHeadFinish": 26,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -50731,7 +51438,9 @@
               "name": "Isabel",
               "projected": 0.5568
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -50769,7 +51478,9 @@
               "name": "2007",
               "projected": 0.566
             }
-          ]
+          ],
+          "headToHeadFinish": 33,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -50807,7 +51518,9 @@
               "name": "Muscle-up Biathlon",
               "projected": 0.5583
             }
-          ]
+          ],
+          "headToHeadFinish": 29,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -50845,7 +51558,9 @@
               "name": "Heavy DT",
               "projected": 0.5254
             }
-          ]
+          ],
+          "headToHeadFinish": 29,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -50883,7 +51598,9 @@
               "name": "Ranch Trail Run",
               "projected": 0.5326
             }
-          ]
+          ],
+          "headToHeadFinish": 26,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -50921,7 +51638,9 @@
               "name": "Madison Triplet",
               "projected": 0.5662
             }
-          ]
+          ],
+          "headToHeadFinish": 28,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -50959,7 +51678,9 @@
               "name": "Bicouplet 2",
               "projected": 0.5658
             }
-          ]
+          ],
+          "headToHeadFinish": 30,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -50997,7 +51718,9 @@
               "name": "First Cut",
               "projected": 0.5652
             }
-          ]
+          ],
+          "headToHeadFinish": 33,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -51035,7 +51758,9 @@
               "name": "Snatch Speed Triple",
               "projected": 0.491
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -51073,7 +51798,9 @@
               "name": "Event 7",
               "projected": 0.4813
             }
-          ]
+          ],
+          "headToHeadFinish": 33,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -51111,7 +51838,9 @@
               "name": "Sandbag Ladder",
               "projected": 0.5507
             }
-          ]
+          ],
+          "headToHeadFinish": 28,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -51149,7 +51878,9 @@
               "name": "Echo Thruster Final",
               "projected": 0.5675
             }
-          ]
+          ],
+          "headToHeadFinish": 31,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -51187,7 +51918,9 @@
               "name": "Push Pull 2.0",
               "projected": 0.5777
             }
-          ]
+          ],
+          "headToHeadFinish": 31,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -51225,7 +51958,9 @@
               "name": "Run Row Run",
               "projected": 0.5558
             }
-          ]
+          ],
+          "headToHeadFinish": 26,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -51263,7 +51998,9 @@
               "name": "CrossFit Total: Deadlift",
               "projected": 0.4174
             }
-          ]
+          ],
+          "headToHeadFinish": 26,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -51271,7 +52008,10 @@
         "bestYear": 2020,
         "worstYear": 2021,
         "wouldWin": 0,
-        "wouldPodium": 0
+        "wouldPodium": 0,
+        "meanHeadToHead": 28.94,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -53200,7 +53940,9 @@
               "name": "The End 1",
               "projected": 0.5791
             }
-          ]
+          ],
+          "headToHeadFinish": 24,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -53238,7 +53980,9 @@
               "name": "Track Triplet",
               "projected": 0.5344
             }
-          ]
+          ],
+          "headToHeadFinish": 31,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -53276,7 +54020,9 @@
               "name": "Naughty Nancy",
               "projected": 0.5271
             }
-          ]
+          ],
+          "headToHeadFinish": 25,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -53314,7 +54060,9 @@
               "name": "Sprint Sled-1",
               "projected": 0.5192
             }
-          ]
+          ],
+          "headToHeadFinish": 30,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -53352,7 +54100,9 @@
               "name": "Heavy DT",
               "projected": 0.5121
             }
-          ]
+          ],
+          "headToHeadFinish": 23,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -53390,7 +54140,9 @@
               "name": "Squat Clean Pyramid",
               "projected": 0.4922
             }
-          ]
+          ],
+          "headToHeadFinish": 23,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -53428,7 +54180,9 @@
               "name": "Strongman's Fear",
               "projected": 0.5509
             }
-          ]
+          ],
+          "headToHeadFinish": 26,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -53466,7 +54220,9 @@
               "name": "Aeneas",
               "projected": 0.5655
             }
-          ]
+          ],
+          "headToHeadFinish": 25,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -53504,7 +54260,9 @@
               "name": "Ruck",
               "projected": 0.5138
             }
-          ]
+          ],
+          "headToHeadFinish": 30,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -53542,7 +54300,9 @@
               "name": "Snatch Speed Triple",
               "projected": 0.4757
             }
-          ]
+          ],
+          "headToHeadFinish": 25,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -53580,7 +54340,9 @@
               "name": "Event 7",
               "projected": 0.4435
             }
-          ]
+          ],
+          "headToHeadFinish": 30,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -53618,7 +54380,9 @@
               "name": "The Capitol",
               "projected": 0.5218
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -53656,7 +54420,9 @@
               "name": "Pig Chipper",
               "projected": 0.5694
             }
-          ]
+          ],
+          "headToHeadFinish": 29,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -53694,7 +54460,9 @@
               "name": "Firestorm",
               "projected": 0.5455
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -53732,7 +54500,9 @@
               "name": "Atlas",
               "projected": 0.5617
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -53770,7 +54540,9 @@
               "name": "CrossFit Total: Deadlift",
               "projected": 0.3486
             }
-          ]
+          ],
+          "headToHeadFinish": 25,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -53778,7 +54550,10 @@
         "bestYear": 2020,
         "worstYear": 2021,
         "wouldWin": 0,
-        "wouldPodium": 0
+        "wouldPodium": 0,
+        "meanHeadToHead": 26.69,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -54534,7 +55309,9 @@
               "name": "The End 1",
               "projected": 0.6079
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -54572,7 +55349,9 @@
               "name": "Pendleton 2",
               "projected": 0.5881
             }
-          ]
+          ],
+          "headToHeadFinish": 18,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -54610,7 +55389,9 @@
               "name": "Zigzag Sprint",
               "projected": 0.5941
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -54648,7 +55429,9 @@
               "name": "Sprint Carry",
               "projected": 0.5477
             }
-          ]
+          ],
+          "headToHeadFinish": 18,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -54686,7 +55469,9 @@
               "name": "Sandbag 2015",
               "projected": 0.5786
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -54724,7 +55509,9 @@
               "name": "100%",
               "projected": 0.5825
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -54762,7 +55549,9 @@
               "name": "Cyclocross",
               "projected": 0.617
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -54800,7 +55589,9 @@
               "name": "Marathon Row",
               "projected": 0.6124
             }
-          ]
+          ],
+          "headToHeadFinish": 16,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -54838,7 +55629,9 @@
               "name": "Ruck",
               "projected": 0.5874
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -54876,7 +55669,9 @@
               "name": "Ranch Loop",
               "projected": 0.5929
             }
-          ]
+          ],
+          "headToHeadFinish": 15,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -54914,7 +55709,9 @@
               "name": "Event 10",
               "projected": 0.6149
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -54952,7 +55749,9 @@
               "name": "Up and Over",
               "projected": 0.6032
             }
-          ]
+          ],
+          "headToHeadFinish": 19,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -54990,7 +55789,9 @@
               "name": "Ride",
               "projected": 0.6153
             }
-          ]
+          ],
+          "headToHeadFinish": 18,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -55028,7 +55829,9 @@
               "name": "Firestorm",
               "projected": 0.5932
             }
-          ]
+          ],
+          "headToHeadFinish": 18,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -55066,7 +55869,9 @@
               "name": "Run Row Run",
               "projected": 0.6078
             }
-          ]
+          ],
+          "headToHeadFinish": 17,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -55104,7 +55909,9 @@
               "name": "Jump Pull Yoke",
               "projected": 0.5921
             }
-          ]
+          ],
+          "headToHeadFinish": 14,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -55112,7 +55919,10 @@
         "bestYear": 2020,
         "worstYear": 2023,
         "wouldWin": 0,
-        "wouldPodium": 1
+        "wouldPodium": 1,
+        "meanHeadToHead": 17.06,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -56537,7 +57347,9 @@
               "name": "Skills 1",
               "projected": 0.5385
             }
-          ]
+          ],
+          "headToHeadFinish": 31,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -56575,7 +57387,9 @@
               "name": "Ball Toss",
               "projected": 0.4888
             }
-          ]
+          ],
+          "headToHeadFinish": 33,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -56613,7 +57427,9 @@
               "name": "Zigzag Sprint",
               "projected": 0.4732
             }
-          ]
+          ],
+          "headToHeadFinish": 38,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -56651,7 +57467,9 @@
               "name": "Sprint Sled-1",
               "projected": 0.5056
             }
-          ]
+          ],
+          "headToHeadFinish": 31,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -56689,7 +57507,9 @@
               "name": "Sprint Course 1",
               "projected": 0.4693
             }
-          ]
+          ],
+          "headToHeadFinish": 34,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -56727,7 +57547,9 @@
               "name": "100%",
               "projected": 0.4808
             }
-          ]
+          ],
+          "headToHeadFinish": 29,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -56765,7 +57587,9 @@
               "name": "Assault Banger",
               "projected": 0.4724
             }
-          ]
+          ],
+          "headToHeadFinish": 30,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -56803,7 +57627,9 @@
               "name": "CRIT",
               "projected": 0.508
             }
-          ]
+          ],
+          "headToHeadFinish": 35,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -56841,7 +57667,9 @@
               "name": "Sprint Couplet",
               "projected": 0.5117
             }
-          ]
+          ],
+          "headToHeadFinish": 41,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -56879,7 +57707,9 @@
               "name": "Snatch Speed Triple",
               "projected": 0.3603
             }
-          ]
+          ],
+          "headToHeadFinish": 28,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -56917,7 +57747,9 @@
               "name": "Event 9",
               "projected": 0.488
             }
-          ]
+          ],
+          "headToHeadFinish": 34,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -56955,7 +57787,9 @@
               "name": "Echo Press",
               "projected": 0.4826
             }
-          ]
+          ],
+          "headToHeadFinish": 30,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -56993,7 +57827,9 @@
               "name": "Ski-Bag",
               "projected": 0.5009
             }
-          ]
+          ],
+          "headToHeadFinish": 32,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -57031,7 +57867,9 @@
               "name": "Final 2421",
               "projected": 0.5406
             }
-          ]
+          ],
+          "headToHeadFinish": 30,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -57069,7 +57907,9 @@
               "name": "Hammer Down",
               "projected": 0.553
             }
-          ]
+          ],
+          "headToHeadFinish": 29,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -57107,7 +57947,9 @@
               "name": "CrossFit Total: Deadlift",
               "projected": 0.1748
             }
-          ]
+          ],
+          "headToHeadFinish": 29,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -57115,7 +57957,10 @@
         "bestYear": 2020,
         "worstYear": 2019,
         "wouldWin": 0,
-        "wouldPodium": 0
+        "wouldPodium": 0,
+        "meanHeadToHead": 32.13,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {
@@ -58255,7 +59100,9 @@
               "name": "Dog Sled",
               "projected": 0.6056
             }
-          ]
+          ],
+          "headToHeadFinish": 21,
+          "poolSize": 67
         },
         {
           "year": 2012,
@@ -58293,7 +59140,9 @@
               "name": "Broad Jump",
               "projected": 0.5379
             }
-          ]
+          ],
+          "headToHeadFinish": 21,
+          "poolSize": 64
         },
         {
           "year": 2013,
@@ -58331,7 +59180,9 @@
               "name": "Zigzag Sprint",
               "projected": 0.5505
             }
-          ]
+          ],
+          "headToHeadFinish": 29,
+          "poolSize": 63
         },
         {
           "year": 2014,
@@ -58369,7 +59220,9 @@
               "name": "Sprint Sled-1",
               "projected": 0.5705
             }
-          ]
+          ],
+          "headToHeadFinish": 25,
+          "poolSize": 55
         },
         {
           "year": 2015,
@@ -58407,7 +59260,9 @@
               "name": "Pier Paddle",
               "projected": 0.4988
             }
-          ]
+          ],
+          "headToHeadFinish": 28,
+          "poolSize": 56
         },
         {
           "year": 2016,
@@ -58445,7 +59300,9 @@
               "name": "Squat Clean Pyramid",
               "projected": 0.4751
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 52
         },
         {
           "year": 2017,
@@ -58483,7 +59340,9 @@
               "name": "Assault Banger",
               "projected": 0.5836
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 51
         },
         {
           "year": 2018,
@@ -58521,7 +59380,9 @@
               "name": "Two-Stroke Pull",
               "projected": 0.5703
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 55
         },
         {
           "year": 2019,
@@ -58559,7 +59420,9 @@
               "name": "Sprint Couplet",
               "projected": 0.5475
             }
-          ]
+          ],
+          "headToHeadFinish": 24,
+          "poolSize": 154
         },
         {
           "year": 2020,
@@ -58597,7 +59460,9 @@
               "name": "Snatch Speed Triple",
               "projected": 0.4155
             }
-          ]
+          ],
+          "headToHeadFinish": 21,
+          "poolSize": 41
         },
         {
           "year": 2021,
@@ -58635,7 +59500,9 @@
               "name": "Event 14",
               "projected": 0.5338
             }
-          ]
+          ],
+          "headToHeadFinish": 27,
+          "poolSize": 51
         },
         {
           "year": 2022,
@@ -58673,7 +59540,9 @@
               "name": "Echo Press",
               "projected": 0.5517
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 50
         },
         {
           "year": 2023,
@@ -58711,7 +59580,9 @@
               "name": "Ski-Bag",
               "projected": 0.6178
             }
-          ]
+          ],
+          "headToHeadFinish": 20,
+          "poolSize": 50
         },
         {
           "year": 2024,
@@ -58749,7 +59620,9 @@
               "name": "Firestorm",
               "projected": 0.5718
             }
-          ]
+          ],
+          "headToHeadFinish": 23,
+          "poolSize": 50
         },
         {
           "year": 2025,
@@ -58787,7 +59660,9 @@
               "name": "Hammer Down",
               "projected": 0.5984
             }
-          ]
+          ],
+          "headToHeadFinish": 22,
+          "poolSize": 46
         },
         {
           "year": 2026,
@@ -58825,7 +59700,9 @@
               "name": "CrossFit Total: Deadlift",
               "projected": 0.2629
             }
-          ]
+          ],
+          "headToHeadFinish": 24,
+          "poolSize": 46
         }
       ],
       "transplantSummary": {
@@ -58833,7 +59710,10 @@
         "bestYear": 2020,
         "worstYear": 2021,
         "wouldWin": 0,
-        "wouldPodium": 0
+        "wouldPodium": 0,
+        "meanHeadToHead": 23.31,
+        "h2hWins": 0,
+        "h2hPodiums": 0
       }
     },
     {

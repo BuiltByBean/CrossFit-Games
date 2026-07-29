@@ -392,16 +392,60 @@ async function main() {
   });
 
   // Era transplant: run the top careers through every Games year.
-  const topForTransplant = eligible.slice(0, 25);
+  const TRANSPLANT_COHORT = 25;
+  const topForTransplant = eligible.slice(0, TRANSPLANT_COHORT);
   for (const c of topForTransplant) {
     c.transplants = dataset.years.map((y) => transplant(c, y, yearResults)).filter(Boolean);
-    const finishes = c.transplants.map((t) => t.projectedFinish);
+  }
+
+  /**
+   * The solo projection above swaps one athlete into a year's real field at a
+   * time, so two athletes who would both beat everyone who actually competed
+   * each come out first — they are never measured against each other.
+   *
+   * This second pass runs the whole cohort in the same year simultaneously:
+   * the pool is that year's real field, with any cohort member's actual result
+   * replaced by their projected one, plus the cohort members who were not
+   * there. Exactly one athlete can win a given year.
+   */
+  const cohortIds = new Set(topForTransplant.map((c) => c.competitorId));
+  for (const y of dataset.years) {
+    const actual = yearResults.get(y.year);
+    if (!actual) continue;
+
+    const pool = [];
+    for (const [id, r] of actual) {
+      if (!cohortIds.has(id)) pool.push({ id, score: r.percentileScore });
+    }
+    for (const c of topForTransplant) {
+      const t = c.transplants.find((x) => x.year === y.year);
+      if (t) pool.push({ id: c.competitorId, score: t.projectedScore });
+    }
+
+    pool.sort((a, b) => b.score - a.score);
+    const rankById = new Map(pool.map((p, i) => [p.id, i + 1]));
+
+    for (const c of topForTransplant) {
+      const t = c.transplants.find((x) => x.year === y.year);
+      if (!t) continue;
+      t.headToHeadFinish = rankById.get(c.competitorId) ?? null;
+      t.poolSize = pool.length;
+    }
+  }
+
+  for (const c of topForTransplant) {
+    const h2h = c.transplants.map((t) => t.headToHeadFinish).filter((v) => v != null);
     c.transplantSummary = {
-      meanFinish: round(mean(finishes), 2),
+      // solo projection: does this athlete's fitness fit that year's test
+      meanFinish: round(mean(c.transplants.map((t) => t.projectedFinish)), 2),
       bestYear: c.transplants.reduce((a, b) => (b.projectedFinish < a.projectedFinish ? b : a)).year,
       worstYear: c.transplants.reduce((a, b) => (b.projectedFinish > a.projectedFinish ? b : a)).year,
       wouldWin: c.transplants.filter((t) => t.projectedFinish === 1).length,
       wouldPodium: c.transplants.filter((t) => t.projectedFinish <= 3).length,
+      // head-to-head: the whole cohort competing in that year at once
+      meanHeadToHead: round(mean(h2h), 2),
+      h2hWins: h2h.filter((v) => v === 1).length,
+      h2hPodiums: h2h.filter((v) => v <= 3).length,
     };
   }
 
@@ -456,6 +500,12 @@ async function main() {
       weights: { quality: W_QUALITY, volume: W_VOLUME, hardware: W_HARDWARE },
       minAppearances: MIN_APPEARANCES,
       consensus: 'Mean of the three model ranks; ties broken by mean model score.',
+      transplant: {
+        cohort: TRANSPLANT_COHORT,
+        solo: "One athlete swapped into that year's real field. Independent per athlete, so two who would both beat the actual field each show first.",
+        headToHead:
+          "The whole cohort competing in that year at once, against the remainder of the real field. Exactly one athlete wins each year.",
+      },
     },
     years: yearSummaries,
     goat: eligible,

@@ -71,7 +71,11 @@ export interface Season {
 export interface Transplant {
   year: number;
   projectedScore: number;
+  /** Solo: this athlete alone swapped into that year's real field. */
   projectedFinish: number;
+  /** Head-to-head: the whole cohort competing in that year at once. */
+  headToHeadFinish: number | null;
+  poolSize: number | null;
   fieldSize: number;
   actualFinish: number | null;
   actualStatus: 'ACT' | 'CUT' | 'WD' | 'DQ' | null;
@@ -127,6 +131,9 @@ export interface Career {
     worstYear: number;
     wouldWin: number;
     wouldPodium: number;
+    meanHeadToHead: number;
+    h2hWins: number;
+    h2hPodiums: number;
   };
 }
 
@@ -155,6 +162,7 @@ export interface Analysis {
     weights: { quality: number; volume: number; hardware: number };
     minAppearances: number;
     consensus: string;
+    transplant: { cohort: number; solo: string; headToHead: string };
   };
   years: YearSummary[];
   goat: Career[];

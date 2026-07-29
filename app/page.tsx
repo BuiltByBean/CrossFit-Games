@@ -32,9 +32,10 @@ export default async function Home() {
           <p className="lede">
             Across {a.years.length} Games, {totalEvents} events and {a.allAthletes.length} men, three
             independent rating models — field-normalised percentile, CrossFit&apos;s own points, and
-            margin-of-victory z-score — all put {goat.name.split(' ')[0]} first. Drop him into any of the{' '}
-            {a.years.length} Games from {firstYear} to {lastYear} and he projects to podium in every one,
-            and win {goat.transplantSummary!.wouldWin} of them.
+            margin-of-victory z-score — all put {goat.name.split(' ')[0]} first. Put the{' '}
+            {a.methodology.transplant.cohort} greatest careers head-to-head in the same year, in every
+            year from {firstYear} to {lastYear}, and he wins {goat.transplantSummary!.h2hWins} of{' '}
+            {a.years.length}.
           </p>
         </div>
       </section>
@@ -58,9 +59,11 @@ export default async function Home() {
               <div className="stat-sub">career average vs the field</div>
             </div>
             <div className="stat">
-              <div className="stat-value">{goat.transplantSummary!.meanFinish}</div>
-              <div className="stat-label">Mean projected finish</div>
-              <div className="stat-sub">across all {a.years.length} eras</div>
+              <div className="stat-value">
+                {goat.transplantSummary!.h2hWins}/{a.years.length}
+              </div>
+              <div className="stat-label">Head-to-head wins</div>
+              <div className="stat-sub">vs the {a.methodology.transplant.cohort} best careers</div>
             </div>
           </div>
         </div>
@@ -74,8 +77,9 @@ export default async function Home() {
             <div>
               <p className="muted">
                 {second.name} is the only athlete close, and on raw dominance in his own era he is
-                arguably {goat.name.split(' ')[0]}&apos;s equal — {second.titles} straight titles and a
-                projected win in {second.transplantSummary!.wouldWin} of {a.years.length} eras.
+                arguably {goat.name.split(' ')[0]}&apos;s equal — {second.titles} straight titles, and
+                dropped alone into any era he projects to podium in all {a.years.length}. Head-to-head
+                he finishes second to {goat.name.split(' ')[0]} in every single year.
               </p>
               <p className="muted">
                 The separation is breadth and depth of field. {goat.name.split(' ')[0]} competed{' '}
@@ -167,8 +171,8 @@ export default async function Home() {
           <h2>Who was era-proof?</h2>
           <p className="lede">
             Each athlete&apos;s career domain profile is projected onto every other year&apos;s actual
-            event mix, then scored against that year&apos;s real field. These men project to a podium in
-            every Games ever held.
+            event mix, then scored against that year&apos;s real field. Dropped in alone, these men
+            project to a podium in every Games ever held.
           </p>
           <div className="grid grid-3" style={{ marginTop: '1.2rem' }}>
             {universal.map((c) => (

@@ -357,6 +357,75 @@ tbody tr:hover {
   color: var(--text);
 }
 
+/* ---------- domain sparkline ----------
+   Every domain is plotted on the same y-axis so the cards can be compared to
+   each other, not just read individually. The axis ceiling and the domain's
+   own average are both drawn, so a bar height means something. */
+.spark-head,
+.spark-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.spark-head {
+  margin-bottom: 0.35rem;
+}
+.spark-foot {
+  padding-left: 2.1rem;
+  margin-top: 0.15rem;
+}
+.spark-avg-key {
+  letter-spacing: -0.04em;
+  opacity: 0.75;
+}
+
+.spark {
+  display: flex;
+  gap: 0.45rem;
+  height: 56px;
+}
+.spark-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 1.65rem;
+  font-size: 0.62rem;
+  line-height: 1;
+  flex: none;
+}
+.spark-plot {
+  position: relative;
+  flex: 1;
+  border-left: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding-left: 2px;
+}
+.spark-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 100%;
+}
+.spark-bar {
+  flex: 1;
+  border-radius: 2px 2px 0 0;
+  min-width: 3px;
+  transition: opacity 0.12s;
+}
+.spark-bar:hover {
+  opacity: 1 !important;
+}
+.spark-avg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 1px dashed var(--text-faint);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
 /* ---------- misc ---------- */
 .pill-row {
   display: flex;

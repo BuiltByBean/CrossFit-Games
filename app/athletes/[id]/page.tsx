@@ -145,19 +145,25 @@ export default async function AthletePage({ params }: { params: Promise<{ id: st
             <div className="eyebrow">Era transplant</div>
             <h2>How he&apos;d do in every other era</h2>
             <p className="muted" style={{ maxWidth: '68ch' }}>
-              Projected finish if this profile were dropped into each Games. Would win{' '}
-              <strong>{c.transplantSummary.wouldWin}</strong> of {c.transplants.length} and podium in{' '}
-              <strong>{c.transplantSummary.wouldPodium}</strong>. Best fit: {c.transplantSummary.bestYear}.
-              Worst fit: {c.transplantSummary.worstYear}.
+              <strong>Solo</strong> drops this profile alone into each Games and ranks it against that
+              year&apos;s real field: {c.transplantSummary.wouldWin} wins and{' '}
+              {c.transplantSummary.wouldPodium} podiums from {c.transplants.length} eras. Best fit:{' '}
+              {c.transplantSummary.bestYear}. Worst fit: {c.transplantSummary.worstYear}.
+            </p>
+            <p className="muted" style={{ maxWidth: '68ch' }}>
+              <strong>Head-to-head</strong> puts the top {a.methodology.transplant.cohort} careers in
+              the same year at once, so only one man can win it — {c.transplantSummary.h2hWins} wins,{' '}
+              {c.transplantSummary.h2hPodiums} podiums, mean finish{' '}
+              {c.transplantSummary.meanHeadToHead}.
             </p>
             <div className="table-scroll" style={{ marginTop: '1rem' }}>
               <table>
                 <thead>
                   <tr>
                     <th>Year</th>
-                    <th>Projected</th>
+                    <th>Head-to-head</th>
+                    <th>Solo</th>
                     <th>Actual</th>
-                    <th>Field</th>
                     <th>Best fit events</th>
                     <th>Worst fit events</th>
                   </tr>
@@ -166,8 +172,16 @@ export default async function AthletePage({ params }: { params: Promise<{ id: st
                   {c.transplants.map((t) => (
                     <tr key={t.year}>
                       <td className="num">{t.year}</td>
-                      <td className={`num rank-${t.projectedFinish}`} style={{ fontWeight: 700 }}>
+                      <td
+                        className={`num rank-${t.headToHeadFinish ?? 0}`}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {t.headToHeadFinish ?? '—'}
+                        <span className="faint"> / {t.poolSize ?? '—'}</span>
+                      </td>
+                      <td className="num">
                         {t.projectedFinish}
+                        <span className="faint"> / {t.fieldSize}</span>
                       </td>
                       <td className="num">
                         {t.actualFinish ??
@@ -177,7 +191,6 @@ export default async function AthletePage({ params }: { params: Promise<{ id: st
                             <span className="faint">did not compete</span>
                           ))}
                       </td>
-                      <td className="num faint">{t.fieldSize}</td>
                       <td className="faint" style={{ whiteSpace: 'normal' }}>
                         {t.strongest.map((s) => s.name).join(', ')}
                       </td>
