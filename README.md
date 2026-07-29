@@ -1,20 +1,20 @@
 # CrossFit Games — Cross-Era Analysis
 
-Every CrossFit Games event from 2011 to 2025 for **Individual Men**, tagged by fitness domain,
+Every CrossFit Games event from 2011 to 2026 for **Individual Men**, tagged by fitness domain,
 with a three-model analysis of who the greatest of all time is — and whether they'd still be
 great dropped into any other era.
 
 **The answer: Mathew Fraser**, unanimously across all three models, projected to podium in
-all 15 Games ever held and win 9 of them. Rich Froning is the only athlete close.
+all 16 Games ever held and win 10 of them. Rich Froning is the only athlete close.
 
 ## What's here
 
 | | |
 |---|---|
-| **15** Games | 2011–2025 |
-| **198** events | 197 domain-tagged, 1 excluded (an aggregate column, not a real event) |
-| **344** athletes | 133 with enough appearances to rank |
-| **7,025** event results | every man, every event, every year |
+| **16** Games | 2011–2026 |
+| **218** events | 217 domain-tagged, 1 excluded (an aggregate column, not a real event) |
+| **347** athletes | 136 with enough appearances to rank |
+| **7,625** event results | every man, every event, every year |
 | **11** fitness domains | endurance, running, swimming, machines, sprint, max strength, weightlifting, gymnastics, odd object, skill, grip |
 
 ## Quick start
@@ -37,7 +37,7 @@ Runs three steps, each independently re-runnable:
 
 | Script | Does |
 |---|---|
-| `npm run fetch` | Pulls every year from the public games.crossfit.com API into `data/games.json` |
+| `npm run fetch` | Pulls every year from the public games.crossfit.com API into `data/games.json`. Discovers the latest completed Games automatically — set `LAST_YEAR` to pin it |
 | `npm run tag` | Applies fitness-domain weights to all 198 events |
 | `npm run analyze` | Computes the three models, consensus GOAT ranking and era transplants |
 
@@ -115,7 +115,7 @@ formats that ended some athletes' competitions early.
 
 ## Limitations
 
-- Field depth is not equalised — a p90 in 2011 came against a shallower field than a p90 in 2024.
+- Field depth is not equalised — a p90 in 2011 came against a shallower field than a p90 in 2026.
 - Domain weights are informed judgement, not measurement. That's why they're isolated in one file.
 - An athlete with no exposure to a domain has no score in it; transplants into years leaning on
   that domain rest on their other domains and are less certain.

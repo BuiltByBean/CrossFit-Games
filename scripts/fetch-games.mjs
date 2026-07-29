@@ -22,7 +22,6 @@ const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; crossfit-games-history/1.0)
 
 const DIVISION = { id: 1, name: 'Individual Men' };
 const FIRST_YEAR = 2011;
-const LAST_YEAR = Number(process.env.LAST_YEAR ?? 2025);
 
 async function getJSON(url, attempt = 1) {
   try {
@@ -34,6 +33,30 @@ async function getJSON(url, attempt = 1) {
     await new Promise((r) => setTimeout(r, 500 * 2 ** attempt));
     return getJSON(url, attempt + 1);
   }
+}
+
+/**
+ * The most recent Games with results, discovered by walking forward until the
+ * competition endpoint 404s. Hardcoding this meant a new Games was silently
+ * missing from the analysis until someone noticed.
+ */
+async function discoverLastYear() {
+  if (process.env.LAST_YEAR) return Number(process.env.LAST_YEAR);
+
+  let last = FIRST_YEAR;
+  for (let year = FIRST_YEAR + 1; year <= FIRST_YEAR + 40; year += 1) {
+    const res = await fetch(`${API}/competitions/v1/competitions/games/${year}`, { headers: UA });
+    if (!res.ok) break;
+    const comp = await res.json();
+    // A scheduled-but-unfinished Games has a competition record before it has
+    // any results, so only count years whose leaderboard is actually populated.
+    const lb = await getJSON(
+      `${API}/leaderboards/v2/competitions/games/${year}/leaderboards?division=${DIVISION.id}&sort=0`,
+    ).catch(() => null);
+    if (!lb?.leaderboardRows?.length) break;
+    last = comp.year ?? year;
+  }
+  return last;
 }
 
 /** Event names for a year, filtered to the division and in competition order. */
@@ -106,7 +129,10 @@ async function main() {
   await mkdir(join(ROOT, 'data', 'raw'), { recursive: true });
   const years = [];
 
-  for (let year = FIRST_YEAR; year <= LAST_YEAR; year += 1) {
+  const lastYear = await discoverLastYear();
+  console.log(`Latest Games with results: ${lastYear}\n`);
+
+  for (let year = FIRST_YEAR; year <= lastYear; year += 1) {
     const [events, { meta, rows }] = await Promise.all([fetchEvents(year), fetchLeaderboard(year)]);
 
     const ordinals = (meta.ordinals ?? []).length;

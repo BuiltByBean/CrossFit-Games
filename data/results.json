@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T15:15:46.615Z",
+  "generatedAt": "2026-07-29T17:46:07.472Z",
   "seasons": [
     {
       "competitorId": "11435",
@@ -66211,6 +66211,4986 @@
           "rank": 23,
           "display": "CAP+2",
           "percentile": 0.2414,
+          "z": -3
+        }
+      ]
+    },
+    {
+      "competitorId": "900251",
+      "year": 2026,
+      "finish": 1,
+      "fieldSize": 30,
+      "officialPoints": 1318,
+      "percentileScore": 0.7707,
+      "officialScore": 1,
+      "zScore": 0.6143,
+      "eventWins": 2,
+      "domains": {
+        "running": 0.85,
+        "swimming": 0.8276,
+        "machine": 0.9591,
+        "endurance": 0.9207,
+        "sprint": 0.6587,
+        "strength": 0.522,
+        "weightlifting": 0.8171,
+        "gymnastics": 0.7999,
+        "strongman": 0.9594,
+        "skill": 0.6771,
+        "grip": 0.9507
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 5,
+          "display": "07:35.20 (03:21)",
+          "percentile": 0.8621,
+          "z": -0.3894
+        },
+        {
+          "ordinal": 2,
+          "rank": 2,
+          "display": "39:43",
+          "percentile": 0.9655,
+          "z": 1.2888
+        },
+        {
+          "ordinal": 3,
+          "rank": 17,
+          "display": "475 (1270)",
+          "percentile": 0.4483,
+          "z": -0.2625
+        },
+        {
+          "ordinal": 4,
+          "rank": 26,
+          "display": "205 (1270)",
+          "percentile": 0.1379,
+          "z": -0.9134
+        },
+        {
+          "ordinal": 5,
+          "rank": 2,
+          "display": "590 (1270)",
+          "percentile": 0.9655,
+          "z": 1.1788
+        },
+        {
+          "ordinal": 6,
+          "rank": 4,
+          "display": "18:16.21",
+          "percentile": 0.8966,
+          "z": 0.9298
+        },
+        {
+          "ordinal": 7,
+          "rank": 6,
+          "display": "12:17.00",
+          "percentile": 0.8276,
+          "z": 0.8058
+        },
+        {
+          "ordinal": 8,
+          "rank": 2,
+          "display": "05:46.03",
+          "percentile": 0.9655,
+          "z": 1.412
+        },
+        {
+          "ordinal": 9,
+          "rank": 15,
+          "display": "110' 3.50\"",
+          "percentile": 0.5172,
+          "z": 0.2411
+        },
+        {
+          "ordinal": 10,
+          "rank": 6,
+          "display": "15:00.07",
+          "percentile": 0.8276,
+          "z": 0.943
+        },
+        {
+          "ordinal": 11,
+          "rank": 14,
+          "display": "02:33.34",
+          "percentile": 0.5517,
+          "z": 0.2468
+        },
+        {
+          "ordinal": 12,
+          "rank": 4,
+          "display": "05:10.54 (03:09.00)",
+          "percentile": 0.8966,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 13,
+          "display": "01:17.84",
+          "percentile": 0.5862,
+          "z": 0.1957
+        },
+        {
+          "ordinal": 14,
+          "rank": 3,
+          "display": "11:11.25 (05:57.00)",
+          "percentile": 0.931,
+          "z": 1.4199
+        },
+        {
+          "ordinal": 15,
+          "rank": 14,
+          "display": "2 (00:37.63)",
+          "percentile": 0.5517,
+          "z": 0
+        },
+        {
+          "ordinal": 16,
+          "rank": 2,
+          "display": "05:18.14 (03:28.00)",
+          "percentile": 0.9655,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 1,
+          "display": "03:20.65 (02:43.00)",
+          "percentile": 1,
+          "z": 1.3156
+        },
+        {
+          "ordinal": 18,
+          "rank": 1,
+          "display": "24:22.46",
+          "percentile": 1,
+          "z": 1.8609
+        },
+        {
+          "ordinal": 19,
+          "rank": 6,
+          "display": "20 (04:59.00)",
+          "percentile": 0.8276,
+          "z": 1.1221
+        },
+        {
+          "ordinal": 20,
+          "rank": 10,
+          "display": "06:38.90",
+          "percentile": 0.6897,
+          "z": 0.4981
+        }
+      ]
+    },
+    {
+      "competitorId": "671093",
+      "year": 2026,
+      "finish": 2,
+      "fieldSize": 30,
+      "officialPoints": 1291,
+      "percentileScore": 0.7776,
+      "officialScore": 0.9725,
+      "zScore": 0.8128,
+      "eventWins": 1,
+      "domains": {
+        "running": 0.6961,
+        "swimming": 0.931,
+        "machine": 0.8276,
+        "endurance": 0.8425,
+        "sprint": 0.5791,
+        "strength": 0.8448,
+        "weightlifting": 0.7879,
+        "gymnastics": 0.6849,
+        "strongman": 0.9189,
+        "skill": 0.7045,
+        "grip": 0.9458
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 17,
+          "display": "08:11.06 (03:26)",
+          "percentile": 0.4483,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 10,
+          "display": "42:57",
+          "percentile": 0.6897,
+          "z": 0.4918
+        },
+        {
+          "ordinal": 3,
+          "rank": 7,
+          "display": "500 (1315)",
+          "percentile": 0.7931,
+          "z": 0.5251
+        },
+        {
+          "ordinal": 4,
+          "rank": 5,
+          "display": "240 (1315)",
+          "percentile": 0.8621,
+          "z": 1.0641
+        },
+        {
+          "ordinal": 5,
+          "rank": 5,
+          "display": "575 (1315)",
+          "percentile": 0.8621,
+          "z": 0.8376
+        },
+        {
+          "ordinal": 6,
+          "rank": 2,
+          "display": "18:15.91",
+          "percentile": 0.9655,
+          "z": 0.935
+        },
+        {
+          "ordinal": 7,
+          "rank": 3,
+          "display": "11:49.00",
+          "percentile": 0.931,
+          "z": 1.2679
+        },
+        {
+          "ordinal": 8,
+          "rank": 3,
+          "display": "05:52.12",
+          "percentile": 0.931,
+          "z": 1.3097
+        },
+        {
+          "ordinal": 9,
+          "rank": 8,
+          "display": "114' 0.50\"",
+          "percentile": 0.7586,
+          "z": 0.6731
+        },
+        {
+          "ordinal": 10,
+          "rank": 10,
+          "display": "15:19.14",
+          "percentile": 0.6897,
+          "z": 0.733
+        },
+        {
+          "ordinal": 11,
+          "rank": 19,
+          "display": "03:05.87",
+          "percentile": 0.3793,
+          "z": -0.374
+        },
+        {
+          "ordinal": 12,
+          "rank": 7,
+          "display": "05:23.06 (03:16.00)",
+          "percentile": 0.7931,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 23,
+          "display": "01:20.36",
+          "percentile": 0.2414,
+          "z": -0.3861
+        },
+        {
+          "ordinal": 14,
+          "rank": 2,
+          "display": "10:46.91 (05:57.00)",
+          "percentile": 0.9655,
+          "z": 1.5335
+        },
+        {
+          "ordinal": 15,
+          "rank": 4,
+          "display": "3 (00:34.74)",
+          "percentile": 0.8966,
+          "z": 1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 1,
+          "display": "04:55.43 (03:14.00)",
+          "percentile": 1,
+          "z": 2.4856
+        },
+        {
+          "ordinal": 17,
+          "rank": 6,
+          "display": "03:50.16 (03:21.00)",
+          "percentile": 0.8276,
+          "z": 1.3156
+        },
+        {
+          "ordinal": 18,
+          "rank": 4,
+          "display": "24:39.77",
+          "percentile": 0.8966,
+          "z": 1.4766
+        },
+        {
+          "ordinal": 19,
+          "rank": 7,
+          "display": "19 (04:48.00)",
+          "percentile": 0.7931,
+          "z": 0.9691
+        },
+        {
+          "ordinal": 20,
+          "rank": 6,
+          "display": "06:06.53",
+          "percentile": 0.8276,
+          "z": 0.8942
+        }
+      ]
+    },
+    {
+      "competitorId": "156156",
+      "year": 2026,
+      "finish": 3,
+      "fieldSize": 30,
+      "officialPoints": 1228,
+      "percentileScore": 0.7362,
+      "officialScore": 0.9314,
+      "zScore": 0.7772,
+      "eventWins": 2,
+      "domains": {
+        "running": 0.8974,
+        "swimming": 0.3793,
+        "machine": 0.7497,
+        "endurance": 0.7908,
+        "sprint": 0.7182,
+        "strength": 0.5556,
+        "weightlifting": 0.8973,
+        "gymnastics": 0.879,
+        "strongman": 0.646,
+        "skill": 0.7437,
+        "grip": 0.5517
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 1,
+          "display": "07:11.22",
+          "percentile": 1,
+          "z": 2.2506
+        },
+        {
+          "ordinal": 2,
+          "rank": 3,
+          "display": "39:52",
+          "percentile": 0.931,
+          "z": 1.2519
+        },
+        {
+          "ordinal": 3,
+          "rank": 14,
+          "display": "485 (1240)",
+          "percentile": 0.5517,
+          "z": 0.0525
+        },
+        {
+          "ordinal": 4,
+          "rank": 11,
+          "display": "225 (1240)",
+          "percentile": 0.6552,
+          "z": 0.2166
+        },
+        {
+          "ordinal": 5,
+          "rank": 18,
+          "display": "530 (1240)",
+          "percentile": 0.4138,
+          "z": -0.1857
+        },
+        {
+          "ordinal": 6,
+          "rank": 3,
+          "display": "18:16.16",
+          "percentile": 0.931,
+          "z": 0.9306
+        },
+        {
+          "ordinal": 7,
+          "rank": 19,
+          "display": "13:15.00",
+          "percentile": 0.3793,
+          "z": -0.1514
+        },
+        {
+          "ordinal": 8,
+          "rank": 17,
+          "display": "07:18.84",
+          "percentile": 0.4483,
+          "z": -0.1463
+        },
+        {
+          "ordinal": 9,
+          "rank": 10,
+          "display": "113' 10.75\"",
+          "percentile": 0.6897,
+          "z": 0.5651
+        },
+        {
+          "ordinal": 10,
+          "rank": 1,
+          "display": "14:15.05",
+          "percentile": 1,
+          "z": 1.4388
+        },
+        {
+          "ordinal": 11,
+          "rank": 5,
+          "display": "02:05.48",
+          "percentile": 0.8621,
+          "z": 0.7785
+        },
+        {
+          "ordinal": 12,
+          "rank": 2,
+          "display": "04:59.27 (03:01.00)",
+          "percentile": 0.9655,
+          "z": 3
+        },
+        {
+          "ordinal": 13,
+          "rank": 10,
+          "display": "01:16.45",
+          "percentile": 0.6897,
+          "z": 0.5167
+        },
+        {
+          "ordinal": 14,
+          "rank": 10,
+          "display": "12:54.44 (07:25.00)",
+          "percentile": 0.6897,
+          "z": 0.6248
+        },
+        {
+          "ordinal": 15,
+          "rank": 12,
+          "display": "2 (00:27.59)",
+          "percentile": 0.6207,
+          "z": 0
+        },
+        {
+          "ordinal": 16,
+          "rank": 6,
+          "display": "05:22.14 (03:28.00)",
+          "percentile": 0.8276,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 7,
+          "display": "03:54.09 (03:27.00)",
+          "percentile": 0.7931,
+          "z": 1.3156
+        },
+        {
+          "ordinal": 18,
+          "rank": 13,
+          "display": "25:39.80",
+          "percentile": 0.5862,
+          "z": 0.144
+        },
+        {
+          "ordinal": 19,
+          "rank": 9,
+          "display": "18 (04:50.00)",
+          "percentile": 0.7241,
+          "z": 0.8161
+        },
+        {
+          "ordinal": 20,
+          "rank": 2,
+          "display": "05:23.94",
+          "percentile": 0.9655,
+          "z": 1.4152
+        }
+      ]
+    },
+    {
+      "competitorId": "811708",
+      "year": 2026,
+      "finish": 4,
+      "fieldSize": 30,
+      "officialPoints": 1104,
+      "percentileScore": 0.6517,
+      "officialScore": 0.8671,
+      "zScore": 0.3581,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.7281,
+        "swimming": 0.9655,
+        "machine": 0.6181,
+        "endurance": 0.7425,
+        "sprint": 0.4483,
+        "strength": 0.4856,
+        "weightlifting": 0.7901,
+        "gymnastics": 0.6552,
+        "strongman": 0.7089,
+        "skill": 0.6042,
+        "grip": 0.798
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 6,
+          "display": "07:36.00 (03:31)",
+          "percentile": 0.8276,
+          "z": -0.3894
+        },
+        {
+          "ordinal": 2,
+          "rank": 8,
+          "display": "42:08",
+          "percentile": 0.7586,
+          "z": 0.6931
+        },
+        {
+          "ordinal": 3,
+          "rank": 6,
+          "display": "505 (1265)",
+          "percentile": 0.8276,
+          "z": 0.6826
+        },
+        {
+          "ordinal": 4,
+          "rank": 28,
+          "display": "195 (1265)",
+          "percentile": 0.069,
+          "z": -1.4784
+        },
+        {
+          "ordinal": 5,
+          "rank": 13,
+          "display": "565 (1265)",
+          "percentile": 0.5862,
+          "z": 0.6102
+        },
+        {
+          "ordinal": 6,
+          "rank": 8,
+          "display": "18:18.11",
+          "percentile": 0.7586,
+          "z": 0.8968
+        },
+        {
+          "ordinal": 7,
+          "rank": 2,
+          "display": "11:23.00",
+          "percentile": 0.9655,
+          "z": 1.6969
+        },
+        {
+          "ordinal": 8,
+          "rank": 9,
+          "display": "06:28.52",
+          "percentile": 0.7241,
+          "z": 0.6986
+        },
+        {
+          "ordinal": 9,
+          "rank": 18,
+          "display": "106' 11.50\"",
+          "percentile": 0.4138,
+          "z": -0.1908
+        },
+        {
+          "ordinal": 10,
+          "rank": 2,
+          "display": "14:28.63",
+          "percentile": 0.9655,
+          "z": 1.2893
+        },
+        {
+          "ordinal": 11,
+          "rank": 6,
+          "display": "02:05.49",
+          "percentile": 0.8276,
+          "z": 0.7784
+        },
+        {
+          "ordinal": 12,
+          "rank": 5,
+          "display": "05:17.38 (03:20.00)",
+          "percentile": 0.8621,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 18,
+          "display": "01:17.98",
+          "percentile": 0.4138,
+          "z": 0.1634
+        },
+        {
+          "ordinal": 14,
+          "rank": 4,
+          "display": "11:38.16 (06:10.00)",
+          "percentile": 0.8966,
+          "z": 1.3063
+        },
+        {
+          "ordinal": 15,
+          "rank": 17,
+          "display": "2 (01:14.55)",
+          "percentile": 0.4483,
+          "z": 0
+        },
+        {
+          "ordinal": 16,
+          "rank": 7,
+          "display": "05:27.81 (03:30.00)",
+          "percentile": 0.7931,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 19,
+          "display": "04:25.01 (03:55.00)",
+          "percentile": 0.3793,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 18,
+          "display": "25:51.54",
+          "percentile": 0.4138,
+          "z": -0.1167
+        },
+        {
+          "ordinal": 19,
+          "rank": 20,
+          "display": "11 (04:45.00)",
+          "percentile": 0.3448,
+          "z": -0.255
+        },
+        {
+          "ordinal": 20,
+          "rank": 8,
+          "display": "06:14.11",
+          "percentile": 0.7586,
+          "z": 0.8014
+        }
+      ]
+    },
+    {
+      "competitorId": "40955",
+      "year": 2026,
+      "finish": 5,
+      "fieldSize": 30,
+      "officialPoints": 1100,
+      "percentileScore": 0.669,
+      "officialScore": 0.8483,
+      "zScore": 0.4655,
+      "eventWins": 2,
+      "domains": {
+        "running": 0.8877,
+        "swimming": 0.6897,
+        "machine": 0.728,
+        "endurance": 0.7816,
+        "sprint": 0.6219,
+        "strength": 0.4741,
+        "weightlifting": 0.6559,
+        "gymnastics": 0.7377,
+        "strongman": 0.6369,
+        "skill": 0.6356,
+        "grip": 0.7143
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 8,
+          "display": "07:47.54",
+          "percentile": 0.7586,
+          "z": 2.4766
+        },
+        {
+          "ordinal": 2,
+          "rank": 1,
+          "display": "39:33",
+          "percentile": 1,
+          "z": 1.3299
+        },
+        {
+          "ordinal": 3,
+          "rank": 26,
+          "display": "440 (1225)",
+          "percentile": 0.1379,
+          "z": -1.3652
+        },
+        {
+          "ordinal": 4,
+          "rank": 2,
+          "display": "250 (1225)",
+          "percentile": 0.9655,
+          "z": 1.6291
+        },
+        {
+          "ordinal": 5,
+          "rank": 17,
+          "display": "535 (1225)",
+          "percentile": 0.4483,
+          "z": -0.072
+        },
+        {
+          "ordinal": 6,
+          "rank": 6,
+          "display": "18:16.64",
+          "percentile": 0.8276,
+          "z": 0.9223
+        },
+        {
+          "ordinal": 7,
+          "rank": 10,
+          "display": "12:35.00",
+          "percentile": 0.6897,
+          "z": 0.5087
+        },
+        {
+          "ordinal": 8,
+          "rank": 5,
+          "display": "06:09.03",
+          "percentile": 0.8621,
+          "z": 1.0258
+        },
+        {
+          "ordinal": 9,
+          "rank": 25,
+          "display": "101' 8.25\"",
+          "percentile": 0.1724,
+          "z": -0.7306
+        },
+        {
+          "ordinal": 10,
+          "rank": 11,
+          "display": "15:32.18",
+          "percentile": 0.6552,
+          "z": 0.5894
+        },
+        {
+          "ordinal": 11,
+          "rank": 8,
+          "display": "02:07.48",
+          "percentile": 0.7586,
+          "z": 0.7404
+        },
+        {
+          "ordinal": 12,
+          "rank": 9,
+          "display": "05:33.12 (03:21.00)",
+          "percentile": 0.7241,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 1,
+          "display": "01:13.09",
+          "percentile": 1,
+          "z": 1.2925
+        },
+        {
+          "ordinal": 14,
+          "rank": 15,
+          "display": "14:52.04 (08:02.00)",
+          "percentile": 0.5172,
+          "z": 0.0568
+        },
+        {
+          "ordinal": 15,
+          "rank": 22,
+          "display": "1 (00:25.09)",
+          "percentile": 0.2759,
+          "z": -1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 11,
+          "display": "05:40.62 (03:42.00)",
+          "percentile": 0.6552,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 13,
+          "display": "04:17.83 (03:37.00)",
+          "percentile": 0.5862,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 8,
+          "display": "25:16.57",
+          "percentile": 0.7586,
+          "z": 0.6597
+        },
+        {
+          "ordinal": 19,
+          "rank": 11,
+          "display": "15 (04:57.00)",
+          "percentile": 0.6552,
+          "z": 0.357
+        },
+        {
+          "ordinal": 20,
+          "rank": 3,
+          "display": "05:48.21",
+          "percentile": 0.931,
+          "z": 1.1183
+        }
+      ]
+    },
+    {
+      "competitorId": "1020449",
+      "year": 2026,
+      "finish": 6,
+      "fieldSize": 30,
+      "officialPoints": 1059,
+      "percentileScore": 0.6448,
+      "officialScore": 0.8155,
+      "zScore": 0.2988,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.6712,
+        "swimming": 0.5517,
+        "machine": 0.8787,
+        "endurance": 0.731,
+        "sprint": 0.7669,
+        "strength": 0.5738,
+        "weightlifting": 0.7481,
+        "gymnastics": 0.5477,
+        "strongman": 0.6318,
+        "skill": 0.5055,
+        "grip": 0.6305
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 12,
+          "display": "07:55.00 (03:24)",
+          "percentile": 0.6207,
+          "z": -0.3894
+        },
+        {
+          "ordinal": 2,
+          "rank": 18,
+          "display": "45:16",
+          "percentile": 0.4138,
+          "z": -0.0793
+        },
+        {
+          "ordinal": 3,
+          "rank": 17,
+          "display": "475 (1270)",
+          "percentile": 0.4483,
+          "z": -0.2625
+        },
+        {
+          "ordinal": 4,
+          "rank": 9,
+          "display": "230 (1270)",
+          "percentile": 0.7241,
+          "z": 0.4991
+        },
+        {
+          "ordinal": 5,
+          "rank": 12,
+          "display": "565 (1270)",
+          "percentile": 0.6207,
+          "z": 0.6102
+        },
+        {
+          "ordinal": 6,
+          "rank": 5,
+          "display": "18:16.53",
+          "percentile": 0.8621,
+          "z": 0.9242
+        },
+        {
+          "ordinal": 7,
+          "rank": 14,
+          "display": "12:54.00",
+          "percentile": 0.5517,
+          "z": 0.1952
+        },
+        {
+          "ordinal": 8,
+          "rank": 4,
+          "display": "06:00.48",
+          "percentile": 0.8966,
+          "z": 1.1694
+        },
+        {
+          "ordinal": 9,
+          "rank": 6,
+          "display": "114' 6.75\"",
+          "percentile": 0.8276,
+          "z": 0.6731
+        },
+        {
+          "ordinal": 10,
+          "rank": 5,
+          "display": "14:40.02",
+          "percentile": 0.8621,
+          "z": 1.1638
+        },
+        {
+          "ordinal": 11,
+          "rank": 17,
+          "display": "02:51.10",
+          "percentile": 0.4483,
+          "z": -0.0921
+        },
+        {
+          "ordinal": 12,
+          "rank": 3,
+          "display": "05:08.23 (03:10.00)",
+          "percentile": 0.931,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 12,
+          "display": "01:17.59",
+          "percentile": 0.6207,
+          "z": 0.2535
+        },
+        {
+          "ordinal": 14,
+          "rank": 22,
+          "display": "CAP+29 (08:50.00)",
+          "percentile": 0.2759,
+          "z": -0.7384
+        },
+        {
+          "ordinal": 15,
+          "rank": 19,
+          "display": "2 (01:35.67)",
+          "percentile": 0.3793,
+          "z": 0
+        },
+        {
+          "ordinal": 16,
+          "rank": 3,
+          "display": "05:19.08 (03:27.00)",
+          "percentile": 0.931,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 3,
+          "display": "03:39.81 (01:14.00)",
+          "percentile": 0.931,
+          "z": 1.3156
+        },
+        {
+          "ordinal": 18,
+          "rank": 2,
+          "display": "24:35.49",
+          "percentile": 0.9655,
+          "z": 1.5717
+        },
+        {
+          "ordinal": 19,
+          "rank": 28,
+          "display": "4 (01:50.00)",
+          "percentile": 0.069,
+          "z": -1.3261
+        },
+        {
+          "ordinal": 20,
+          "rank": 15,
+          "display": "07:11.96",
+          "percentile": 0.5172,
+          "z": 0.0937
+        }
+      ]
+    },
+    {
+      "competitorId": "469656",
+      "year": 2026,
+      "finish": 7,
+      "fieldSize": 30,
+      "officialPoints": 970,
+      "percentileScore": 0.5966,
+      "officialScore": 0.7645,
+      "zScore": 0.2716,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.6472,
+        "swimming": 0.7586,
+        "machine": 0.6501,
+        "endurance": 0.6563,
+        "sprint": 0.6742,
+        "strength": 0.4157,
+        "weightlifting": 0.7129,
+        "gymnastics": 0.5794,
+        "strongman": 0.7099,
+        "skill": 0.4616,
+        "grip": 0.6256
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 9,
+          "display": "07:47.89 (03:29)",
+          "percentile": 0.7241,
+          "z": -0.3894
+        },
+        {
+          "ordinal": 2,
+          "rank": 4,
+          "display": "40:27",
+          "percentile": 0.8966,
+          "z": 1.1081
+        },
+        {
+          "ordinal": 3,
+          "rank": 19,
+          "display": "475 (1220)",
+          "percentile": 0.3793,
+          "z": -0.2625
+        },
+        {
+          "ordinal": 4,
+          "rank": 21,
+          "display": "215 (1220)",
+          "percentile": 0.3103,
+          "z": -0.3484
+        },
+        {
+          "ordinal": 5,
+          "rank": 19,
+          "display": "530 (1220)",
+          "percentile": 0.3793,
+          "z": -0.1857
+        },
+        {
+          "ordinal": 6,
+          "rank": 25,
+          "display": "19:57.65",
+          "percentile": 0.1724,
+          "z": -0.8305
+        },
+        {
+          "ordinal": 7,
+          "rank": 8,
+          "display": "12:20.00",
+          "percentile": 0.7586,
+          "z": 0.7563
+        },
+        {
+          "ordinal": 8,
+          "rank": 14,
+          "display": "07:09.71",
+          "percentile": 0.5517,
+          "z": 0.007
+        },
+        {
+          "ordinal": 9,
+          "rank": 16,
+          "display": "110' 2\"",
+          "percentile": 0.4828,
+          "z": 0.2411
+        },
+        {
+          "ordinal": 10,
+          "rank": 3,
+          "display": "14:29.04",
+          "percentile": 0.931,
+          "z": 1.2848
+        },
+        {
+          "ordinal": 11,
+          "rank": 23,
+          "display": "03:20.39",
+          "percentile": 0.2414,
+          "z": -0.6511
+        },
+        {
+          "ordinal": 12,
+          "rank": 12,
+          "display": "05:39.72 (03:25.00)",
+          "percentile": 0.6207,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 7,
+          "display": "01:16.12",
+          "percentile": 0.7931,
+          "z": 0.5929
+        },
+        {
+          "ordinal": 14,
+          "rank": 9,
+          "display": "12:51.91 (06:48.00)",
+          "percentile": 0.7241,
+          "z": 0.7384
+        },
+        {
+          "ordinal": 15,
+          "rank": 8,
+          "display": "3 (01:29.10)",
+          "percentile": 0.7586,
+          "z": 1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 13,
+          "display": "05:48.53 (03:49.00)",
+          "percentile": 0.5862,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 5,
+          "display": "03:46.53 (02:57.00)",
+          "percentile": 0.8621,
+          "z": 1.3156
+        },
+        {
+          "ordinal": 18,
+          "rank": 11,
+          "display": "25:29.96",
+          "percentile": 0.6552,
+          "z": 0.3624
+        },
+        {
+          "ordinal": 19,
+          "rank": 17,
+          "display": "11 (04:32.00)",
+          "percentile": 0.4483,
+          "z": -0.255
+        },
+        {
+          "ordinal": 20,
+          "rank": 11,
+          "display": "06:50.93",
+          "percentile": 0.6552,
+          "z": 0.351
+        }
+      ]
+    },
+    {
+      "competitorId": "975774",
+      "year": 2026,
+      "finish": 8,
+      "fieldSize": 30,
+      "officialPoints": 946,
+      "percentileScore": 0.5776,
+      "officialScore": 0.7382,
+      "zScore": 0.2465,
+      "eventWins": 1,
+      "domains": {
+        "running": 0.7426,
+        "swimming": 0.7931,
+        "machine": 0.7471,
+        "endurance": 0.823,
+        "sprint": 0.409,
+        "strength": 0.4291,
+        "weightlifting": 0.4985,
+        "gymnastics": 0.4212,
+        "strongman": 0.7779,
+        "skill": 0.4694,
+        "grip": 0.9261
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 15,
+          "display": "08:01.00 (03:25)",
+          "percentile": 0.5172,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 5,
+          "display": "40:42",
+          "percentile": 0.8621,
+          "z": 1.0464
+        },
+        {
+          "ordinal": 3,
+          "rank": 20,
+          "display": "475 (1215)",
+          "percentile": 0.3448,
+          "z": -0.2625
+        },
+        {
+          "ordinal": 4,
+          "rank": 4,
+          "display": "245 (1215)",
+          "percentile": 0.8966,
+          "z": 1.3466
+        },
+        {
+          "ordinal": 5,
+          "rank": 26,
+          "display": "495 (1215)",
+          "percentile": 0.1379,
+          "z": -0.9817
+        },
+        {
+          "ordinal": 6,
+          "rank": 7,
+          "display": "18:17.46",
+          "percentile": 0.7931,
+          "z": 0.9081
+        },
+        {
+          "ordinal": 7,
+          "rank": 7,
+          "display": "12:18.00",
+          "percentile": 0.7931,
+          "z": 0.7893
+        },
+        {
+          "ordinal": 8,
+          "rank": 1,
+          "display": "05:27.60",
+          "percentile": 1,
+          "z": 1.7214
+        },
+        {
+          "ordinal": 9,
+          "rank": 17,
+          "display": "107' 10.25\"",
+          "percentile": 0.4483,
+          "z": -0.0828
+        },
+        {
+          "ordinal": 10,
+          "rank": 4,
+          "display": "14:34.51",
+          "percentile": 0.8966,
+          "z": 1.2245
+        },
+        {
+          "ordinal": 11,
+          "rank": 24,
+          "display": "03:47.64",
+          "percentile": 0.2069,
+          "z": -1.1711
+        },
+        {
+          "ordinal": 12,
+          "rank": 21,
+          "display": "05:57.36 (03:39.00)",
+          "percentile": 0.3103,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 21,
+          "display": "01:19.14",
+          "percentile": 0.3103,
+          "z": -0.1044
+        },
+        {
+          "ordinal": 14,
+          "rank": 6,
+          "display": "12:16.50 (06:21.00)",
+          "percentile": 0.8276,
+          "z": 1.0791
+        },
+        {
+          "ordinal": 15,
+          "rank": 23,
+          "display": "1 (00:25.50)",
+          "percentile": 0.2414,
+          "z": -1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 12,
+          "display": "05:44.83 (03:38.00)",
+          "percentile": 0.6207,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 17,
+          "display": "04:23.57 (03:59.00)",
+          "percentile": 0.4483,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 3,
+          "display": "24:36.98",
+          "percentile": 0.931,
+          "z": 1.5386
+        },
+        {
+          "ordinal": 19,
+          "rank": 10,
+          "display": "15 (04:34.00)",
+          "percentile": 0.6897,
+          "z": 0.357
+        },
+        {
+          "ordinal": 20,
+          "rank": 22,
+          "display": "08:30.46",
+          "percentile": 0.2759,
+          "z": -0.8667
+        }
+      ]
+    },
+    {
+      "competitorId": "686308",
+      "year": 2026,
+      "finish": 9,
+      "fieldSize": 30,
+      "officialPoints": 904,
+      "percentileScore": 0.5966,
+      "officialScore": 0.705,
+      "zScore": 0.2176,
+      "eventWins": 3,
+      "domains": {
+        "running": 0.3087,
+        "swimming": 0.5172,
+        "machine": 0.3384,
+        "endurance": 0.2552,
+        "sprint": 0.8644,
+        "strength": 0.7797,
+        "weightlifting": 0.5922,
+        "gymnastics": 0.6498,
+        "strongman": 0.4777,
+        "skill": 0.8613,
+        "grip": 0.5764
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 21,
+          "display": "08:20.87 (03:36)",
+          "percentile": 0.3103,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 30,
+          "display": "55:58",
+          "percentile": 0,
+          "z": -2.7169
+        },
+        {
+          "ordinal": 3,
+          "rank": 2,
+          "display": "550 (1335)",
+          "percentile": 0.9655,
+          "z": 2.1004
+        },
+        {
+          "ordinal": 4,
+          "rank": 17,
+          "display": "215 (1335)",
+          "percentile": 0.4483,
+          "z": -0.3484
+        },
+        {
+          "ordinal": 5,
+          "rank": 7,
+          "display": "570 (1335)",
+          "percentile": 0.7931,
+          "z": 0.7239
+        },
+        {
+          "ordinal": 6,
+          "rank": 22,
+          "display": "19:31.55",
+          "percentile": 0.2759,
+          "z": -0.3776
+        },
+        {
+          "ordinal": 7,
+          "rank": 15,
+          "display": "13:12.00",
+          "percentile": 0.5172,
+          "z": -0.1019
+        },
+        {
+          "ordinal": 8,
+          "rank": 6,
+          "display": "06:22.52",
+          "percentile": 0.8276,
+          "z": 0.7993
+        },
+        {
+          "ordinal": 9,
+          "rank": 1,
+          "display": "123' 6.50\"",
+          "percentile": 1,
+          "z": 1.6448
+        },
+        {
+          "ordinal": 10,
+          "rank": 23,
+          "display": "17:21.56",
+          "percentile": 0.2414,
+          "z": -0.6151
+        },
+        {
+          "ordinal": 11,
+          "rank": 2,
+          "display": "01:30.26",
+          "percentile": 0.9655,
+          "z": 1.4507
+        },
+        {
+          "ordinal": 12,
+          "rank": 11,
+          "display": "05:36.47 (03:41.00)",
+          "percentile": 0.6552,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 2,
+          "display": "01:13.31",
+          "percentile": 0.9655,
+          "z": 1.2417
+        },
+        {
+          "ordinal": 14,
+          "rank": 23,
+          "display": "CAP+31 (10:10.00)",
+          "percentile": 0.2414,
+          "z": -0.8519
+        },
+        {
+          "ordinal": 15,
+          "rank": 1,
+          "display": "3 (00:21.27)",
+          "percentile": 1,
+          "z": 1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 15,
+          "display": "05:57.04 (04:08.00)",
+          "percentile": 0.5172,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 16,
+          "display": "04:23.51 (03:59.00)",
+          "percentile": 0.4828,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 23,
+          "display": "26:15.16",
+          "percentile": 0.2414,
+          "z": -0.641
+        },
+        {
+          "ordinal": 19,
+          "rank": 16,
+          "display": "11 (03:48.00)",
+          "percentile": 0.4828,
+          "z": -0.255
+        },
+        {
+          "ordinal": 20,
+          "rank": 1,
+          "display": "05:16.70",
+          "percentile": 1,
+          "z": 1.5038
+        }
+      ]
+    },
+    {
+      "competitorId": "925870",
+      "year": 2026,
+      "finish": 10,
+      "fieldSize": 30,
+      "officialPoints": 898,
+      "percentileScore": 0.5741,
+      "officialScore": 0.6855,
+      "zScore": 0.0796,
+      "eventWins": 1,
+      "domains": {
+        "running": 0.5605,
+        "swimming": 0.5862,
+        "machine": 0.7216,
+        "endurance": 0.6115,
+        "sprint": 0.478,
+        "strength": 0.6954,
+        "weightlifting": 0.4768,
+        "gymnastics": 0.4834,
+        "strongman": 0.7079,
+        "skill": 0.4216,
+        "grip": 0.6601
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 7,
+          "display": "07:41.00 (03:26)",
+          "percentile": 0.7931,
+          "z": -0.3894
+        },
+        {
+          "ordinal": 2,
+          "rank": 21,
+          "display": "45:45",
+          "percentile": 0.3103,
+          "z": -0.1984
+        },
+        {
+          "ordinal": 3,
+          "rank": 8,
+          "display": "500 (1290)",
+          "percentile": 0.7586,
+          "z": 0.5251
+        },
+        {
+          "ordinal": 4,
+          "rank": 10,
+          "display": "225 (1290)",
+          "percentile": 0.6897,
+          "z": 0.2166
+        },
+        {
+          "ordinal": 5,
+          "rank": 10,
+          "display": "565 (1290)",
+          "percentile": 0.6897,
+          "z": 0.6102
+        },
+        {
+          "ordinal": 6,
+          "rank": 1,
+          "display": "18:15.77",
+          "percentile": 1,
+          "z": 0.9374
+        },
+        {
+          "ordinal": 7,
+          "rank": 13,
+          "display": "12:51.00",
+          "percentile": 0.5862,
+          "z": 0.2447
+        },
+        {
+          "ordinal": 8,
+          "rank": 13,
+          "display": "06:59.47",
+          "percentile": 0.5862,
+          "z": 0.1789
+        },
+        {
+          "ordinal": 9,
+          "rank": 19,
+          "display": "106' 0.25\"",
+          "percentile": 0.3793,
+          "z": -0.1908
+        },
+        {
+          "ordinal": 10,
+          "rank": 21,
+          "display": "17:02.88",
+          "percentile": 0.3103,
+          "z": -0.4094
+        },
+        {
+          "ordinal": 11,
+          "rank": 22,
+          "display": "03:19.10",
+          "percentile": 0.2759,
+          "z": -0.6265
+        },
+        {
+          "ordinal": 12,
+          "rank": 24,
+          "display": "CAP+3 (03:50.00)",
+          "percentile": 0.2069,
+          "z": -3
+        },
+        {
+          "ordinal": 13,
+          "rank": 17,
+          "display": "01:17.94",
+          "percentile": 0.4483,
+          "z": 0.1726
+        },
+        {
+          "ordinal": 14,
+          "rank": 8,
+          "display": "12:46.52 (07:06.00)",
+          "percentile": 0.7586,
+          "z": 0.8519
+        },
+        {
+          "ordinal": 15,
+          "rank": 11,
+          "display": "2 (00:27.14)",
+          "percentile": 0.6552,
+          "z": 0
+        },
+        {
+          "ordinal": 16,
+          "rank": 14,
+          "display": "05:50.27 (03:52.00)",
+          "percentile": 0.5517,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 8,
+          "display": "03:55.83 (03:20.00)",
+          "percentile": 0.7586,
+          "z": 1.3156
+        },
+        {
+          "ordinal": 18,
+          "rank": 7,
+          "display": "25:12.56",
+          "percentile": 0.7931,
+          "z": 0.7487
+        },
+        {
+          "ordinal": 19,
+          "rank": 19,
+          "display": "11 (04:37.00)",
+          "percentile": 0.3793,
+          "z": -0.255
+        },
+        {
+          "ordinal": 20,
+          "rank": 14,
+          "display": "07:07.42",
+          "percentile": 0.5517,
+          "z": 0.1492
+        }
+      ]
+    },
+    {
+      "competitorId": "676693",
+      "year": 2026,
+      "finish": 11,
+      "fieldSize": 30,
+      "officialPoints": 825,
+      "percentileScore": 0.5103,
+      "officialScore": 0.6406,
+      "zScore": -0.1677,
+      "eventWins": 3,
+      "domains": {
+        "running": 0.146,
+        "swimming": 0.6552,
+        "machine": 0.53,
+        "endurance": 0.2805,
+        "sprint": 0.1807,
+        "strength": 0.7912,
+        "weightlifting": 0.7871,
+        "gymnastics": 0.7275,
+        "strongman": 0.2475,
+        "skill": 0.4342,
+        "grip": 0.1379
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 2,
+          "display": "07:17.00 (03:28)",
+          "percentile": 0.9655,
+          "z": -0.3894
+        },
+        {
+          "ordinal": 2,
+          "rank": 28,
+          "display": "51:21",
+          "percentile": 0.069,
+          "z": -1.5789
+        },
+        {
+          "ordinal": 3,
+          "rank": 1,
+          "display": "555 (1380)",
+          "percentile": 1,
+          "z": 2.2579
+        },
+        {
+          "ordinal": 4,
+          "rank": 1,
+          "display": "260 (1380)",
+          "percentile": 1,
+          "z": 2.1941
+        },
+        {
+          "ordinal": 5,
+          "rank": 8,
+          "display": "565 (1380)",
+          "percentile": 0.7586,
+          "z": 0.6102
+        },
+        {
+          "ordinal": 6,
+          "rank": 30,
+          "display": "21:48.03",
+          "percentile": 0,
+          "z": -2.7458
+        },
+        {
+          "ordinal": 7,
+          "rank": 11,
+          "display": "12:42.00",
+          "percentile": 0.6552,
+          "z": 0.3932
+        },
+        {
+          "ordinal": 8,
+          "rank": 26,
+          "display": "08:18.83",
+          "percentile": 0.1379,
+          "z": -1.1536
+        },
+        {
+          "ordinal": 9,
+          "rank": 29,
+          "display": "89' 1.50\"",
+          "percentile": 0.0345,
+          "z": -2.0264
+        },
+        {
+          "ordinal": 10,
+          "rank": 8,
+          "display": "15:05.27",
+          "percentile": 0.7586,
+          "z": 0.8858
+        },
+        {
+          "ordinal": 11,
+          "rank": 7,
+          "display": "02:05.66",
+          "percentile": 0.7931,
+          "z": 0.7751
+        },
+        {
+          "ordinal": 12,
+          "rank": 1,
+          "display": "04:55.57 (03:06.00)",
+          "percentile": 1,
+          "z": 3
+        },
+        {
+          "ordinal": 13,
+          "rank": 30,
+          "display": "01:33.67",
+          "percentile": 0,
+          "z": -3
+        },
+        {
+          "ordinal": 14,
+          "rank": 26,
+          "display": "CAP+38 (11:10.00)",
+          "percentile": 0.1379,
+          "z": -1.1927
+        },
+        {
+          "ordinal": 15,
+          "rank": 25,
+          "display": "1 (00:26.81)",
+          "percentile": 0.1724,
+          "z": -1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 4,
+          "display": "05:21.44 (03:35.00)",
+          "percentile": 0.8966,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 14,
+          "display": "04:20.02 (03:47.00)",
+          "percentile": 0.5517,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 27,
+          "display": "26:39.78",
+          "percentile": 0.1034,
+          "z": -1.1876
+        },
+        {
+          "ordinal": 19,
+          "rank": 21,
+          "display": "11 (04:59.00)",
+          "percentile": 0.3103,
+          "z": -0.255
+        },
+        {
+          "ordinal": 20,
+          "rank": 5,
+          "display": "06:00.23",
+          "percentile": 0.8621,
+          "z": 0.9712
+        }
+      ]
+    },
+    {
+      "competitorId": "422637",
+      "year": 2026,
+      "finish": 12,
+      "fieldSize": 30,
+      "officialPoints": 816,
+      "percentileScore": 0.5362,
+      "officialScore": 0.6199,
+      "zScore": 0.1086,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.4531,
+        "swimming": 0.1379,
+        "machine": 0.6015,
+        "endurance": 0.4494,
+        "sprint": 0.8359,
+        "strength": 0.592,
+        "weightlifting": 0.5615,
+        "gymnastics": 0.478,
+        "strongman": 0.4026,
+        "skill": 0.6646,
+        "grip": 0.4187
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 23,
+          "display": "08:24.00 (03:20)",
+          "percentile": 0.2414,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 17,
+          "display": "45:04",
+          "percentile": 0.4483,
+          "z": -0.03
+        },
+        {
+          "ordinal": 3,
+          "rank": 24,
+          "display": "455 (1245)",
+          "percentile": 0.2069,
+          "z": -0.8927
+        },
+        {
+          "ordinal": 4,
+          "rank": 3,
+          "display": "245 (1245)",
+          "percentile": 0.931,
+          "z": 1.3466
+        },
+        {
+          "ordinal": 5,
+          "rank": 16,
+          "display": "545 (1245)",
+          "percentile": 0.4828,
+          "z": 0.1554
+        },
+        {
+          "ordinal": 6,
+          "rank": 29,
+          "display": "21:25.74",
+          "percentile": 0.0345,
+          "z": -2.359
+        },
+        {
+          "ordinal": 7,
+          "rank": 26,
+          "display": "14:15.00",
+          "percentile": 0.1379,
+          "z": -1.1415
+        },
+        {
+          "ordinal": 8,
+          "rank": 11,
+          "display": "06:50.11",
+          "percentile": 0.6552,
+          "z": 0.3361
+        },
+        {
+          "ordinal": 9,
+          "rank": 2,
+          "display": "122' 2\"",
+          "percentile": 0.9655,
+          "z": 1.5369
+        },
+        {
+          "ordinal": 10,
+          "rank": 7,
+          "display": "15:03.30",
+          "percentile": 0.7931,
+          "z": 0.9075
+        },
+        {
+          "ordinal": 11,
+          "rank": 10,
+          "display": "02:19.22",
+          "percentile": 0.6897,
+          "z": 0.5163
+        },
+        {
+          "ordinal": 12,
+          "rank": 19,
+          "display": "05:51.36 (03:35.00)",
+          "percentile": 0.3793,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 4,
+          "display": "01:14.18",
+          "percentile": 0.8966,
+          "z": 1.0408
+        },
+        {
+          "ordinal": 14,
+          "rank": 27,
+          "display": "CAP+43 (11:34.00)",
+          "percentile": 0.1034,
+          "z": -1.3063
+        },
+        {
+          "ordinal": 15,
+          "rank": 6,
+          "display": "3 (00:42.98)",
+          "percentile": 0.8276,
+          "z": 1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 17,
+          "display": "05:59.36 (03:53.00)",
+          "percentile": 0.4483,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 12,
+          "display": "04:15.35 (03:39.00)",
+          "percentile": 0.6207,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 5,
+          "display": "24:56.52",
+          "percentile": 0.8621,
+          "z": 1.1048
+        },
+        {
+          "ordinal": 19,
+          "rank": 22,
+          "display": "10 (04:52.00)",
+          "percentile": 0.2759,
+          "z": -0.408
+        },
+        {
+          "ordinal": 20,
+          "rank": 9,
+          "display": "06:33.07",
+          "percentile": 0.7241,
+          "z": 0.5695
+        }
+      ]
+    },
+    {
+      "competitorId": "479759",
+      "year": 2026,
+      "finish": 13,
+      "fieldSize": 30,
+      "officialPoints": 804,
+      "percentileScore": 0.5534,
+      "officialScore": 0.5981,
+      "zScore": 0.027,
+      "eventWins": 1,
+      "domains": {
+        "running": 0.5533,
+        "swimming": 0.0345,
+        "machine": 0.1737,
+        "endurance": 0.3506,
+        "sprint": 0.7111,
+        "strength": 0.7577,
+        "weightlifting": 0.473,
+        "gymnastics": 0.6227,
+        "strongman": 0.5446,
+        "skill": 0.6944,
+        "grip": 0.5764
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 10,
+          "display": "07:49.00 (03:28)",
+          "percentile": 0.6897,
+          "z": -0.3894
+        },
+        {
+          "ordinal": 2,
+          "rank": 19,
+          "display": "45:19",
+          "percentile": 0.3793,
+          "z": -0.0916
+        },
+        {
+          "ordinal": 3,
+          "rank": 5,
+          "display": "520 (1305)",
+          "percentile": 0.8621,
+          "z": 1.1552
+        },
+        {
+          "ordinal": 4,
+          "rank": 13,
+          "display": "220 (1305)",
+          "percentile": 0.5862,
+          "z": -0.0659
+        },
+        {
+          "ordinal": 5,
+          "rank": 9,
+          "display": "565 (1305)",
+          "percentile": 0.7241,
+          "z": 0.6102
+        },
+        {
+          "ordinal": 6,
+          "rank": 9,
+          "display": "18:21.63",
+          "percentile": 0.7241,
+          "z": 0.8357
+        },
+        {
+          "ordinal": 7,
+          "rank": 29,
+          "display": "15:12.00",
+          "percentile": 0.0345,
+          "z": -2.0822
+        },
+        {
+          "ordinal": 8,
+          "rank": 18,
+          "display": "07:19.34",
+          "percentile": 0.4138,
+          "z": -0.1547
+        },
+        {
+          "ordinal": 9,
+          "rank": 4,
+          "display": "117' 7.75\"",
+          "percentile": 0.8966,
+          "z": 0.997
+        },
+        {
+          "ordinal": 10,
+          "rank": 24,
+          "display": "17:35.09",
+          "percentile": 0.2069,
+          "z": -0.7641
+        },
+        {
+          "ordinal": 11,
+          "rank": 13,
+          "display": "02:28.37",
+          "percentile": 0.5862,
+          "z": 0.3417
+        },
+        {
+          "ordinal": 12,
+          "rank": 10,
+          "display": "05:35.32 (03:31.00)",
+          "percentile": 0.6897,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 5,
+          "display": "01:15.01",
+          "percentile": 0.8621,
+          "z": 0.8492
+        },
+        {
+          "ordinal": 14,
+          "rank": 7,
+          "display": "12:21.93 (06:39.00)",
+          "percentile": 0.7931,
+          "z": 0.9655
+        },
+        {
+          "ordinal": 15,
+          "rank": 3,
+          "display": "3 (00:26.26)",
+          "percentile": 0.931,
+          "z": 1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 28,
+          "display": "06:25.64 (04:08.00)",
+          "percentile": 0.069,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 22,
+          "display": "04:27.00 (01:25.00)",
+          "percentile": 0.2759,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 30,
+          "display": "27:38.91",
+          "percentile": 0,
+          "z": -2.5003
+        },
+        {
+          "ordinal": 19,
+          "rank": 1,
+          "display": "25 (04:59.00)",
+          "percentile": 1,
+          "z": 1.8871
+        },
+        {
+          "ordinal": 20,
+          "rank": 20,
+          "display": "07:56.95",
+          "percentile": 0.3448,
+          "z": -0.4567
+        }
+      ]
+    },
+    {
+      "competitorId": "1978208",
+      "year": 2026,
+      "finish": 14,
+      "fieldSize": 30,
+      "officialPoints": 775,
+      "percentileScore": 0.4948,
+      "officialScore": 0.5699,
+      "zScore": -0.0422,
+      "eventWins": 1,
+      "domains": {
+        "running": 0.3721,
+        "swimming": 0.7241,
+        "machine": 0.53,
+        "endurance": 0.4828,
+        "sprint": 0.3353,
+        "strength": 0.4195,
+        "weightlifting": 0.539,
+        "gymnastics": 0.6065,
+        "strongman": 0.3722,
+        "skill": 0.6701,
+        "grip": 0.4335
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 14,
+          "display": "08:00.74 (03:23)",
+          "percentile": 0.5517,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 16,
+          "display": "44:31",
+          "percentile": 0.4828,
+          "z": 0.1056
+        },
+        {
+          "ordinal": 3,
+          "rank": 15,
+          "display": "485 (1185)",
+          "percentile": 0.5172,
+          "z": 0.0525
+        },
+        {
+          "ordinal": 4,
+          "rank": 12,
+          "display": "225 (1185)",
+          "percentile": 0.6207,
+          "z": 0.2166
+        },
+        {
+          "ordinal": 5,
+          "rank": 28,
+          "display": "475 (1185)",
+          "percentile": 0.069,
+          "z": -1.4365
+        },
+        {
+          "ordinal": 6,
+          "rank": 16,
+          "display": "18:58.85",
+          "percentile": 0.4828,
+          "z": 0.1899
+        },
+        {
+          "ordinal": 7,
+          "rank": 9,
+          "display": "12:34.00",
+          "percentile": 0.7241,
+          "z": 0.5252
+        },
+        {
+          "ordinal": 8,
+          "rank": 20,
+          "display": "07:24.64",
+          "percentile": 0.3448,
+          "z": -0.2437
+        },
+        {
+          "ordinal": 9,
+          "rank": 12,
+          "display": "111' 10\"",
+          "percentile": 0.6207,
+          "z": 0.3491
+        },
+        {
+          "ordinal": 10,
+          "rank": 22,
+          "display": "17:04.33",
+          "percentile": 0.2759,
+          "z": -0.4254
+        },
+        {
+          "ordinal": 11,
+          "rank": 1,
+          "display": "01:05.62",
+          "percentile": 1,
+          "z": 1.921
+        },
+        {
+          "ordinal": 12,
+          "rank": 6,
+          "display": "05:19.79 (03:26.00)",
+          "percentile": 0.8276,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 28,
+          "display": "01:23.11",
+          "percentile": 0.069,
+          "z": -1.0211
+        },
+        {
+          "ordinal": 14,
+          "rank": 14,
+          "display": "14:21.95 (07:53.00)",
+          "percentile": 0.5517,
+          "z": 0.1704
+        },
+        {
+          "ordinal": 15,
+          "rank": 16,
+          "display": "2 (01:02.27)",
+          "percentile": 0.4828,
+          "z": 0
+        },
+        {
+          "ordinal": 16,
+          "rank": 8,
+          "display": "05:31.81 (03:36.00)",
+          "percentile": 0.7586,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 27,
+          "display": "04:51.23 (04:04.00)",
+          "percentile": 0.1034,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 19,
+          "display": "26:00.69",
+          "percentile": 0.3793,
+          "z": -0.3198
+        },
+        {
+          "ordinal": 19,
+          "rank": 3,
+          "display": "22 (04:44.00)",
+          "percentile": 0.931,
+          "z": 1.4281
+        },
+        {
+          "ordinal": 20,
+          "rank": 27,
+          "display": "09:58.84",
+          "percentile": 0.1034,
+          "z": -1.9479
+        }
+      ]
+    },
+    {
+      "competitorId": "947291",
+      "year": 2026,
+      "finish": 15,
+      "fieldSize": 30,
+      "officialPoints": 762,
+      "percentileScore": 0.4845,
+      "officialScore": 0.5477,
+      "zScore": -0.0835,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.4723,
+        "swimming": 0.2069,
+        "machine": 0.5338,
+        "endurance": 0.4184,
+        "sprint": 0.4221,
+        "strength": 0.6542,
+        "weightlifting": 0.6432,
+        "gymnastics": 0.4895,
+        "strongman": 0.3742,
+        "skill": 0.3417,
+        "grip": 0.1921
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 11,
+          "display": "07:49.09 (03:22)",
+          "percentile": 0.6552,
+          "z": -0.3894
+        },
+        {
+          "ordinal": 2,
+          "rank": 7,
+          "display": "41:09",
+          "percentile": 0.7931,
+          "z": 0.9355
+        },
+        {
+          "ordinal": 3,
+          "rank": 3,
+          "display": "525 (1290)",
+          "percentile": 0.931,
+          "z": 1.3127
+        },
+        {
+          "ordinal": 4,
+          "rank": 7,
+          "display": "240 (1290)",
+          "percentile": 0.7931,
+          "z": 1.0641
+        },
+        {
+          "ordinal": 5,
+          "rank": 20,
+          "display": "525 (1290)",
+          "percentile": 0.3448,
+          "z": -0.2994
+        },
+        {
+          "ordinal": 6,
+          "rank": 26,
+          "display": "20:06.08",
+          "percentile": 0.1379,
+          "z": -0.9767
+        },
+        {
+          "ordinal": 7,
+          "rank": 24,
+          "display": "14:01.00",
+          "percentile": 0.2069,
+          "z": -0.9105
+        },
+        {
+          "ordinal": 8,
+          "rank": 24,
+          "display": "08:13.97",
+          "percentile": 0.2069,
+          "z": -1.072
+        },
+        {
+          "ordinal": 9,
+          "rank": 22,
+          "display": "103' 5.25\"",
+          "percentile": 0.2759,
+          "z": -0.5147
+        },
+        {
+          "ordinal": 10,
+          "rank": 9,
+          "display": "15:12.86",
+          "percentile": 0.7241,
+          "z": 0.8022
+        },
+        {
+          "ordinal": 11,
+          "rank": 12,
+          "display": "02:28.33",
+          "percentile": 0.6207,
+          "z": 0.3425
+        },
+        {
+          "ordinal": 12,
+          "rank": 13,
+          "display": "05:40.25 (03:27.00)",
+          "percentile": 0.5862,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 22,
+          "display": "01:20.03",
+          "percentile": 0.2759,
+          "z": -0.3099
+        },
+        {
+          "ordinal": 14,
+          "rank": 25,
+          "display": "CAP+36 (09:25.00)",
+          "percentile": 0.1724,
+          "z": -1.0791
+        },
+        {
+          "ordinal": 15,
+          "rank": 15,
+          "display": "2 (00:46.57)",
+          "percentile": 0.5172,
+          "z": 0
+        },
+        {
+          "ordinal": 16,
+          "rank": 5,
+          "display": "05:22.07 (03:38.00)",
+          "percentile": 0.8621,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 4,
+          "display": "03:45.98 (03:12.00)",
+          "percentile": 0.8966,
+          "z": 1.3156
+        },
+        {
+          "ordinal": 18,
+          "rank": 22,
+          "display": "26:11.89",
+          "percentile": 0.2759,
+          "z": -0.5684
+        },
+        {
+          "ordinal": 19,
+          "rank": 29,
+          "display": "3 (03:31.00)",
+          "percentile": 0.0345,
+          "z": -1.4791
+        },
+        {
+          "ordinal": 20,
+          "rank": 19,
+          "display": "07:38.92",
+          "percentile": 0.3793,
+          "z": -0.2361
+        }
+      ]
+    },
+    {
+      "competitorId": "897110",
+      "year": 2026,
+      "finish": 16,
+      "fieldSize": 30,
+      "officialPoints": 757,
+      "percentileScore": 0.5086,
+      "officialScore": 0.5286,
+      "zScore": -0.1021,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.3152,
+        "swimming": 0.6552,
+        "machine": 0.401,
+        "endurance": 0.3759,
+        "sprint": 0.3306,
+        "strength": 0.8199,
+        "weightlifting": 0.4595,
+        "gymnastics": 0.6105,
+        "strongman": 0.2535,
+        "skill": 0.5831,
+        "grip": 0.2118
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 16,
+          "display": "08:01.20 (03:27)",
+          "percentile": 0.4828,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 29,
+          "display": "52:00",
+          "percentile": 0.0345,
+          "z": -1.7391
+        },
+        {
+          "ordinal": 3,
+          "rank": 10,
+          "display": "495 (1315)",
+          "percentile": 0.6897,
+          "z": 0.3676
+        },
+        {
+          "ordinal": 4,
+          "rank": 5,
+          "display": "240 (1315)",
+          "percentile": 0.8621,
+          "z": 1.0641
+        },
+        {
+          "ordinal": 5,
+          "rank": 4,
+          "display": "580 (1315)",
+          "percentile": 0.8966,
+          "z": 0.9513
+        },
+        {
+          "ordinal": 6,
+          "rank": 12,
+          "display": "18:29.65",
+          "percentile": 0.6207,
+          "z": 0.6965
+        },
+        {
+          "ordinal": 7,
+          "rank": 11,
+          "display": "12:42.00",
+          "percentile": 0.6552,
+          "z": 0.3932
+        },
+        {
+          "ordinal": 8,
+          "rank": 29,
+          "display": "CAP+1",
+          "percentile": 0.0345,
+          "z": -3
+        },
+        {
+          "ordinal": 9,
+          "rank": 24,
+          "display": "102' 10.75\"",
+          "percentile": 0.2069,
+          "z": -0.6227
+        },
+        {
+          "ordinal": 10,
+          "rank": 29,
+          "display": "19:14.67",
+          "percentile": 0.0345,
+          "z": -1.8608
+        },
+        {
+          "ordinal": 11,
+          "rank": 9,
+          "display": "02:09.07",
+          "percentile": 0.7241,
+          "z": 0.71
+        },
+        {
+          "ordinal": 12,
+          "rank": 16,
+          "display": "05:41.90 (03:42.00)",
+          "percentile": 0.4828,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 15,
+          "display": "01:17.90",
+          "percentile": 0.5172,
+          "z": 0.1819
+        },
+        {
+          "ordinal": 14,
+          "rank": 17,
+          "display": "CAP+1 (08:17.00)",
+          "percentile": 0.4483,
+          "z": -0.1704
+        },
+        {
+          "ordinal": 15,
+          "rank": 2,
+          "display": "3 (00:24.42)",
+          "percentile": 0.9655,
+          "z": 1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 24,
+          "display": "06:13.56 (04:10.00)",
+          "percentile": 0.2069,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 25,
+          "display": "04:40.83 (01:26.00)",
+          "percentile": 0.1724,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 16,
+          "display": "25:45.27",
+          "percentile": 0.4828,
+          "z": 0.0225
+        },
+        {
+          "ordinal": 19,
+          "rank": 8,
+          "display": "19 (04:59.00)",
+          "percentile": 0.7586,
+          "z": 0.9691
+        },
+        {
+          "ordinal": 20,
+          "rank": 4,
+          "display": "06:00.02",
+          "percentile": 0.8966,
+          "z": 0.9738
+        }
+      ]
+    },
+    {
+      "competitorId": "158264",
+      "year": 2026,
+      "finish": 17,
+      "fieldSize": 30,
+      "officialPoints": 751,
+      "percentileScore": 0.5138,
+      "officialScore": 0.509,
+      "zScore": -0.0541,
+      "eventWins": 2,
+      "domains": {
+        "running": 0.3569,
+        "swimming": 0,
+        "machine": 0.2324,
+        "endurance": 0.354,
+        "sprint": 0.5933,
+        "strength": 0.6149,
+        "weightlifting": 0.3831,
+        "gymnastics": 0.5943,
+        "strongman": 0.8479,
+        "skill": 0.656,
+        "grip": 0.8818
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 22,
+          "display": "08:21.00 (03:33)",
+          "percentile": 0.2759,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 23,
+          "display": "47:13",
+          "percentile": 0.2414,
+          "z": -0.56
+        },
+        {
+          "ordinal": 3,
+          "rank": 16,
+          "display": "480 (1305)",
+          "percentile": 0.4828,
+          "z": -0.105
+        },
+        {
+          "ordinal": 4,
+          "rank": 13,
+          "display": "220 (1305)",
+          "percentile": 0.5862,
+          "z": -0.0659
+        },
+        {
+          "ordinal": 5,
+          "rank": 1,
+          "display": "605 (1305)",
+          "percentile": 1,
+          "z": 1.5199
+        },
+        {
+          "ordinal": 6,
+          "rank": 17,
+          "display": "19:01.81",
+          "percentile": 0.4483,
+          "z": 0.1385
+        },
+        {
+          "ordinal": 7,
+          "rank": 30,
+          "display": "CAP+11",
+          "percentile": 0,
+          "z": -3
+        },
+        {
+          "ordinal": 8,
+          "rank": 7,
+          "display": "06:23.29",
+          "percentile": 0.7931,
+          "z": 0.7864
+        },
+        {
+          "ordinal": 9,
+          "rank": 3,
+          "display": "122' 0.75\"",
+          "percentile": 0.931,
+          "z": 1.5369
+        },
+        {
+          "ordinal": 10,
+          "rank": 19,
+          "display": "16:48.62",
+          "percentile": 0.3793,
+          "z": -0.2524
+        },
+        {
+          "ordinal": 11,
+          "rank": 16,
+          "display": "02:38.96",
+          "percentile": 0.4828,
+          "z": 0.1396
+        },
+        {
+          "ordinal": 12,
+          "rank": 8,
+          "display": "05:29.27 (03:33.00)",
+          "percentile": 0.7586,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 19,
+          "display": "01:18.09",
+          "percentile": 0.3793,
+          "z": 0.138
+        },
+        {
+          "ordinal": 14,
+          "rank": 1,
+          "display": "10:31.58 (05:37.00)",
+          "percentile": 1,
+          "z": 1.6471
+        },
+        {
+          "ordinal": 15,
+          "rank": 27,
+          "display": "1 (00:34.97)",
+          "percentile": 0.1034,
+          "z": -1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 23,
+          "display": "06:11.96 (03:57.00)",
+          "percentile": 0.2414,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 11,
+          "display": "04:14.43 (03:25.00)",
+          "percentile": 0.6552,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 24,
+          "display": "26:18.83",
+          "percentile": 0.2069,
+          "z": -0.7225
+        },
+        {
+          "ordinal": 19,
+          "rank": 4,
+          "display": "21 (04:39.00)",
+          "percentile": 0.8966,
+          "z": 1.2751
+        },
+        {
+          "ordinal": 20,
+          "rank": 18,
+          "display": "07:33.54",
+          "percentile": 0.4138,
+          "z": -0.1703
+        }
+      ]
+    },
+    {
+      "competitorId": "2225448",
+      "year": 2026,
+      "finish": 18,
+      "fieldSize": 30,
+      "officialPoints": 745,
+      "percentileScore": 0.4793,
+      "officialScore": 0.4895,
+      "zScore": -0.0735,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.5405,
+        "swimming": 0.4828,
+        "machine": 0.6015,
+        "endurance": 0.546,
+        "sprint": 0.4673,
+        "strength": 0.545,
+        "weightlifting": 0.5052,
+        "gymnastics": 0.4077,
+        "strongman": 0.2921,
+        "skill": 0.4232,
+        "grip": 0.3251
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 25,
+          "display": "08:26.97 (03:25)",
+          "percentile": 0.1724,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 6,
+          "display": "40:56",
+          "percentile": 0.8276,
+          "z": 0.9889
+        },
+        {
+          "ordinal": 3,
+          "rank": 11,
+          "display": "495 (1285)",
+          "percentile": 0.6552,
+          "z": 0.3676
+        },
+        {
+          "ordinal": 4,
+          "rank": 19,
+          "display": "215 (1285)",
+          "percentile": 0.3793,
+          "z": -0.3484
+        },
+        {
+          "ordinal": 5,
+          "rank": 6,
+          "display": "575 (1285)",
+          "percentile": 0.8276,
+          "z": 0.8376
+        },
+        {
+          "ordinal": 6,
+          "rank": 24,
+          "display": "19:47.94",
+          "percentile": 0.2069,
+          "z": -0.662
+        },
+        {
+          "ordinal": 7,
+          "rank": 16,
+          "display": "13:13.00",
+          "percentile": 0.4828,
+          "z": -0.1184
+        },
+        {
+          "ordinal": 8,
+          "rank": 15,
+          "display": "07:11.70",
+          "percentile": 0.5172,
+          "z": -0.0265
+        },
+        {
+          "ordinal": 9,
+          "rank": 21,
+          "display": "104' 8\"",
+          "percentile": 0.3103,
+          "z": -0.4067
+        },
+        {
+          "ordinal": 10,
+          "rank": 12,
+          "display": "15:38.86",
+          "percentile": 0.6207,
+          "z": 0.5159
+        },
+        {
+          "ordinal": 11,
+          "rank": 11,
+          "display": "02:28.26",
+          "percentile": 0.6552,
+          "z": 0.3438
+        },
+        {
+          "ordinal": 12,
+          "rank": 15,
+          "display": "05:41.11 (03:33.00)",
+          "percentile": 0.5172,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 14,
+          "display": "01:17.88",
+          "percentile": 0.5517,
+          "z": 0.1865
+        },
+        {
+          "ordinal": 14,
+          "rank": 28,
+          "display": "CAP+80 (09:16.00)",
+          "percentile": 0.069,
+          "z": -1.4199
+        },
+        {
+          "ordinal": 15,
+          "rank": 26,
+          "display": "1 (00:27.42)",
+          "percentile": 0.1379,
+          "z": -1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 9,
+          "display": "05:32.35 (03:40.00)",
+          "percentile": 0.7241,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 18,
+          "display": "04:23.93 (03:42.00)",
+          "percentile": 0.4138,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 9,
+          "display": "25:24.59",
+          "percentile": 0.7241,
+          "z": 0.4816
+        },
+        {
+          "ordinal": 19,
+          "rank": 30,
+          "display": "3 (04:50.00)",
+          "percentile": 0,
+          "z": -1.4791
+        },
+        {
+          "ordinal": 20,
+          "rank": 7,
+          "display": "06:07.58",
+          "percentile": 0.7931,
+          "z": 0.8813
+        }
+      ]
+    },
+    {
+      "competitorId": "1967193",
+      "year": 2026,
+      "finish": 19,
+      "fieldSize": 30,
+      "officialPoints": 713,
+      "percentileScore": 0.4672,
+      "officialScore": 0.4601,
+      "zScore": -0.1277,
+      "eventWins": 1,
+      "domains": {
+        "running": 0.5565,
+        "swimming": 1,
+        "machine": 0.5134,
+        "endurance": 0.6172,
+        "sprint": 0.4721,
+        "strength": 0.4042,
+        "weightlifting": 0.3366,
+        "gymnastics": 0.3759,
+        "strongman": 0.4422,
+        "skill": 0.413,
+        "grip": 0.4187
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 27,
+          "display": "08:37.00 (03:25)",
+          "percentile": 0.1034,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 9,
+          "display": "42:43",
+          "percentile": 0.7241,
+          "z": 0.5493
+        },
+        {
+          "ordinal": 3,
+          "rank": 21,
+          "display": "475 (1200)",
+          "percentile": 0.3103,
+          "z": -0.2625
+        },
+        {
+          "ordinal": 4,
+          "rank": 15,
+          "display": "220 (1200)",
+          "percentile": 0.5172,
+          "z": -0.0659
+        },
+        {
+          "ordinal": 5,
+          "rank": 23,
+          "display": "505 (1200)",
+          "percentile": 0.2414,
+          "z": -0.7543
+        },
+        {
+          "ordinal": 6,
+          "rank": 20,
+          "display": "19:21.63",
+          "percentile": 0.3448,
+          "z": -0.2054
+        },
+        {
+          "ordinal": 7,
+          "rank": 1,
+          "display": "11:09.00",
+          "percentile": 1,
+          "z": 1.928
+        },
+        {
+          "ordinal": 8,
+          "rank": 23,
+          "display": "08:05.23",
+          "percentile": 0.2414,
+          "z": -0.9252
+        },
+        {
+          "ordinal": 9,
+          "rank": 23,
+          "display": "103' 3.75\"",
+          "percentile": 0.2414,
+          "z": -0.5147
+        },
+        {
+          "ordinal": 10,
+          "rank": 18,
+          "display": "16:45.45",
+          "percentile": 0.4138,
+          "z": -0.2175
+        },
+        {
+          "ordinal": 11,
+          "rank": 25,
+          "display": "03:55.35",
+          "percentile": 0.1724,
+          "z": -1.3183
+        },
+        {
+          "ordinal": 12,
+          "rank": 25,
+          "display": "CAP+3 (03:52.00)",
+          "percentile": 0.1724,
+          "z": -3
+        },
+        {
+          "ordinal": 13,
+          "rank": 8,
+          "display": "01:16.38",
+          "percentile": 0.7586,
+          "z": 0.5328
+        },
+        {
+          "ordinal": 14,
+          "rank": 11,
+          "display": "13:11.69 (07:16.00)",
+          "percentile": 0.6552,
+          "z": 0.5112
+        },
+        {
+          "ordinal": 15,
+          "rank": 9,
+          "display": "3 (01:36.82)",
+          "percentile": 0.7241,
+          "z": 1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 21,
+          "display": "06:09.69 (04:03.00)",
+          "percentile": 0.3103,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 21,
+          "display": "04:26.25 (01:30.00)",
+          "percentile": 0.3103,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 6,
+          "display": "25:09.55",
+          "percentile": 0.8276,
+          "z": 0.8155
+        },
+        {
+          "ordinal": 19,
+          "rank": 2,
+          "display": "24 (04:56.00)",
+          "percentile": 0.9655,
+          "z": 1.7341
+        },
+        {
+          "ordinal": 20,
+          "rank": 21,
+          "display": "08:16.71",
+          "percentile": 0.3103,
+          "z": -0.6985
+        }
+      ]
+    },
+    {
+      "competitorId": "680734",
+      "year": 2026,
+      "finish": 20,
+      "fieldSize": 30,
+      "officialPoints": 674,
+      "percentileScore": 0.431,
+      "officialScore": 0.4281,
+      "zScore": -0.2109,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.2326,
+        "swimming": 0.3448,
+        "machine": 0.2989,
+        "endurance": 0.3172,
+        "sprint": 0.4875,
+        "strength": 0.2778,
+        "weightlifting": 0.2474,
+        "gymnastics": 0.6308,
+        "strongman": 0.7525,
+        "skill": 0.6998,
+        "grip": 0.6995
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 18,
+          "display": "08:16.00 (03:34)",
+          "percentile": 0.4138,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 22,
+          "display": "46:49",
+          "percentile": 0.2759,
+          "z": -0.4614
+        },
+        {
+          "ordinal": 3,
+          "rank": 23,
+          "display": "470 (1240)",
+          "percentile": 0.2414,
+          "z": -0.4201
+        },
+        {
+          "ordinal": 4,
+          "rank": 27,
+          "display": "205 (1240)",
+          "percentile": 0.1034,
+          "z": -0.9134
+        },
+        {
+          "ordinal": 5,
+          "rank": 14,
+          "display": "565 (1240)",
+          "percentile": 0.5517,
+          "z": 0.6102
+        },
+        {
+          "ordinal": 6,
+          "rank": 19,
+          "display": "19:21.44",
+          "percentile": 0.3793,
+          "z": -0.2021
+        },
+        {
+          "ordinal": 7,
+          "rank": 20,
+          "display": "13:33.00",
+          "percentile": 0.3448,
+          "z": -0.4484
+        },
+        {
+          "ordinal": 8,
+          "rank": 8,
+          "display": "06:23.98",
+          "percentile": 0.7586,
+          "z": 0.7748
+        },
+        {
+          "ordinal": 9,
+          "rank": 5,
+          "display": "116' 1\"",
+          "percentile": 0.8621,
+          "z": 0.889
+        },
+        {
+          "ordinal": 10,
+          "rank": 30,
+          "display": "20:02.57",
+          "percentile": 0,
+          "z": -2.3883
+        },
+        {
+          "ordinal": 11,
+          "rank": 4,
+          "display": "02:03.19",
+          "percentile": 0.8966,
+          "z": 0.8223
+        },
+        {
+          "ordinal": 12,
+          "rank": 17,
+          "display": "05:43.58 (03:31.00)",
+          "percentile": 0.4483,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 27,
+          "display": "01:22.78",
+          "percentile": 0.1034,
+          "z": -0.9449
+        },
+        {
+          "ordinal": 14,
+          "rank": 12,
+          "display": "13:28.62 (07:32.00)",
+          "percentile": 0.6207,
+          "z": 0.3976
+        },
+        {
+          "ordinal": 15,
+          "rank": 29,
+          "display": "1 (01:01.12)",
+          "percentile": 0.0345,
+          "z": -1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 26,
+          "display": "06:17.95 (04:01.00)",
+          "percentile": 0.1379,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 2,
+          "display": "03:38.09 (03:16.00)",
+          "percentile": 0.9655,
+          "z": 1.3156
+        },
+        {
+          "ordinal": 18,
+          "rank": 20,
+          "display": "26:04.26",
+          "percentile": 0.3448,
+          "z": -0.3991
+        },
+        {
+          "ordinal": 19,
+          "rank": 14,
+          "display": "12 (04:56.00)",
+          "percentile": 0.5517,
+          "z": -0.102
+        },
+        {
+          "ordinal": 20,
+          "rank": 13,
+          "display": "07:01.52",
+          "percentile": 0.5862,
+          "z": 0.2214
+        }
+      ]
+    },
+    {
+      "competitorId": "310970",
+      "year": 2026,
+      "finish": 21,
+      "fieldSize": 30,
+      "officialPoints": 641,
+      "percentileScore": 0.3914,
+      "officialScore": 0.3983,
+      "zScore": -0.4495,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.6006,
+        "swimming": 0.8966,
+        "machine": 0.3423,
+        "endurance": 0.4851,
+        "sprint": 0.4114,
+        "strength": 0.1092,
+        "weightlifting": 0.4693,
+        "gymnastics": 0.4348,
+        "strongman": 0.3945,
+        "skill": 0.2696,
+        "grip": 0.4089
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 3,
+          "display": "07:19.00 (03:34)",
+          "percentile": 0.931,
+          "z": -0.3894
+        },
+        {
+          "ordinal": 2,
+          "rank": 11,
+          "display": "43:00",
+          "percentile": 0.6552,
+          "z": 0.4795
+        },
+        {
+          "ordinal": 3,
+          "rank": 25,
+          "display": "455 (1140)",
+          "percentile": 0.1724,
+          "z": -0.8927
+        },
+        {
+          "ordinal": 4,
+          "rank": 30,
+          "display": "185 (1140)",
+          "percentile": 0,
+          "z": -2.0435
+        },
+        {
+          "ordinal": 5,
+          "rank": 25,
+          "display": "500 (1140)",
+          "percentile": 0.1724,
+          "z": -0.868
+        },
+        {
+          "ordinal": 6,
+          "rank": 15,
+          "display": "18:57.34",
+          "percentile": 0.5172,
+          "z": 0.2161
+        },
+        {
+          "ordinal": 7,
+          "rank": 4,
+          "display": "12:00.00",
+          "percentile": 0.8966,
+          "z": 1.0863
+        },
+        {
+          "ordinal": 8,
+          "rank": 22,
+          "display": "07:57.20",
+          "percentile": 0.2759,
+          "z": -0.7904
+        },
+        {
+          "ordinal": 9,
+          "rank": 26,
+          "display": "100' 7\"",
+          "percentile": 0.1379,
+          "z": -0.8386
+        },
+        {
+          "ordinal": 10,
+          "rank": 15,
+          "display": "16:20.63",
+          "percentile": 0.5172,
+          "z": 0.0559
+        },
+        {
+          "ordinal": 11,
+          "rank": 18,
+          "display": "02:59.04",
+          "percentile": 0.4138,
+          "z": -0.2436
+        },
+        {
+          "ordinal": 12,
+          "rank": 14,
+          "display": "05:40.80 (03:48.00)",
+          "percentile": 0.5517,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 9,
+          "display": "01:16.39",
+          "percentile": 0.7241,
+          "z": 0.5305
+        },
+        {
+          "ordinal": 14,
+          "rank": 13,
+          "display": "14:12.14 (08:13.00)",
+          "percentile": 0.5862,
+          "z": 0.284
+        },
+        {
+          "ordinal": 15,
+          "rank": 28,
+          "display": "1 (00:45.68)",
+          "percentile": 0.069,
+          "z": -1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 20,
+          "display": "06:08.32 (04:01.00)",
+          "percentile": 0.3448,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 24,
+          "display": "04:35.19 (03:55.00)",
+          "percentile": 0.2069,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 28,
+          "display": "26:43.79",
+          "percentile": 0.069,
+          "z": -1.2766
+        },
+        {
+          "ordinal": 19,
+          "rank": 26,
+          "display": "5 (04:52.00)",
+          "percentile": 0.1379,
+          "z": -1.1731
+        },
+        {
+          "ordinal": 20,
+          "rank": 17,
+          "display": "07:29.63",
+          "percentile": 0.4483,
+          "z": -0.1225
+        }
+      ]
+    },
+    {
+      "competitorId": "1135386",
+      "year": 2026,
+      "finish": 22,
+      "fieldSize": 30,
+      "officialPoints": 635,
+      "percentileScore": 0.4483,
+      "officialScore": 0.3788,
+      "zScore": -0.4398,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.5822,
+        "swimming": 0.1724,
+        "machine": 0.5466,
+        "endurance": 0.4678,
+        "sprint": 0.6873,
+        "strength": 0.6255,
+        "weightlifting": 0.4678,
+        "gymnastics": 0.3333,
+        "strongman": 0.1521,
+        "skill": 0.3135,
+        "grip": 0.0148
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 20,
+          "display": "08:20.49 (03:22)",
+          "percentile": 0.3448,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 13,
+          "display": "43:19",
+          "percentile": 0.5862,
+          "z": 0.4014
+        },
+        {
+          "ordinal": 3,
+          "rank": 13,
+          "display": "485 (1280)",
+          "percentile": 0.5862,
+          "z": 0.0525
+        },
+        {
+          "ordinal": 4,
+          "rank": 8,
+          "display": "230 (1280)",
+          "percentile": 0.7586,
+          "z": 0.4991
+        },
+        {
+          "ordinal": 5,
+          "rank": 11,
+          "display": "565 (1280)",
+          "percentile": 0.6552,
+          "z": 0.6102
+        },
+        {
+          "ordinal": 6,
+          "rank": 14,
+          "display": "18:53.69",
+          "percentile": 0.5517,
+          "z": 0.2794
+        },
+        {
+          "ordinal": 7,
+          "rank": 25,
+          "display": "14:11.00",
+          "percentile": 0.1724,
+          "z": -1.0755
+        },
+        {
+          "ordinal": 8,
+          "rank": 30,
+          "display": "CAP+13",
+          "percentile": 0,
+          "z": -3
+        },
+        {
+          "ordinal": 9,
+          "rank": 7,
+          "display": "114' 6.25\"",
+          "percentile": 0.7931,
+          "z": 0.6731
+        },
+        {
+          "ordinal": 10,
+          "rank": 14,
+          "display": "16:09.48",
+          "percentile": 0.5517,
+          "z": 0.1787
+        },
+        {
+          "ordinal": 11,
+          "rank": 28,
+          "display": "04:47.44",
+          "percentile": 0.069,
+          "z": -2.3124
+        },
+        {
+          "ordinal": 12,
+          "rank": 22,
+          "display": "CAP+0 (03:41.00)",
+          "percentile": 0.2759,
+          "z": -3
+        },
+        {
+          "ordinal": 13,
+          "rank": 11,
+          "display": "01:17.12",
+          "percentile": 0.6552,
+          "z": 0.362
+        },
+        {
+          "ordinal": 14,
+          "rank": 29,
+          "display": "CAP+86 (09:14.00)",
+          "percentile": 0.0345,
+          "z": -1.5335
+        },
+        {
+          "ordinal": 15,
+          "rank": 20,
+          "display": "2 (02:01.00)",
+          "percentile": 0.3448,
+          "z": 0
+        },
+        {
+          "ordinal": 16,
+          "rank": 10,
+          "display": "05:37.24 (03:47.00)",
+          "percentile": 0.6897,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 15,
+          "display": "04:23.39 (03:49.00)",
+          "percentile": 0.5172,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 14,
+          "display": "25:43.64",
+          "percentile": 0.5517,
+          "z": 0.0587
+        },
+        {
+          "ordinal": 19,
+          "rank": 24,
+          "display": "5 (02:42.00)",
+          "percentile": 0.2069,
+          "z": -1.1731
+        },
+        {
+          "ordinal": 20,
+          "rank": 12,
+          "display": "06:57.17",
+          "percentile": 0.6207,
+          "z": 0.2746
+        }
+      ]
+    },
+    {
+      "competitorId": "2064040",
+      "year": 2026,
+      "finish": 23,
+      "fieldSize": 30,
+      "officialPoints": 614,
+      "percentileScore": 0.4241,
+      "officialScore": 0.3536,
+      "zScore": -0.2553,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.6391,
+        "swimming": 0.1034,
+        "machine": 0.461,
+        "endurance": 0.508,
+        "sprint": 0.6683,
+        "strength": 0.3985,
+        "weightlifting": 0.3133,
+        "gymnastics": 0.2569,
+        "strongman": 0.3438,
+        "skill": 0.4984,
+        "grip": 0.5025
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 26,
+          "display": "08:28.00",
+          "percentile": 0.1379,
+          "z": 2.7284
+        },
+        {
+          "ordinal": 2,
+          "rank": 12,
+          "display": "43:06",
+          "percentile": 0.6207,
+          "z": 0.4548
+        },
+        {
+          "ordinal": 3,
+          "rank": 27,
+          "display": "440 (1220)",
+          "percentile": 0.1034,
+          "z": -1.3652
+        },
+        {
+          "ordinal": 4,
+          "rank": 21,
+          "display": "215 (1220)",
+          "percentile": 0.3103,
+          "z": -0.3484
+        },
+        {
+          "ordinal": 5,
+          "rank": 15,
+          "display": "565 (1220)",
+          "percentile": 0.5172,
+          "z": 0.6102
+        },
+        {
+          "ordinal": 6,
+          "rank": 13,
+          "display": "18:35.55",
+          "percentile": 0.5862,
+          "z": 0.5942
+        },
+        {
+          "ordinal": 7,
+          "rank": 27,
+          "display": "14:16.00",
+          "percentile": 0.1034,
+          "z": -1.158
+        },
+        {
+          "ordinal": 8,
+          "rank": 12,
+          "display": "06:58.21",
+          "percentile": 0.6207,
+          "z": 0.2001
+        },
+        {
+          "ordinal": 9,
+          "rank": 9,
+          "display": "113' 11\"",
+          "percentile": 0.7241,
+          "z": 0.5651
+        },
+        {
+          "ordinal": 10,
+          "rank": 17,
+          "display": "16:42.41",
+          "percentile": 0.4483,
+          "z": -0.184
+        },
+        {
+          "ordinal": 11,
+          "rank": 26,
+          "display": "03:57.98",
+          "percentile": 0.1379,
+          "z": -1.3685
+        },
+        {
+          "ordinal": 12,
+          "rank": 28,
+          "display": "CAP+7 (03:39.00)",
+          "percentile": 0.069,
+          "z": -3
+        },
+        {
+          "ordinal": 13,
+          "rank": 3,
+          "display": "01:13.98",
+          "percentile": 0.931,
+          "z": 1.087
+        },
+        {
+          "ordinal": 14,
+          "rank": 20,
+          "display": "CAP+21 (09:29.00)",
+          "percentile": 0.3448,
+          "z": -0.5112
+        },
+        {
+          "ordinal": 15,
+          "rank": 5,
+          "display": "3 (00:36.85)",
+          "percentile": 0.8621,
+          "z": 1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 22,
+          "display": "06:10.42 (04:00.00)",
+          "percentile": 0.2759,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 29,
+          "display": "05:29.53 (03:53.00)",
+          "percentile": 0.0345,
+          "z": -2.1528
+        },
+        {
+          "ordinal": 18,
+          "rank": 9,
+          "display": "25:24.59",
+          "percentile": 0.7241,
+          "z": 0.4816
+        },
+        {
+          "ordinal": 19,
+          "rank": 5,
+          "display": "20 (04:52.00)",
+          "percentile": 0.8621,
+          "z": 1.1221
+        },
+        {
+          "ordinal": 20,
+          "rank": 28,
+          "display": "CAP+1",
+          "percentile": 0.069,
+          "z": -3
+        }
+      ]
+    },
+    {
+      "competitorId": "771441",
+      "year": 2026,
+      "finish": 24,
+      "fieldSize": 30,
+      "officialPoints": 603,
+      "percentileScore": 0.3948,
+      "officialScore": 0.3322,
+      "zScore": -0.4697,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.2414,
+        "swimming": 0.2759,
+        "machine": 0.4955,
+        "endurance": 0.3126,
+        "sprint": 0.5315,
+        "strength": 0.2481,
+        "weightlifting": 0.3628,
+        "gymnastics": 0.5132,
+        "strongman": 0.5984,
+        "skill": 0.4412,
+        "grip": 0.601
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 4,
+          "display": "07:34.74 (03:33)",
+          "percentile": 0.8966,
+          "z": -0.3894
+        },
+        {
+          "ordinal": 2,
+          "rank": 25,
+          "display": "49:10",
+          "percentile": 0.1724,
+          "z": -1.0407
+        },
+        {
+          "ordinal": 3,
+          "rank": 29,
+          "display": "435 (1140)",
+          "percentile": 0.0345,
+          "z": -1.5228
+        },
+        {
+          "ordinal": 4,
+          "rank": 16,
+          "display": "220 (1140)",
+          "percentile": 0.4828,
+          "z": -0.0659
+        },
+        {
+          "ordinal": 5,
+          "rank": 27,
+          "display": "485 (1140)",
+          "percentile": 0.1034,
+          "z": -1.2091
+        },
+        {
+          "ordinal": 6,
+          "rank": 23,
+          "display": "19:37.14",
+          "percentile": 0.2414,
+          "z": -0.4746
+        },
+        {
+          "ordinal": 7,
+          "rank": 22,
+          "display": "13:47.00",
+          "percentile": 0.2759,
+          "z": -0.6795
+        },
+        {
+          "ordinal": 8,
+          "rank": 10,
+          "display": "06:41.63",
+          "percentile": 0.6897,
+          "z": 0.4784
+        },
+        {
+          "ordinal": 9,
+          "rank": 11,
+          "display": "113' 4.75\"",
+          "percentile": 0.6552,
+          "z": 0.5651
+        },
+        {
+          "ordinal": 10,
+          "rank": 27,
+          "display": "18:19.92",
+          "percentile": 0.1034,
+          "z": -1.2578
+        },
+        {
+          "ordinal": 11,
+          "rank": 27,
+          "display": "04:30.52",
+          "percentile": 0.1034,
+          "z": -1.9895
+        },
+        {
+          "ordinal": 12,
+          "rank": 18,
+          "display": "05:44.55 (03:30.00)",
+          "percentile": 0.4138,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 16,
+          "display": "01:17.93",
+          "percentile": 0.4828,
+          "z": 0.1749
+        },
+        {
+          "ordinal": 14,
+          "rank": 16,
+          "display": "CAP+0 (08:58.00)",
+          "percentile": 0.4828,
+          "z": -0.0568
+        },
+        {
+          "ordinal": 15,
+          "rank": 18,
+          "display": "2 (01:23.67)",
+          "percentile": 0.4138,
+          "z": 0
+        },
+        {
+          "ordinal": 16,
+          "rank": 27,
+          "display": "06:19.12 (04:16.00)",
+          "percentile": 0.1034,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 10,
+          "display": "04:02.37 (03:28.00)",
+          "percentile": 0.6897,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 14,
+          "display": "25:43.64",
+          "percentile": 0.5517,
+          "z": 0.0587
+        },
+        {
+          "ordinal": 19,
+          "rank": 15,
+          "display": "11 (03:37.00)",
+          "percentile": 0.5172,
+          "z": -0.255
+        },
+        {
+          "ordinal": 20,
+          "rank": 16,
+          "display": "07:13.83",
+          "percentile": 0.4828,
+          "z": 0.0708
+        }
+      ]
+    },
+    {
+      "competitorId": "1986035",
+      "year": 2026,
+      "finish": 25,
+      "fieldSize": 30,
+      "officialPoints": 515,
+      "percentileScore": 0.369,
+      "officialScore": 0.2816,
+      "zScore": -0.5285,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.4515,
+        "swimming": 0.4828,
+        "machine": 0.272,
+        "endurance": 0.3391,
+        "sprint": 0.6207,
+        "strength": 0.5096,
+        "weightlifting": 0.3426,
+        "gymnastics": 0.121,
+        "strongman": 0.2972,
+        "skill": 0.2994,
+        "grip": 0.3645
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 30,
+          "display": "09:45.32 (03:31)",
+          "percentile": 0,
+          "z": -0.377
+        },
+        {
+          "ordinal": 2,
+          "rank": 15,
+          "display": "43:55",
+          "percentile": 0.5172,
+          "z": 0.2535
+        },
+        {
+          "ordinal": 3,
+          "rank": 9,
+          "display": "500 (1240)",
+          "percentile": 0.7241,
+          "z": 0.5251
+        },
+        {
+          "ordinal": 4,
+          "rank": 20,
+          "display": "215 (1240)",
+          "percentile": 0.3448,
+          "z": -0.3484
+        },
+        {
+          "ordinal": 5,
+          "rank": 21,
+          "display": "525 (1240)",
+          "percentile": 0.3103,
+          "z": -0.2994
+        },
+        {
+          "ordinal": 6,
+          "rank": 27,
+          "display": "20:19.83",
+          "percentile": 0.1034,
+          "z": -1.2153
+        },
+        {
+          "ordinal": 7,
+          "rank": 16,
+          "display": "13:13.00",
+          "percentile": 0.4828,
+          "z": -0.1184
+        },
+        {
+          "ordinal": 8,
+          "rank": 16,
+          "display": "07:15.62",
+          "percentile": 0.4828,
+          "z": -0.0923
+        },
+        {
+          "ordinal": 9,
+          "rank": 13,
+          "display": "111' 6\"",
+          "percentile": 0.5862,
+          "z": 0.3491
+        },
+        {
+          "ordinal": 10,
+          "rank": 13,
+          "display": "15:59.74",
+          "percentile": 0.5862,
+          "z": 0.2859
+        },
+        {
+          "ordinal": 11,
+          "rank": 30,
+          "display": "CAP+11",
+          "percentile": 0,
+          "z": -3
+        },
+        {
+          "ordinal": 12,
+          "rank": 29,
+          "display": "CAP+7 (04:01.00)",
+          "percentile": 0.0345,
+          "z": -3
+        },
+        {
+          "ordinal": 13,
+          "rank": 6,
+          "display": "01:15.39",
+          "percentile": 0.8276,
+          "z": 0.7614
+        },
+        {
+          "ordinal": 14,
+          "rank": 24,
+          "display": "CAP+31 (10:17.00)",
+          "percentile": 0.2069,
+          "z": -0.9655
+        },
+        {
+          "ordinal": 15,
+          "rank": 7,
+          "display": "3 (01:25.31)",
+          "percentile": 0.7931,
+          "z": 1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 18,
+          "display": "06:00.16 (03:58.00)",
+          "percentile": 0.4138,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 23,
+          "display": "04:34.83 (01:28.00)",
+          "percentile": 0.2414,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 21,
+          "display": "26:09.71",
+          "percentile": 0.3103,
+          "z": -0.52
+        },
+        {
+          "ordinal": 19,
+          "rank": 23,
+          "display": "7 (04:25.00)",
+          "percentile": 0.2414,
+          "z": -0.8671
+        },
+        {
+          "ordinal": 20,
+          "rank": 25,
+          "display": "09:35.53",
+          "percentile": 0.1724,
+          "z": -1.6628
+        }
+      ]
+    },
+    {
+      "competitorId": "1285760",
+      "year": 2026,
+      "finish": 26,
+      "fieldSize": 30,
+      "officialPoints": 513,
+      "percentileScore": 0.3121,
+      "officialScore": 0.2636,
+      "zScore": -0.7375,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.4362,
+        "swimming": 0.3103,
+        "machine": 0.4955,
+        "endurance": 0.4471,
+        "sprint": 0.1581,
+        "strength": 0.1054,
+        "weightlifting": 0.2984,
+        "gymnastics": 0.4009,
+        "strongman": 0.2028,
+        "skill": 0.4373,
+        "grip": 0.2167
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 19,
+          "display": "08:17.04 (03:20)",
+          "percentile": 0.3793,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 20,
+          "display": "45:25",
+          "percentile": 0.3448,
+          "z": -0.1163
+        },
+        {
+          "ordinal": 3,
+          "rank": 30,
+          "display": "425 (1115)",
+          "percentile": 0,
+          "z": -1.8378
+        },
+        {
+          "ordinal": 4,
+          "rank": 23,
+          "display": "215 (1115)",
+          "percentile": 0.2414,
+          "z": -0.3484
+        },
+        {
+          "ordinal": 5,
+          "rank": 29,
+          "display": "475 (1115)",
+          "percentile": 0.0345,
+          "z": -1.4365
+        },
+        {
+          "ordinal": 6,
+          "rank": 11,
+          "display": "18:29.52",
+          "percentile": 0.6552,
+          "z": 0.6988
+        },
+        {
+          "ordinal": 7,
+          "rank": 21,
+          "display": "13:45.00",
+          "percentile": 0.3103,
+          "z": -0.6465
+        },
+        {
+          "ordinal": 8,
+          "rank": 19,
+          "display": "07:22.99",
+          "percentile": 0.3793,
+          "z": -0.216
+        },
+        {
+          "ordinal": 9,
+          "rank": 30,
+          "display": "86' 10.50\"",
+          "percentile": 0,
+          "z": -2.3503
+        },
+        {
+          "ordinal": 10,
+          "rank": 16,
+          "display": "16:40.84",
+          "percentile": 0.4828,
+          "z": -0.1667
+        },
+        {
+          "ordinal": 11,
+          "rank": 3,
+          "display": "01:50.18",
+          "percentile": 0.931,
+          "z": 1.0705
+        },
+        {
+          "ordinal": 12,
+          "rank": 27,
+          "display": "CAP+6 (03:54.00)",
+          "percentile": 0.1034,
+          "z": -3
+        },
+        {
+          "ordinal": 13,
+          "rank": 25,
+          "display": "01:20.93",
+          "percentile": 0.1724,
+          "z": -0.5178
+        },
+        {
+          "ordinal": 14,
+          "rank": 30,
+          "display": "CAP+102 (10:47.00)",
+          "percentile": 0,
+          "z": -1.6471
+        },
+        {
+          "ordinal": 15,
+          "rank": 24,
+          "display": "1 (00:26.20)",
+          "percentile": 0.2069,
+          "z": -1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 19,
+          "display": "06:07.73 (04:00.00)",
+          "percentile": 0.3793,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 20,
+          "display": "04:26.04 (03:45.00)",
+          "percentile": 0.3448,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 12,
+          "display": "25:36.63",
+          "percentile": 0.6207,
+          "z": 0.2143
+        },
+        {
+          "ordinal": 19,
+          "rank": 18,
+          "display": "11 (04:34.00)",
+          "percentile": 0.4138,
+          "z": -0.255
+        },
+        {
+          "ordinal": 20,
+          "rank": 23,
+          "display": "08:51.58",
+          "percentile": 0.2414,
+          "z": -1.1251
+        }
+      ]
+    },
+    {
+      "competitorId": "162712",
+      "year": 2026,
+      "finish": 27,
+      "fieldSize": 30,
+      "officialPoints": 512,
+      "percentileScore": 0.35,
+      "officialScore": 0.246,
+      "zScore": -0.2457,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.2662,
+        "swimming": 0.4828,
+        "machine": 0.2069,
+        "endurance": 0.2897,
+        "sprint": 0.2842,
+        "strength": 0.3927,
+        "weightlifting": 0.3126,
+        "gymnastics": 0.382,
+        "strongman": 0.4675,
+        "skill": 0.3754,
+        "grip": 0.468
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 13,
+          "display": "07:59.43",
+          "percentile": 0.5862,
+          "z": 2.5506
+        },
+        {
+          "ordinal": 2,
+          "rank": 26,
+          "display": "49:26",
+          "percentile": 0.1379,
+          "z": -1.1064
+        },
+        {
+          "ordinal": 3,
+          "rank": 12,
+          "display": "490 (1200)",
+          "percentile": 0.6207,
+          "z": 0.21
+        },
+        {
+          "ordinal": 4,
+          "rank": 24,
+          "display": "210 (1200)",
+          "percentile": 0.2069,
+          "z": -0.6309
+        },
+        {
+          "ordinal": 5,
+          "rank": 24,
+          "display": "500 (1200)",
+          "percentile": 0.2069,
+          "z": -0.868
+        },
+        {
+          "ordinal": 6,
+          "rank": 18,
+          "display": "19:02.65",
+          "percentile": 0.4138,
+          "z": 0.1239
+        },
+        {
+          "ordinal": 7,
+          "rank": 16,
+          "display": "13:13.00",
+          "percentile": 0.4828,
+          "z": -0.1184
+        },
+        {
+          "ordinal": 8,
+          "rank": 25,
+          "display": "08:16.74",
+          "percentile": 0.1724,
+          "z": -1.1185
+        },
+        {
+          "ordinal": 9,
+          "rank": 20,
+          "display": "104' 10.50\"",
+          "percentile": 0.3448,
+          "z": -0.4067
+        },
+        {
+          "ordinal": 10,
+          "rank": 26,
+          "display": "18:04.51",
+          "percentile": 0.1379,
+          "z": -1.0881
+        },
+        {
+          "ordinal": 11,
+          "rank": 20,
+          "display": "03:09.48",
+          "percentile": 0.3448,
+          "z": -0.4429
+        },
+        {
+          "ordinal": 12,
+          "rank": 20,
+          "display": "05:56.21 (03:44.00)",
+          "percentile": 0.3448,
+          "z": -0.3166
+        },
+        {
+          "ordinal": 13,
+          "rank": 20,
+          "display": "01:18.41",
+          "percentile": 0.3448,
+          "z": 0.0641
+        },
+        {
+          "ordinal": 14,
+          "rank": 5,
+          "display": "11:59.50 (06:30.00)",
+          "percentile": 0.8621,
+          "z": 1.1927
+        },
+        {
+          "ordinal": 15,
+          "rank": 10,
+          "display": "3 (02:05.15)",
+          "percentile": 0.6897,
+          "z": 1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 29,
+          "display": "06:34.98 (04:17.00)",
+          "percentile": 0.0345,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 26,
+          "display": "04:44.64 (04:01.00)",
+          "percentile": 0.1379,
+          "z": -0.4186
+        },
+        {
+          "ordinal": 18,
+          "rank": 26,
+          "display": "26:34.76",
+          "percentile": 0.1379,
+          "z": -1.0762
+        },
+        {
+          "ordinal": 19,
+          "rank": 13,
+          "display": "13 (04:38.00)",
+          "percentile": 0.5862,
+          "z": 0.051
+        },
+        {
+          "ordinal": 20,
+          "rank": 24,
+          "display": "09:34.77",
+          "percentile": 0.2069,
+          "z": -1.6535
+        }
+      ]
+    },
+    {
+      "competitorId": "843041",
+      "year": 2026,
+      "finish": 28,
+      "fieldSize": 30,
+      "officialPoints": 479,
+      "percentileScore": 0.3483,
+      "officialScore": 0.2162,
+      "zScore": -0.597,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.263,
+        "swimming": 0.069,
+        "machine": 0.1418,
+        "endurance": 0.2402,
+        "sprint": 0.239,
+        "strength": 0.7069,
+        "weightlifting": 0.2624,
+        "gymnastics": 0.3496,
+        "strongman": 0.3945,
+        "skill": 0.2986,
+        "grip": 0.2167
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 29,
+          "display": "09:39.00 (03:32)",
+          "percentile": 0.0345,
+          "z": -0.377
+        },
+        {
+          "ordinal": 2,
+          "rank": 24,
+          "display": "47:51",
+          "percentile": 0.2069,
+          "z": -0.7161
+        },
+        {
+          "ordinal": 3,
+          "rank": 4,
+          "display": "520 (1320)",
+          "percentile": 0.8966,
+          "z": 1.1552
+        },
+        {
+          "ordinal": 4,
+          "rank": 18,
+          "display": "215 (1320)",
+          "percentile": 0.4138,
+          "z": -0.3484
+        },
+        {
+          "ordinal": 5,
+          "rank": 3,
+          "display": "585 (1320)",
+          "percentile": 0.931,
+          "z": 1.0651
+        },
+        {
+          "ordinal": 6,
+          "rank": 21,
+          "display": "19:29.68",
+          "percentile": 0.3103,
+          "z": -0.3451
+        },
+        {
+          "ordinal": 7,
+          "rank": 28,
+          "display": "15:05.00",
+          "percentile": 0.069,
+          "z": -1.9667
+        },
+        {
+          "ordinal": 8,
+          "rank": 28,
+          "display": "09:35.99",
+          "percentile": 0.069,
+          "z": -2.4491
+        },
+        {
+          "ordinal": 9,
+          "rank": 27,
+          "display": "98' 11\"",
+          "percentile": 0.1034,
+          "z": -1.0546
+        },
+        {
+          "ordinal": 10,
+          "rank": 20,
+          "display": "16:57.01",
+          "percentile": 0.3448,
+          "z": -0.3448
+        },
+        {
+          "ordinal": 11,
+          "rank": 21,
+          "display": "03:14.43",
+          "percentile": 0.3103,
+          "z": -0.5373
+        },
+        {
+          "ordinal": 12,
+          "rank": 23,
+          "display": "CAP+2 (03:56.00)",
+          "percentile": 0.2414,
+          "z": -3
+        },
+        {
+          "ordinal": 13,
+          "rank": 24,
+          "display": "01:20.81",
+          "percentile": 0.2069,
+          "z": -0.49
+        },
+        {
+          "ordinal": 14,
+          "rank": 18,
+          "display": "CAP+1 (08:54.00)",
+          "percentile": 0.4138,
+          "z": -0.284
+        },
+        {
+          "ordinal": 15,
+          "rank": 13,
+          "display": "2 (00:31.90)",
+          "percentile": 0.5862,
+          "z": 0
+        },
+        {
+          "ordinal": 16,
+          "rank": 25,
+          "display": "06:15.92 (04:11.00)",
+          "percentile": 0.1724,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 9,
+          "display": "03:58.48 (03:25.00)",
+          "percentile": 0.7241,
+          "z": 1.3156
+        },
+        {
+          "ordinal": 18,
+          "rank": 25,
+          "display": "26:24.75",
+          "percentile": 0.1724,
+          "z": -0.8539
+        },
+        {
+          "ordinal": 19,
+          "rank": 12,
+          "display": "14 (04:25.00)",
+          "percentile": 0.6207,
+          "z": 0.204
+        },
+        {
+          "ordinal": 20,
+          "rank": 26,
+          "display": "09:50.62",
+          "percentile": 0.1379,
+          "z": -1.8474
+        }
+      ]
+    },
+    {
+      "competitorId": "1774373",
+      "year": 2026,
+      "finish": 29,
+      "fieldSize": 30,
+      "officialPoints": 456,
+      "percentileScore": 0.2983,
+      "officialScore": 0.1902,
+      "zScore": -0.8738,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.4579,
+        "swimming": 0.8621,
+        "machine": 0.4049,
+        "endurance": 0.492,
+        "sprint": 0.2973,
+        "strength": 0.2213,
+        "weightlifting": 0.2324,
+        "gymnastics": 0.0967,
+        "strongman": 0.2282,
+        "skill": 0.2085,
+        "grip": 0.3103
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 24,
+          "display": "08:24.62 (08:25)",
+          "percentile": 0.2069,
+          "z": -0.3832
+        },
+        {
+          "ordinal": 2,
+          "rank": 14,
+          "display": "43:30",
+          "percentile": 0.5517,
+          "z": 0.3562
+        },
+        {
+          "ordinal": 3,
+          "rank": 22,
+          "display": "475 (1175)",
+          "percentile": 0.2759,
+          "z": -0.2625
+        },
+        {
+          "ordinal": 4,
+          "rank": 29,
+          "display": "185 (1175)",
+          "percentile": 0.0345,
+          "z": -2.0435
+        },
+        {
+          "ordinal": 5,
+          "rank": 22,
+          "display": "515 (1175)",
+          "percentile": 0.2759,
+          "z": -0.5268
+        },
+        {
+          "ordinal": 6,
+          "rank": 10,
+          "display": "18:28.14",
+          "percentile": 0.6897,
+          "z": 0.7227
+        },
+        {
+          "ordinal": 7,
+          "rank": 5,
+          "display": "12:04.00",
+          "percentile": 0.8621,
+          "z": 1.0203
+        },
+        {
+          "ordinal": 8,
+          "rank": 21,
+          "display": "07:51.43",
+          "percentile": 0.3103,
+          "z": -0.6935
+        },
+        {
+          "ordinal": 9,
+          "rank": 14,
+          "display": "111' 3\"",
+          "percentile": 0.5517,
+          "z": 0.3491
+        },
+        {
+          "ordinal": 10,
+          "rank": 25,
+          "display": "17:49.10",
+          "percentile": 0.1724,
+          "z": -0.9184
+        },
+        {
+          "ordinal": 11,
+          "rank": 29,
+          "display": "CAP+1",
+          "percentile": 0.0345,
+          "z": -3
+        },
+        {
+          "ordinal": 12,
+          "rank": 26,
+          "display": "CAP+5 (03:40.00)",
+          "percentile": 0.1379,
+          "z": -3
+        },
+        {
+          "ordinal": 13,
+          "rank": 26,
+          "display": "01:22.14",
+          "percentile": 0.1379,
+          "z": -0.7971
+        },
+        {
+          "ordinal": 14,
+          "rank": 21,
+          "display": "CAP+26 (09:01.00)",
+          "percentile": 0.3103,
+          "z": -0.6248
+        },
+        {
+          "ordinal": 15,
+          "rank": 21,
+          "display": "1 (00:24.02)",
+          "percentile": 0.3103,
+          "z": -1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 16,
+          "display": "05:57.60 (03:49.00)",
+          "percentile": 0.4828,
+          "z": 0.7102
+        },
+        {
+          "ordinal": 17,
+          "rank": 30,
+          "display": "CAP+3 (05:11.00)",
+          "percentile": 0,
+          "z": -3
+        },
+        {
+          "ordinal": 18,
+          "rank": 17,
+          "display": "25:46.66",
+          "percentile": 0.4483,
+          "z": -0.0083
+        },
+        {
+          "ordinal": 19,
+          "rank": 25,
+          "display": "5 (02:54.00)",
+          "percentile": 0.1724,
+          "z": -1.1731
+        },
+        {
+          "ordinal": 20,
+          "rank": 30,
+          "display": "CAP+29",
+          "percentile": 0,
+          "z": -3
+        }
+      ]
+    },
+    {
+      "competitorId": "1398324",
+      "year": 2026,
+      "finish": 30,
+      "fieldSize": 30,
+      "officialPoints": 160,
+      "percentileScore": 0.1069,
+      "officialScore": 0.0607,
+      "zScore": -1.4953,
+      "eventWins": 0,
+      "domains": {
+        "running": 0.0738,
+        "swimming": 0.2414,
+        "machine": 0.0319,
+        "endurance": 0.1011,
+        "sprint": 0.0476,
+        "strength": 0.069,
+        "weightlifting": 0.0262,
+        "gymnastics": 0.1298,
+        "strongman": 0.216,
+        "skill": 0.1936,
+        "grip": 0.2217
+      },
+      "events": [
+        {
+          "ordinal": 1,
+          "rank": 28,
+          "display": "09:31.40 (09:30)",
+          "percentile": 0.069,
+          "z": -0.377
+        },
+        {
+          "ordinal": 2,
+          "rank": 27,
+          "display": "50:13",
+          "percentile": 0.1034,
+          "z": -1.2995
+        },
+        {
+          "ordinal": 3,
+          "rank": 28,
+          "display": "440 (1055)",
+          "percentile": 0.069,
+          "z": -1.3652
+        },
+        {
+          "ordinal": 4,
+          "rank": 25,
+          "display": "210 (1055)",
+          "percentile": 0.1724,
+          "z": -0.6309
+        },
+        {
+          "ordinal": 5,
+          "rank": 30,
+          "display": "405 (1055)",
+          "percentile": 0,
+          "z": -3
+        },
+        {
+          "ordinal": 6,
+          "rank": 28,
+          "display": "20:35.40",
+          "percentile": 0.069,
+          "z": -1.4855
+        },
+        {
+          "ordinal": 7,
+          "rank": 23,
+          "display": "14:00.00",
+          "percentile": 0.2414,
+          "z": -0.894
+        },
+        {
+          "ordinal": 8,
+          "rank": 27,
+          "display": "08:58.27",
+          "percentile": 0.1034,
+          "z": -1.8158
+        },
+        {
+          "ordinal": 9,
+          "rank": 28,
+          "display": "90' 3.50\"",
+          "percentile": 0.069,
+          "z": -1.9184
+        },
+        {
+          "ordinal": 10,
+          "rank": 28,
+          "display": "18:33.33",
+          "percentile": 0.069,
+          "z": -1.4055
+        },
+        {
+          "ordinal": 11,
+          "rank": 15,
+          "display": "02:38.43",
+          "percentile": 0.5172,
+          "z": 0.1497
+        },
+        {
+          "ordinal": 12,
+          "rank": 30,
+          "display": "CAP+8 (04:21.00)",
+          "percentile": 0,
+          "z": -3
+        },
+        {
+          "ordinal": 13,
+          "rank": 29,
+          "display": "01:28.68",
+          "percentile": 0.0345,
+          "z": -2.3072
+        },
+        {
+          "ordinal": 14,
+          "rank": 19,
+          "display": "CAP+3 (08:51.00)",
+          "percentile": 0.3793,
+          "z": -0.3976
+        },
+        {
+          "ordinal": 15,
+          "rank": 30,
+          "display": "1 (01:01.47)",
+          "percentile": 0,
+          "z": -1.2042
+        },
+        {
+          "ordinal": 16,
+          "rank": 30,
+          "display": "06:39.71 (04:30.00)",
+          "percentile": 0,
+          "z": -1.0653
+        },
+        {
+          "ordinal": 17,
+          "rank": 28,
+          "display": "05:20.49 (01:44.00)",
+          "percentile": 0.069,
+          "z": -2.1528
+        },
+        {
+          "ordinal": 18,
+          "rank": 29,
+          "display": "26:49.79",
+          "percentile": 0.0345,
+          "z": -1.4098
+        },
+        {
+          "ordinal": 19,
+          "rank": 27,
+          "display": "4 (00:29.00)",
+          "percentile": 0.1034,
+          "z": -1.3261
+        },
+        {
+          "ordinal": 20,
+          "rank": 29,
+          "display": "CAP+15",
+          "percentile": 0.0345,
           "z": -3
         }
       ]

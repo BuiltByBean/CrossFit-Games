@@ -1,6 +1,6 @@
 {
   "source": "games.crossfit.com (c3po public API)",
-  "fetchedAt": "2026-07-29T15:11:55.225Z",
+  "fetchedAt": "2026-07-29T17:44:56.114Z",
   "division": {
     "id": 1,
     "name": "Individual Men"
@@ -77908,6 +77908,4973 @@
               "rank": 23,
               "points": 21,
               "display": "CAP+2",
+              "valid": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "competitionId": 261,
+      "eventCount": 20,
+      "fieldSize": 30,
+      "events": [
+        {
+          "ordinal": 1,
+          "name": "2007 Hopper",
+          "internalName": "event1",
+          "identifier": "817731d50b2b74499694",
+          "scoreFormat": "time",
+          "medianSeconds": 479.43,
+          "sampleScore": "07:35.20 (03:21)",
+          "domains": {
+            "gymnastics": 0.4,
+            "machine": 0.3,
+            "weightlifting": 0.3
+          },
+          "tagSource": "curated",
+          "note": "1,000-m row, then 5 rounds of 25 pull-ups and 7 push jerks (135 lb) — the 2007 Games workout."
+        },
+        {
+          "ordinal": 2,
+          "name": "Ranch 7200m",
+          "internalName": "event2",
+          "identifier": "630c35ee56e988d106de",
+          "scoreFormat": "time",
+          "medianSeconds": 2671,
+          "sampleScore": "39:43",
+          "domains": {
+            "running": 0.7,
+            "endurance": 0.3
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 3,
+          "name": "CrossFit Total: Squat",
+          "internalName": "event3",
+          "identifier": "fa086c84baa968113f5f",
+          "scoreFormat": "other",
+          "medianSeconds": null,
+          "sampleScore": "475 (1270)",
+          "domains": {
+            "strength": 1
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 4,
+          "name": "CrossFit Total: Press",
+          "internalName": "event4",
+          "identifier": "c5b7dcc2ff01512f8345",
+          "scoreFormat": "other",
+          "medianSeconds": null,
+          "sampleScore": "205 (1270)",
+          "domains": {
+            "strength": 1
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 5,
+          "name": "CrossFit Total: Deadlift",
+          "internalName": "event5",
+          "identifier": "b72443b58ad005c7dcde",
+          "scoreFormat": "other",
+          "medianSeconds": null,
+          "sampleScore": "590 (1270)",
+          "domains": {
+            "strength": 1
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 6,
+          "name": "Grass Track Race",
+          "internalName": "event6",
+          "identifier": "51d6fef57e2ee3cde08d",
+          "scoreFormat": "time",
+          "medianSeconds": 1138.85,
+          "sampleScore": "18:16.21",
+          "domains": {
+            "running": 0.7,
+            "endurance": 0.3
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 7,
+          "name": "Swim Standard",
+          "internalName": "event7",
+          "identifier": "0e1a943c83c5eb5f5c37",
+          "scoreFormat": "time",
+          "medianSeconds": 792,
+          "sampleScore": "12:17.00",
+          "domains": {
+            "swimming": 0.85,
+            "endurance": 0.15
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 8,
+          "name": "Climbing Snail '26",
+          "internalName": "event8",
+          "identifier": "e9a50ffcf80060898b76",
+          "scoreFormat": "time",
+          "medianSeconds": 431.7,
+          "sampleScore": "05:46.03",
+          "domains": {
+            "strongman": 0.5,
+            "skill": 0.3,
+            "grip": 0.2
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 9,
+          "name": "3D Throw",
+          "internalName": "event9",
+          "identifier": "327f31ce7fa2ef7293f9",
+          "scoreFormat": "other",
+          "medianSeconds": null,
+          "sampleScore": "110' 3.50\"",
+          "domains": {
+            "sprint": 0.5,
+            "skill": 0.4,
+            "strength": 0.1
+          },
+          "tagSource": "curated",
+          "note": "For total distance: one throw right, left and backward with a 30-lb ball."
+        },
+        {
+          "ordinal": 10,
+          "name": "Run Hang Squat Clean",
+          "internalName": "event10",
+          "identifier": "f71e7a3c04d3afe6d81b",
+          "scoreFormat": "time",
+          "medianSeconds": 1000.84,
+          "sampleScore": "15:00.07",
+          "domains": {
+            "weightlifting": 0.45,
+            "running": 0.35,
+            "endurance": 0.2
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 11,
+          "name": "Handstand Sprint",
+          "internalName": "event11",
+          "identifier": "dcd34dbc878c8f97c4b8",
+          "scoreFormat": "time",
+          "medianSeconds": 158.43,
+          "sampleScore": "02:33.34",
+          "domains": {
+            "skill": 0.6,
+            "gymnastics": 0.4
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 12,
+          "name": "The Hopper 2026",
+          "internalName": "event12",
+          "identifier": "e8950208387b45bf6c40",
+          "scoreFormat": "other",
+          "medianSeconds": null,
+          "sampleScore": "05:10.54 (03:09.00)",
+          "domains": {
+            "weightlifting": 0.5,
+            "gymnastics": 0.4,
+            "endurance": 0.1
+          },
+          "tagSource": "curated",
+          "note": "3 rounds: 21 toes-to-bar, then 7 unbroken power, hang and squat snatches (95 lb)."
+        },
+        {
+          "ordinal": 13,
+          "name": "500 Run",
+          "internalName": "event13",
+          "identifier": "c2644e83cb30e12fca60",
+          "scoreFormat": "time",
+          "medianSeconds": 77.93,
+          "sampleScore": "01:17.84",
+          "domains": {
+            "sprint": 0.6,
+            "running": 0.4
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 14,
+          "name": "Triple Pig",
+          "internalName": "event14",
+          "identifier": "e9c204f9eef67113e3ae",
+          "scoreFormat": "other",
+          "medianSeconds": null,
+          "sampleScore": "11:11.25 (05:57.00)",
+          "domains": {
+            "strongman": 0.75,
+            "grip": 0.15,
+            "endurance": 0.1
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 15,
+          "name": "2020 Speed Snatch",
+          "internalName": "event15",
+          "identifier": "c984a088975028f5d0c4",
+          "scoreFormat": "other",
+          "medianSeconds": null,
+          "sampleScore": "2 (00:37.63)",
+          "domains": {
+            "strength": 0.5,
+            "weightlifting": 0.35,
+            "skill": 0.15
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 16,
+          "name": "Echo Thruster",
+          "internalName": "event16",
+          "identifier": "968b2db7cef7212f1bd7",
+          "scoreFormat": "other",
+          "medianSeconds": null,
+          "sampleScore": "05:18.14 (03:28.00)",
+          "domains": {
+            "weightlifting": 0.45,
+            "machine": 0.4,
+            "sprint": 0.15
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 17,
+          "name": "Jump Pull Yoke",
+          "internalName": "event17",
+          "identifier": "99b91072767529a91b67",
+          "scoreFormat": "other",
+          "medianSeconds": null,
+          "sampleScore": "03:20.65 (02:43.00)",
+          "domains": {
+            "strongman": 0.45,
+            "gymnastics": 0.35,
+            "sprint": 0.2
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 18,
+          "name": "Machine 7200m",
+          "internalName": "event18",
+          "identifier": "98221ba592492276fc5e",
+          "scoreFormat": "time",
+          "medianSeconds": 1545.27,
+          "sampleScore": "24:22.46",
+          "domains": {
+            "machine": 0.65,
+            "endurance": 0.35
+          },
+          "tagSource": "curated",
+          "note": null
+        },
+        {
+          "ordinal": 19,
+          "name": "Roll to Support AMRAP",
+          "internalName": "event19",
+          "identifier": "84f3a440f2c125922048",
+          "scoreFormat": "other",
+          "medianSeconds": null,
+          "sampleScore": "20 (04:59.00)",
+          "domains": {
+            "gymnastics": 0.55,
+            "skill": 0.45
+          },
+          "tagSource": "curated",
+          "note": "5-minute AMRAP of 4 forward and 3 backward rolls to support."
+        },
+        {
+          "ordinal": 20,
+          "name": "Fibonacci Final",
+          "internalName": "event20",
+          "identifier": "dc9dc056741a82f34b1c",
+          "scoreFormat": "time",
+          "medianSeconds": 427.42,
+          "sampleScore": "06:38.90",
+          "domains": {
+            "gymnastics": 0.45,
+            "skill": 0.3,
+            "weightlifting": 0.25
+          },
+          "tagSource": "curated",
+          "note": null
+        }
+      ],
+      "athletes": [
+        {
+          "competitorId": "900251",
+          "name": "James Sprague",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "Lakeside CrossFit",
+          "age": 24,
+          "heightIn": 74,
+          "weightLb": 210,
+          "overallRank": 1,
+          "overallPoints": 1318,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 5,
+              "points": 84,
+              "display": "07:35.20 (03:21)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 2,
+              "points": 96,
+              "display": "39:43",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 17,
+              "points": 18,
+              "display": "475 (1270)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 26,
+              "points": 4,
+              "display": "205 (1270)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 2,
+              "points": 48,
+              "display": "590 (1270)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 4,
+              "points": 88,
+              "display": "18:16.21",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 6,
+              "points": 80,
+              "display": "12:17.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 2,
+              "points": 96,
+              "display": "05:46.03",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 15,
+              "points": 22,
+              "display": "110' 3.50\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 6,
+              "points": 80,
+              "display": "15:00.07",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 14,
+              "points": 48,
+              "display": "02:33.34",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 4,
+              "points": 88,
+              "display": "05:10.54 (03:09.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 13,
+              "points": 26,
+              "display": "01:17.84",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 3,
+              "points": 92,
+              "display": "11:11.25 (05:57.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 14,
+              "points": 48,
+              "display": "2 (00:37.63)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 2,
+              "points": 96,
+              "display": "05:18.14 (03:28.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 1,
+              "points": 100,
+              "display": "03:20.65 (02:43.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 1,
+              "points": 100,
+              "display": "24:22.46",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 6,
+              "points": 40,
+              "display": "20 (04:59.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 10,
+              "points": 64,
+              "display": "06:38.90",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "671093",
+          "name": "Dallin Pepper",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "Nebo CrossFit",
+          "age": 24,
+          "heightIn": 72,
+          "weightLb": 215,
+          "overallRank": 2,
+          "overallPoints": 1291,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 17,
+              "points": 39,
+              "display": "08:11.06 (03:26)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 10,
+              "points": 64,
+              "display": "42:57",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 7,
+              "points": 38,
+              "display": "500 (1315)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 5,
+              "points": 42,
+              "display": "240 (1315)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 5,
+              "points": 42,
+              "display": "575 (1315)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 2,
+              "points": 96,
+              "display": "18:15.91",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 3,
+              "points": 92,
+              "display": "11:49.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 3,
+              "points": 92,
+              "display": "05:52.12",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 8,
+              "points": 36,
+              "display": "114' 0.50\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 10,
+              "points": 64,
+              "display": "15:19.14",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 19,
+              "points": 33,
+              "display": "03:05.87",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 7,
+              "points": 76,
+              "display": "05:23.06 (03:16.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 23,
+              "points": 7,
+              "display": "01:20.36",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 2,
+              "points": 96,
+              "display": "10:46.91 (05:57.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 4,
+              "points": 88,
+              "display": "3 (00:34.74)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 1,
+              "points": 100,
+              "display": "04:55.43 (03:14.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 6,
+              "points": 80,
+              "display": "03:50.16 (03:21.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 4,
+              "points": 88,
+              "display": "24:39.77",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 7,
+              "points": 38,
+              "display": "19 (04:48.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 6,
+              "points": 80,
+              "display": "06:06.53",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "156156",
+          "name": "Jay Crouch",
+          "country": "Australia",
+          "countryCode": "AU",
+          "affiliate": null,
+          "age": 27,
+          "heightIn": 175,
+          "weightLb": 88,
+          "overallRank": 3,
+          "overallPoints": 1228,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 1,
+              "points": 100,
+              "display": "07:11.22",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 3,
+              "points": 92,
+              "display": "39:52",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 14,
+              "points": 24,
+              "display": "485 (1240)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 11,
+              "points": 30,
+              "display": "225 (1240)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 18,
+              "points": 16,
+              "display": "530 (1240)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 3,
+              "points": 92,
+              "display": "18:16.16",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 19,
+              "points": 33,
+              "display": "13:15.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 17,
+              "points": 39,
+              "display": "07:18.84",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 10,
+              "points": 32,
+              "display": "113' 10.75\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 1,
+              "points": 100,
+              "display": "14:15.05",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 5,
+              "points": 84,
+              "display": "02:05.48",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 2,
+              "points": 96,
+              "display": "04:59.27 (03:01.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 10,
+              "points": 32,
+              "display": "01:16.45",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 10,
+              "points": 64,
+              "display": "12:54.44 (07:25.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 12,
+              "points": 56,
+              "display": "2 (00:27.59)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 6,
+              "points": 80,
+              "display": "05:22.14 (03:28.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 7,
+              "points": 76,
+              "display": "03:54.09 (03:27.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 13,
+              "points": 52,
+              "display": "25:39.80",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 9,
+              "points": 34,
+              "display": "18 (04:50.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 2,
+              "points": 96,
+              "display": "05:23.94",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "811708",
+          "name": "Justin Medeiros",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "CrossFit Fort Vancouver",
+          "age": 27,
+          "heightIn": 69,
+          "weightLb": 195,
+          "overallRank": 4,
+          "overallPoints": 1104,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 6,
+              "points": 80,
+              "display": "07:36.00 (03:31)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 8,
+              "points": 72,
+              "display": "42:08",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 6,
+              "points": 40,
+              "display": "505 (1265)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 28,
+              "points": 2,
+              "display": "195 (1265)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 13,
+              "points": 26,
+              "display": "565 (1265)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 8,
+              "points": 72,
+              "display": "18:18.11",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 2,
+              "points": 96,
+              "display": "11:23.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 9,
+              "points": 68,
+              "display": "06:28.52",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 18,
+              "points": 16,
+              "display": "106' 11.50\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 2,
+              "points": 96,
+              "display": "14:28.63",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 6,
+              "points": 80,
+              "display": "02:05.49",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 5,
+              "points": 84,
+              "display": "05:17.38 (03:20.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 18,
+              "points": 16,
+              "display": "01:17.98",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 4,
+              "points": 88,
+              "display": "11:38.16 (06:10.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 17,
+              "points": 39,
+              "display": "2 (01:14.55)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 7,
+              "points": 76,
+              "display": "05:27.81 (03:30.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 19,
+              "points": 33,
+              "display": "04:25.01 (03:55.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 18,
+              "points": 36,
+              "display": "25:51.54",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 20,
+              "points": 12,
+              "display": "11 (04:45.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 8,
+              "points": 72,
+              "display": "06:14.11",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "40955",
+          "name": "Ricky Garard",
+          "country": "Australia",
+          "countryCode": "AU",
+          "affiliate": "HomeFront CrossFit",
+          "age": 32,
+          "heightIn": 179,
+          "weightLb": 205,
+          "overallRank": 5,
+          "overallPoints": 1100,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 8,
+              "points": 72,
+              "display": "07:47.54",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 1,
+              "points": 100,
+              "display": "39:33",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 26,
+              "points": 4,
+              "display": "440 (1225)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 2,
+              "points": 48,
+              "display": "250 (1225)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 17,
+              "points": 18,
+              "display": "535 (1225)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 6,
+              "points": 80,
+              "display": "18:16.64",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 10,
+              "points": 64,
+              "display": "12:35.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 5,
+              "points": 84,
+              "display": "06:09.03",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 25,
+              "points": 5,
+              "display": "101' 8.25\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 11,
+              "points": 60,
+              "display": "15:32.18",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 8,
+              "points": 72,
+              "display": "02:07.48",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 9,
+              "points": 68,
+              "display": "05:33.12 (03:21.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 1,
+              "points": 50,
+              "display": "01:13.09",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 15,
+              "points": 45,
+              "display": "14:52.04 (08:02.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 22,
+              "points": 24,
+              "display": "1 (00:25.09)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 11,
+              "points": 60,
+              "display": "05:40.62 (03:42.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 13,
+              "points": 52,
+              "display": "04:17.83 (03:37.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 8,
+              "points": 72,
+              "display": "25:16.57",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 11,
+              "points": 30,
+              "display": "15 (04:57.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 3,
+              "points": 92,
+              "display": "05:48.21",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "1020449",
+          "name": "Jayson Hopper",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "CrossFit Crash",
+          "age": 28,
+          "heightIn": 73,
+          "weightLb": 220,
+          "overallRank": 6,
+          "overallPoints": 1059,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 12,
+              "points": 56,
+              "display": "07:55.00 (03:24)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 18,
+              "points": 36,
+              "display": "45:16",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 17,
+              "points": 18,
+              "display": "475 (1270)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 9,
+              "points": 34,
+              "display": "230 (1270)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 12,
+              "points": 28,
+              "display": "565 (1270)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 5,
+              "points": 84,
+              "display": "18:16.53",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 14,
+              "points": 48,
+              "display": "12:54.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 4,
+              "points": 88,
+              "display": "06:00.48",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 6,
+              "points": 40,
+              "display": "114' 6.75\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 5,
+              "points": 84,
+              "display": "14:40.02",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 17,
+              "points": 39,
+              "display": "02:51.10",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 3,
+              "points": 92,
+              "display": "05:08.23 (03:10.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 12,
+              "points": 28,
+              "display": "01:17.59",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 22,
+              "points": 24,
+              "display": "CAP+29 (08:50.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 19,
+              "points": 33,
+              "display": "2 (01:35.67)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 3,
+              "points": 92,
+              "display": "05:19.08 (03:27.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 3,
+              "points": 92,
+              "display": "03:39.81 (01:14.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 2,
+              "points": 96,
+              "display": "24:35.49",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 28,
+              "points": 2,
+              "display": "4 (01:50.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 15,
+              "points": 45,
+              "display": "07:11.96",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "469656",
+          "name": "Jeffrey Adler",
+          "country": "Canada",
+          "countryCode": "CA",
+          "affiliate": "CrossFit Wonderland",
+          "age": 32,
+          "heightIn": 69,
+          "weightLb": 197,
+          "overallRank": 7,
+          "overallPoints": 970,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 9,
+              "points": 68,
+              "display": "07:47.89 (03:29)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 4,
+              "points": 88,
+              "display": "40:27",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 19,
+              "points": 14,
+              "display": "475 (1220)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 21,
+              "points": 10,
+              "display": "215 (1220)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 19,
+              "points": 14,
+              "display": "530 (1220)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 25,
+              "points": 15,
+              "display": "19:57.65",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 8,
+              "points": 72,
+              "display": "12:20.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 14,
+              "points": 48,
+              "display": "07:09.71",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 16,
+              "points": 20,
+              "display": "110' 2\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 3,
+              "points": 92,
+              "display": "14:29.04",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 23,
+              "points": 21,
+              "display": "03:20.39",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 12,
+              "points": 56,
+              "display": "05:39.72 (03:25.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 7,
+              "points": 38,
+              "display": "01:16.12",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 9,
+              "points": 68,
+              "display": "12:51.91 (06:48.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 8,
+              "points": 72,
+              "display": "3 (01:29.10)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 13,
+              "points": 52,
+              "display": "05:48.53 (03:49.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 5,
+              "points": 84,
+              "display": "03:46.53 (02:57.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 11,
+              "points": 60,
+              "display": "25:29.96",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 17,
+              "points": 18,
+              "display": "11 (04:32.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 11,
+              "points": 60,
+              "display": "06:50.93",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "975774",
+          "name": "Roman Khrennikov",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "CrossFit Mayhem",
+          "age": 31,
+          "heightIn": 182,
+          "weightLb": 103,
+          "overallRank": 8,
+          "overallPoints": 946,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 15,
+              "points": 45,
+              "display": "08:01.00 (03:25)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 5,
+              "points": 84,
+              "display": "40:42",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 20,
+              "points": 12,
+              "display": "475 (1215)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 4,
+              "points": 44,
+              "display": "245 (1215)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 26,
+              "points": 4,
+              "display": "495 (1215)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 7,
+              "points": 76,
+              "display": "18:17.46",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 7,
+              "points": 76,
+              "display": "12:18.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 1,
+              "points": 100,
+              "display": "05:27.60",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 17,
+              "points": 18,
+              "display": "107' 10.25\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 4,
+              "points": 88,
+              "display": "14:34.51",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 24,
+              "points": 18,
+              "display": "03:47.64",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 21,
+              "points": 27,
+              "display": "05:57.36 (03:39.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 21,
+              "points": 10,
+              "display": "01:19.14",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 6,
+              "points": 80,
+              "display": "12:16.50 (06:21.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 23,
+              "points": 21,
+              "display": "1 (00:25.50)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 12,
+              "points": 56,
+              "display": "05:44.83 (03:38.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 17,
+              "points": 39,
+              "display": "04:23.57 (03:59.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 3,
+              "points": 92,
+              "display": "24:36.98",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 10,
+              "points": 32,
+              "display": "15 (04:34.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 22,
+              "points": 24,
+              "display": "08:30.46",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "686308",
+          "name": "Guilherme Malheiros",
+          "country": "Brazil",
+          "countryCode": "BR",
+          "affiliate": "CrossFit Mayhem",
+          "age": 26,
+          "heightIn": 177,
+          "weightLb": 88,
+          "overallRank": 9,
+          "overallPoints": 904,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 21,
+              "points": 27,
+              "display": "08:20.87 (03:36)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 30,
+              "points": 0,
+              "display": "55:58",
+              "valid": false
+            },
+            {
+              "ordinal": 3,
+              "rank": 2,
+              "points": 48,
+              "display": "550 (1335)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 17,
+              "points": 18,
+              "display": "215 (1335)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 7,
+              "points": 38,
+              "display": "570 (1335)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 22,
+              "points": 24,
+              "display": "19:31.55",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 15,
+              "points": 45,
+              "display": "13:12.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 6,
+              "points": 80,
+              "display": "06:22.52",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 1,
+              "points": 50,
+              "display": "123' 6.50\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 23,
+              "points": 21,
+              "display": "17:21.56",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 2,
+              "points": 96,
+              "display": "01:30.26",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 11,
+              "points": 60,
+              "display": "05:36.47 (03:41.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 2,
+              "points": 48,
+              "display": "01:13.31",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 23,
+              "points": 21,
+              "display": "CAP+31 (10:10.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 1,
+              "points": 100,
+              "display": "3 (00:21.27)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 15,
+              "points": 45,
+              "display": "05:57.04 (04:08.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 16,
+              "points": 42,
+              "display": "04:23.51 (03:59.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 23,
+              "points": 21,
+              "display": "26:15.16",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 16,
+              "points": 20,
+              "display": "11 (03:48.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 1,
+              "points": 100,
+              "display": "05:16.70",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "925870",
+          "name": "Moritz Fiebig",
+          "country": "Germany",
+          "countryCode": "DE",
+          "affiliate": null,
+          "age": 31,
+          "heightIn": 179,
+          "weightLb": 95,
+          "overallRank": 10,
+          "overallPoints": 898,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 7,
+              "points": 76,
+              "display": "07:41.00 (03:26)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 21,
+              "points": 27,
+              "display": "45:45",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 8,
+              "points": 36,
+              "display": "500 (1290)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 10,
+              "points": 32,
+              "display": "225 (1290)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 10,
+              "points": 32,
+              "display": "565 (1290)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 1,
+              "points": 100,
+              "display": "18:15.77",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 13,
+              "points": 52,
+              "display": "12:51.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 13,
+              "points": 52,
+              "display": "06:59.47",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 19,
+              "points": 14,
+              "display": "106' 0.25\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 21,
+              "points": 27,
+              "display": "17:02.88",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 22,
+              "points": 24,
+              "display": "03:19.10",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 24,
+              "points": 18,
+              "display": "CAP+3 (03:50.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 17,
+              "points": 18,
+              "display": "01:17.94",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 8,
+              "points": 72,
+              "display": "12:46.52 (07:06.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 11,
+              "points": 60,
+              "display": "2 (00:27.14)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 14,
+              "points": 48,
+              "display": "05:50.27 (03:52.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 8,
+              "points": 72,
+              "display": "03:55.83 (03:20.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 7,
+              "points": 76,
+              "display": "25:12.56",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 19,
+              "points": 14,
+              "display": "11 (04:37.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 14,
+              "points": 48,
+              "display": "07:07.42",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "676693",
+          "name": "Colten Mertens",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "CrossFit Teo",
+          "age": 28,
+          "heightIn": 64,
+          "weightLb": 190,
+          "overallRank": 11,
+          "overallPoints": 825,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 2,
+              "points": 96,
+              "display": "07:17.00 (03:28)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 28,
+              "points": 6,
+              "display": "51:21",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 1,
+              "points": 50,
+              "display": "555 (1380)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 1,
+              "points": 50,
+              "display": "260 (1380)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 8,
+              "points": 36,
+              "display": "565 (1380)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 30,
+              "points": 0,
+              "display": "21:48.03",
+              "valid": false
+            },
+            {
+              "ordinal": 7,
+              "rank": 11,
+              "points": 60,
+              "display": "12:42.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 26,
+              "points": 12,
+              "display": "08:18.83",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 29,
+              "points": 1,
+              "display": "89' 1.50\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 8,
+              "points": 72,
+              "display": "15:05.27",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 7,
+              "points": 76,
+              "display": "02:05.66",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 1,
+              "points": 100,
+              "display": "04:55.57 (03:06.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 30,
+              "points": 0,
+              "display": "01:33.67",
+              "valid": false
+            },
+            {
+              "ordinal": 14,
+              "rank": 26,
+              "points": 12,
+              "display": "CAP+38 (11:10.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 25,
+              "points": 15,
+              "display": "1 (00:26.81)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 4,
+              "points": 88,
+              "display": "05:21.44 (03:35.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 14,
+              "points": 48,
+              "display": "04:20.02 (03:47.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 27,
+              "points": 9,
+              "display": "26:39.78",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 21,
+              "points": 10,
+              "display": "11 (04:59.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 5,
+              "points": 84,
+              "display": "06:00.23",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "422637",
+          "name": "Dylan Hamming",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "8th Day CrossFit",
+          "age": 33,
+          "heightIn": 74,
+          "weightLb": 215,
+          "overallRank": 12,
+          "overallPoints": 816,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 23,
+              "points": 21,
+              "display": "08:24.00 (03:20)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 17,
+              "points": 39,
+              "display": "45:04",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 24,
+              "points": 6,
+              "display": "455 (1245)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 3,
+              "points": 46,
+              "display": "245 (1245)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 16,
+              "points": 20,
+              "display": "545 (1245)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 29,
+              "points": 3,
+              "display": "21:25.74",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 26,
+              "points": 12,
+              "display": "14:15.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 11,
+              "points": 60,
+              "display": "06:50.11",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 2,
+              "points": 48,
+              "display": "122' 2\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 7,
+              "points": 76,
+              "display": "15:03.30",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 10,
+              "points": 64,
+              "display": "02:19.22",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 19,
+              "points": 33,
+              "display": "05:51.36 (03:35.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 4,
+              "points": 44,
+              "display": "01:14.18",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 27,
+              "points": 9,
+              "display": "CAP+43 (11:34.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 6,
+              "points": 80,
+              "display": "3 (00:42.98)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 17,
+              "points": 39,
+              "display": "05:59.36 (03:53.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 12,
+              "points": 56,
+              "display": "04:15.35 (03:39.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 5,
+              "points": 84,
+              "display": "24:56.52",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 22,
+              "points": 8,
+              "display": "10 (04:52.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 9,
+              "points": 68,
+              "display": "06:33.07",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "479759",
+          "name": "Bayley Martin",
+          "country": "New Zealand",
+          "countryCode": "NZ",
+          "affiliate": "CrossFit Torian",
+          "age": 26,
+          "heightIn": 174,
+          "weightLb": 82,
+          "overallRank": 13,
+          "overallPoints": 804,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 10,
+              "points": 64,
+              "display": "07:49.00 (03:28)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 19,
+              "points": 33,
+              "display": "45:19",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 5,
+              "points": 42,
+              "display": "520 (1305)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 13,
+              "points": 26,
+              "display": "220 (1305)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 9,
+              "points": 34,
+              "display": "565 (1305)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 9,
+              "points": 68,
+              "display": "18:21.63",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 29,
+              "points": 3,
+              "display": "15:12.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 18,
+              "points": 36,
+              "display": "07:19.34",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 4,
+              "points": 44,
+              "display": "117' 7.75\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 24,
+              "points": 18,
+              "display": "17:35.09",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 13,
+              "points": 52,
+              "display": "02:28.37",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 10,
+              "points": 64,
+              "display": "05:35.32 (03:31.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 5,
+              "points": 42,
+              "display": "01:15.01",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 7,
+              "points": 76,
+              "display": "12:21.93 (06:39.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 3,
+              "points": 92,
+              "display": "3 (00:26.26)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 28,
+              "points": 6,
+              "display": "06:25.64 (04:08.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 22,
+              "points": 24,
+              "display": "04:27.00 (01:25.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 30,
+              "points": 0,
+              "display": "27:38.91",
+              "valid": false
+            },
+            {
+              "ordinal": 19,
+              "rank": 1,
+              "points": 50,
+              "display": "25 (04:59.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 20,
+              "points": 30,
+              "display": "07:56.95",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "1978208",
+          "name": "Victor Hoffer",
+          "country": "France",
+          "countryCode": "FR",
+          "affiliate": "CrossFit Grillen",
+          "age": 23,
+          "heightIn": 180,
+          "weightLb": 90,
+          "overallRank": 14,
+          "overallPoints": 775,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 14,
+              "points": 48,
+              "display": "08:00.74 (03:23)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 16,
+              "points": 42,
+              "display": "44:31",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 15,
+              "points": 22,
+              "display": "485 (1185)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 12,
+              "points": 28,
+              "display": "225 (1185)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 28,
+              "points": 2,
+              "display": "475 (1185)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 16,
+              "points": 42,
+              "display": "18:58.85",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 9,
+              "points": 68,
+              "display": "12:34.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 20,
+              "points": 30,
+              "display": "07:24.64",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 12,
+              "points": 28,
+              "display": "111' 10\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 22,
+              "points": 24,
+              "display": "17:04.33",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 1,
+              "points": 100,
+              "display": "01:05.62",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 6,
+              "points": 80,
+              "display": "05:19.79 (03:26.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 28,
+              "points": 2,
+              "display": "01:23.11",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 14,
+              "points": 48,
+              "display": "14:21.95 (07:53.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 16,
+              "points": 42,
+              "display": "2 (01:02.27)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 8,
+              "points": 72,
+              "display": "05:31.81 (03:36.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 27,
+              "points": 9,
+              "display": "04:51.23 (04:04.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 19,
+              "points": 33,
+              "display": "26:00.69",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 3,
+              "points": 46,
+              "display": "22 (04:44.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 27,
+              "points": 9,
+              "display": "09:58.84",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "947291",
+          "name": "Austin Hatfield",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "CrossFit Mayhem",
+          "age": 26,
+          "heightIn": 67,
+          "weightLb": 195,
+          "overallRank": 15,
+          "overallPoints": 762,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 11,
+              "points": 60,
+              "display": "07:49.09 (03:22)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 7,
+              "points": 76,
+              "display": "41:09",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 3,
+              "points": 46,
+              "display": "525 (1290)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 7,
+              "points": 38,
+              "display": "240 (1290)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 20,
+              "points": 12,
+              "display": "525 (1290)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 26,
+              "points": 12,
+              "display": "20:06.08",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 24,
+              "points": 18,
+              "display": "14:01.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 24,
+              "points": 18,
+              "display": "08:13.97",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 22,
+              "points": 8,
+              "display": "103' 5.25\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 9,
+              "points": 68,
+              "display": "15:12.86",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 12,
+              "points": 56,
+              "display": "02:28.33",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 13,
+              "points": 52,
+              "display": "05:40.25 (03:27.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 22,
+              "points": 8,
+              "display": "01:20.03",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 25,
+              "points": 15,
+              "display": "CAP+36 (09:25.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 15,
+              "points": 45,
+              "display": "2 (00:46.57)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 5,
+              "points": 84,
+              "display": "05:22.07 (03:38.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 4,
+              "points": 88,
+              "display": "03:45.98 (03:12.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 22,
+              "points": 24,
+              "display": "26:11.89",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 29,
+              "points": 1,
+              "display": "3 (03:31.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 19,
+              "points": 33,
+              "display": "07:38.92",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "897110",
+          "name": "Tudor Magda",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "SnoRidge CrossFit",
+          "age": 23,
+          "heightIn": 70,
+          "weightLb": 205,
+          "overallRank": 16,
+          "overallPoints": 757,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 16,
+              "points": 42,
+              "display": "08:01.20 (03:27)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 29,
+              "points": 3,
+              "display": "52:00",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 10,
+              "points": 32,
+              "display": "495 (1315)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 5,
+              "points": 42,
+              "display": "240 (1315)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 4,
+              "points": 44,
+              "display": "580 (1315)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 12,
+              "points": 56,
+              "display": "18:29.65",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 11,
+              "points": 60,
+              "display": "12:42.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 29,
+              "points": 3,
+              "display": "CAP+1",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 24,
+              "points": 6,
+              "display": "102' 10.75\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 29,
+              "points": 3,
+              "display": "19:14.67",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 9,
+              "points": 68,
+              "display": "02:09.07",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 16,
+              "points": 42,
+              "display": "05:41.90 (03:42.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 15,
+              "points": 22,
+              "display": "01:17.90",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 17,
+              "points": 39,
+              "display": "CAP+1 (08:17.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 2,
+              "points": 96,
+              "display": "3 (00:24.42)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 24,
+              "points": 18,
+              "display": "06:13.56 (04:10.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 25,
+              "points": 15,
+              "display": "04:40.83 (01:26.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 16,
+              "points": 42,
+              "display": "25:45.27",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 8,
+              "points": 36,
+              "display": "19 (04:59.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 4,
+              "points": 88,
+              "display": "06:00.02",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "158264",
+          "name": "Patrick Vellner",
+          "country": "Canada",
+          "countryCode": "CA",
+          "affiliate": null,
+          "age": 36,
+          "heightIn": 71,
+          "weightLb": 195,
+          "overallRank": 17,
+          "overallPoints": 751,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 22,
+              "points": 24,
+              "display": "08:21.00 (03:33)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 23,
+              "points": 21,
+              "display": "47:13",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 16,
+              "points": 20,
+              "display": "480 (1305)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 13,
+              "points": 26,
+              "display": "220 (1305)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 1,
+              "points": 50,
+              "display": "605 (1305)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 17,
+              "points": 39,
+              "display": "19:01.81",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 30,
+              "points": 0,
+              "display": "CAP+11",
+              "valid": false
+            },
+            {
+              "ordinal": 8,
+              "rank": 7,
+              "points": 76,
+              "display": "06:23.29",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 3,
+              "points": 46,
+              "display": "122' 0.75\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 19,
+              "points": 33,
+              "display": "16:48.62",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 16,
+              "points": 42,
+              "display": "02:38.96",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 8,
+              "points": 72,
+              "display": "05:29.27 (03:33.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 19,
+              "points": 14,
+              "display": "01:18.09",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 1,
+              "points": 100,
+              "display": "10:31.58 (05:37.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 27,
+              "points": 9,
+              "display": "1 (00:34.97)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 23,
+              "points": 21,
+              "display": "06:11.96 (03:57.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 11,
+              "points": 60,
+              "display": "04:14.43 (03:25.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 24,
+              "points": 18,
+              "display": "26:18.83",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 4,
+              "points": 44,
+              "display": "21 (04:39.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 18,
+              "points": 36,
+              "display": "07:33.54",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "2225448",
+          "name": "Nika Maisuradze",
+          "country": "Georgia",
+          "countryCode": "GE",
+          "affiliate": "CrossFit 148",
+          "age": 26,
+          "heightIn": 0,
+          "weightLb": 0,
+          "overallRank": 18,
+          "overallPoints": 745,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 25,
+              "points": 15,
+              "display": "08:26.97 (03:25)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 6,
+              "points": 80,
+              "display": "40:56",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 11,
+              "points": 30,
+              "display": "495 (1285)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 19,
+              "points": 14,
+              "display": "215 (1285)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 6,
+              "points": 40,
+              "display": "575 (1285)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 24,
+              "points": 18,
+              "display": "19:47.94",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 16,
+              "points": 42,
+              "display": "13:13.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 15,
+              "points": 45,
+              "display": "07:11.70",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 21,
+              "points": 10,
+              "display": "104' 8\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 12,
+              "points": 56,
+              "display": "15:38.86",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 11,
+              "points": 60,
+              "display": "02:28.26",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 15,
+              "points": 45,
+              "display": "05:41.11 (03:33.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 14,
+              "points": 24,
+              "display": "01:17.88",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 28,
+              "points": 6,
+              "display": "CAP+80 (09:16.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 26,
+              "points": 12,
+              "display": "1 (00:27.42)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 9,
+              "points": 68,
+              "display": "05:32.35 (03:40.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 18,
+              "points": 36,
+              "display": "04:23.93 (03:42.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 9,
+              "points": 68,
+              "display": "25:24.59",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 30,
+              "points": 0,
+              "display": "3 (04:50.00)",
+              "valid": false
+            },
+            {
+              "ordinal": 20,
+              "rank": 7,
+              "points": 76,
+              "display": "06:07.58",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "1967193",
+          "name": "Ty Jenkins",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "Table Rock CrossFit",
+          "age": 20,
+          "heightIn": 69,
+          "weightLb": 185,
+          "overallRank": 19,
+          "overallPoints": 713,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 27,
+              "points": 9,
+              "display": "08:37.00 (03:25)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 9,
+              "points": 68,
+              "display": "42:43",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 21,
+              "points": 10,
+              "display": "475 (1200)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 15,
+              "points": 22,
+              "display": "220 (1200)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 23,
+              "points": 7,
+              "display": "505 (1200)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 20,
+              "points": 30,
+              "display": "19:21.63",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 1,
+              "points": 100,
+              "display": "11:09.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 23,
+              "points": 21,
+              "display": "08:05.23",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 23,
+              "points": 7,
+              "display": "103' 3.75\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 18,
+              "points": 36,
+              "display": "16:45.45",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 25,
+              "points": 15,
+              "display": "03:55.35",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 25,
+              "points": 15,
+              "display": "CAP+3 (03:52.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 8,
+              "points": 36,
+              "display": "01:16.38",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 11,
+              "points": 60,
+              "display": "13:11.69 (07:16.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 9,
+              "points": 68,
+              "display": "3 (01:36.82)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 21,
+              "points": 27,
+              "display": "06:09.69 (04:03.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 21,
+              "points": 27,
+              "display": "04:26.25 (01:30.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 6,
+              "points": 80,
+              "display": "25:09.55",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 2,
+              "points": 48,
+              "display": "24 (04:56.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 21,
+              "points": 27,
+              "display": "08:16.71",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "680734",
+          "name": "Henrik Haapalainen",
+          "country": "Finland",
+          "countryCode": "FI",
+          "affiliate": null,
+          "age": 31,
+          "heightIn": 185,
+          "weightLb": 94,
+          "overallRank": 20,
+          "overallPoints": 674,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 18,
+              "points": 36,
+              "display": "08:16.00 (03:34)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 22,
+              "points": 24,
+              "display": "46:49",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 23,
+              "points": 7,
+              "display": "470 (1240)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 27,
+              "points": 3,
+              "display": "205 (1240)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 14,
+              "points": 24,
+              "display": "565 (1240)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 19,
+              "points": 33,
+              "display": "19:21.44",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 20,
+              "points": 30,
+              "display": "13:33.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 8,
+              "points": 72,
+              "display": "06:23.98",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 5,
+              "points": 42,
+              "display": "116' 1\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 30,
+              "points": 0,
+              "display": "20:02.57",
+              "valid": false
+            },
+            {
+              "ordinal": 11,
+              "rank": 4,
+              "points": 88,
+              "display": "02:03.19",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 17,
+              "points": 39,
+              "display": "05:43.58 (03:31.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 27,
+              "points": 3,
+              "display": "01:22.78",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 12,
+              "points": 56,
+              "display": "13:28.62 (07:32.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 29,
+              "points": 3,
+              "display": "1 (01:01.12)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 26,
+              "points": 12,
+              "display": "06:17.95 (04:01.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 2,
+              "points": 96,
+              "display": "03:38.09 (03:16.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 20,
+              "points": 30,
+              "display": "26:04.26",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 14,
+              "points": 24,
+              "display": "12 (04:56.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 13,
+              "points": 52,
+              "display": "07:01.52",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "310970",
+          "name": "Saxon Panchik",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "CrossFit Mentality",
+          "age": 30,
+          "heightIn": 69,
+          "weightLb": 185,
+          "overallRank": 21,
+          "overallPoints": 641,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 3,
+              "points": 92,
+              "display": "07:19.00 (03:34)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 11,
+              "points": 60,
+              "display": "43:00",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 25,
+              "points": 5,
+              "display": "455 (1140)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 30,
+              "points": 0,
+              "display": "185 (1140)",
+              "valid": false
+            },
+            {
+              "ordinal": 5,
+              "rank": 25,
+              "points": 5,
+              "display": "500 (1140)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 15,
+              "points": 45,
+              "display": "18:57.34",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 4,
+              "points": 88,
+              "display": "12:00.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 22,
+              "points": 24,
+              "display": "07:57.20",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 26,
+              "points": 4,
+              "display": "100' 7\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 15,
+              "points": 45,
+              "display": "16:20.63",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 18,
+              "points": 36,
+              "display": "02:59.04",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 14,
+              "points": 48,
+              "display": "05:40.80 (03:48.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 9,
+              "points": 34,
+              "display": "01:16.39",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 13,
+              "points": 52,
+              "display": "14:12.14 (08:13.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 28,
+              "points": 6,
+              "display": "1 (00:45.68)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 20,
+              "points": 30,
+              "display": "06:08.32 (04:01.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 24,
+              "points": 18,
+              "display": "04:35.19 (03:55.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 28,
+              "points": 6,
+              "display": "26:43.79",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 26,
+              "points": 4,
+              "display": "5 (04:52.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 17,
+              "points": 39,
+              "display": "07:29.63",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "1135386",
+          "name": "Aniol Ekai",
+          "country": "Spain",
+          "countryCode": "ES",
+          "affiliate": "CrossFit Zarautz",
+          "age": 29,
+          "heightIn": 187,
+          "weightLb": 96,
+          "overallRank": 22,
+          "overallPoints": 635,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 20,
+              "points": 30,
+              "display": "08:20.49 (03:22)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 13,
+              "points": 52,
+              "display": "43:19",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 13,
+              "points": 26,
+              "display": "485 (1280)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 8,
+              "points": 36,
+              "display": "230 (1280)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 11,
+              "points": 30,
+              "display": "565 (1280)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 14,
+              "points": 48,
+              "display": "18:53.69",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 25,
+              "points": 15,
+              "display": "14:11.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 30,
+              "points": 0,
+              "display": "CAP+13",
+              "valid": false
+            },
+            {
+              "ordinal": 9,
+              "rank": 7,
+              "points": 38,
+              "display": "114' 6.25\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 14,
+              "points": 48,
+              "display": "16:09.48",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 28,
+              "points": 6,
+              "display": "04:47.44",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 22,
+              "points": 24,
+              "display": "CAP+0 (03:41.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 11,
+              "points": 30,
+              "display": "01:17.12",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 29,
+              "points": 3,
+              "display": "CAP+86 (09:14.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 20,
+              "points": 30,
+              "display": "2 (02:01.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 10,
+              "points": 64,
+              "display": "05:37.24 (03:47.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 15,
+              "points": 45,
+              "display": "04:23.39 (03:49.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 14,
+              "points": 48,
+              "display": "25:43.64",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 24,
+              "points": 6,
+              "display": "5 (02:42.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 12,
+              "points": 56,
+              "display": "06:57.17",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "2064040",
+          "name": "Kalyan Souza",
+          "country": "Brazil",
+          "countryCode": "BR",
+          "affiliate": null,
+          "age": 25,
+          "heightIn": 184,
+          "weightLb": 97,
+          "overallRank": 23,
+          "overallPoints": 614,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 26,
+              "points": 12,
+              "display": "08:28.00",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 12,
+              "points": 56,
+              "display": "43:06",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 27,
+              "points": 3,
+              "display": "440 (1220)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 21,
+              "points": 10,
+              "display": "215 (1220)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 15,
+              "points": 22,
+              "display": "565 (1220)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 13,
+              "points": 52,
+              "display": "18:35.55",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 27,
+              "points": 9,
+              "display": "14:16.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 12,
+              "points": 56,
+              "display": "06:58.21",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 9,
+              "points": 34,
+              "display": "113' 11\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 17,
+              "points": 39,
+              "display": "16:42.41",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 26,
+              "points": 12,
+              "display": "03:57.98",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 28,
+              "points": 6,
+              "display": "CAP+7 (03:39.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 3,
+              "points": 46,
+              "display": "01:13.98",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 20,
+              "points": 30,
+              "display": "CAP+21 (09:29.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 5,
+              "points": 84,
+              "display": "3 (00:36.85)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 22,
+              "points": 24,
+              "display": "06:10.42 (04:00.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 29,
+              "points": 3,
+              "display": "05:29.53 (03:53.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 9,
+              "points": 68,
+              "display": "25:24.59",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 5,
+              "points": 42,
+              "display": "20 (04:52.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 28,
+              "points": 6,
+              "display": "CAP+1",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "771441",
+          "name": "Calum Clements",
+          "country": "Spain",
+          "countryCode": "ES",
+          "affiliate": null,
+          "age": 29,
+          "heightIn": 185,
+          "weightLb": 98,
+          "overallRank": 24,
+          "overallPoints": 603,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 4,
+              "points": 88,
+              "display": "07:34.74 (03:33)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 25,
+              "points": 15,
+              "display": "49:10",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 29,
+              "points": 1,
+              "display": "435 (1140)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 16,
+              "points": 20,
+              "display": "220 (1140)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 27,
+              "points": 3,
+              "display": "485 (1140)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 23,
+              "points": 21,
+              "display": "19:37.14",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 22,
+              "points": 24,
+              "display": "13:47.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 10,
+              "points": 64,
+              "display": "06:41.63",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 11,
+              "points": 30,
+              "display": "113' 4.75\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 27,
+              "points": 9,
+              "display": "18:19.92",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 27,
+              "points": 9,
+              "display": "04:30.52",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 18,
+              "points": 36,
+              "display": "05:44.55 (03:30.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 16,
+              "points": 20,
+              "display": "01:17.93",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 16,
+              "points": 42,
+              "display": "CAP+0 (08:58.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 18,
+              "points": 36,
+              "display": "2 (01:23.67)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 27,
+              "points": 9,
+              "display": "06:19.12 (04:16.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 10,
+              "points": 64,
+              "display": "04:02.37 (03:28.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 14,
+              "points": 48,
+              "display": "25:43.64",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 15,
+              "points": 22,
+              "display": "11 (03:37.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 16,
+              "points": 42,
+              "display": "07:13.83",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "1986035",
+          "name": "Quinn Robinson",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "CrossFit Trivium",
+          "age": 29,
+          "heightIn": 72,
+          "weightLb": 205,
+          "overallRank": 25,
+          "overallPoints": 515,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 30,
+              "points": 0,
+              "display": "09:45.32 (03:31)",
+              "valid": false
+            },
+            {
+              "ordinal": 2,
+              "rank": 15,
+              "points": 45,
+              "display": "43:55",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 9,
+              "points": 34,
+              "display": "500 (1240)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 20,
+              "points": 12,
+              "display": "215 (1240)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 21,
+              "points": 10,
+              "display": "525 (1240)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 27,
+              "points": 9,
+              "display": "20:19.83",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 16,
+              "points": 42,
+              "display": "13:13.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 16,
+              "points": 42,
+              "display": "07:15.62",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 13,
+              "points": 26,
+              "display": "111' 6\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 13,
+              "points": 52,
+              "display": "15:59.74",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 30,
+              "points": 0,
+              "display": "CAP+11",
+              "valid": false
+            },
+            {
+              "ordinal": 12,
+              "rank": 29,
+              "points": 3,
+              "display": "CAP+7 (04:01.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 6,
+              "points": 40,
+              "display": "01:15.39",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 24,
+              "points": 18,
+              "display": "CAP+31 (10:17.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 7,
+              "points": 76,
+              "display": "3 (01:25.31)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 18,
+              "points": 36,
+              "display": "06:00.16 (03:58.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 23,
+              "points": 21,
+              "display": "04:34.83 (01:28.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 21,
+              "points": 27,
+              "display": "26:09.71",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 23,
+              "points": 7,
+              "display": "7 (04:25.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 25,
+              "points": 15,
+              "display": "09:35.53",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "1285760",
+          "name": "Ben Fowler",
+          "country": "New Zealand",
+          "countryCode": "NZ",
+          "affiliate": "CrossFit Selwyn",
+          "age": 25,
+          "heightIn": 178,
+          "weightLb": 83,
+          "overallRank": 26,
+          "overallPoints": 513,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 19,
+              "points": 33,
+              "display": "08:17.04 (03:20)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 20,
+              "points": 30,
+              "display": "45:25",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 30,
+              "points": 0,
+              "display": "425 (1115)",
+              "valid": false
+            },
+            {
+              "ordinal": 4,
+              "rank": 23,
+              "points": 7,
+              "display": "215 (1115)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 29,
+              "points": 1,
+              "display": "475 (1115)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 11,
+              "points": 60,
+              "display": "18:29.52",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 21,
+              "points": 27,
+              "display": "13:45.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 19,
+              "points": 33,
+              "display": "07:22.99",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 30,
+              "points": 0,
+              "display": "86' 10.50\"",
+              "valid": false
+            },
+            {
+              "ordinal": 10,
+              "rank": 16,
+              "points": 42,
+              "display": "16:40.84",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 3,
+              "points": 92,
+              "display": "01:50.18",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 27,
+              "points": 9,
+              "display": "CAP+6 (03:54.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 25,
+              "points": 5,
+              "display": "01:20.93",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 30,
+              "points": 0,
+              "display": "CAP+102 (10:47.00)",
+              "valid": false
+            },
+            {
+              "ordinal": 15,
+              "rank": 24,
+              "points": 18,
+              "display": "1 (00:26.20)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 19,
+              "points": 33,
+              "display": "06:07.73 (04:00.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 20,
+              "points": 30,
+              "display": "04:26.04 (03:45.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 12,
+              "points": 56,
+              "display": "25:36.63",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 18,
+              "points": 16,
+              "display": "11 (04:34.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 23,
+              "points": 21,
+              "display": "08:51.58",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "162712",
+          "name": "Spencer Panchik",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "CrossFit Mentality",
+          "age": 30,
+          "heightIn": 68,
+          "weightLb": 190,
+          "overallRank": 27,
+          "overallPoints": 512,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 13,
+              "points": 52,
+              "display": "07:59.43",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 26,
+              "points": 12,
+              "display": "49:26",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 12,
+              "points": 28,
+              "display": "490 (1200)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 24,
+              "points": 6,
+              "display": "210 (1200)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 24,
+              "points": 6,
+              "display": "500 (1200)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 18,
+              "points": 36,
+              "display": "19:02.65",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 16,
+              "points": 42,
+              "display": "13:13.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 25,
+              "points": 15,
+              "display": "08:16.74",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 20,
+              "points": 12,
+              "display": "104' 10.50\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 26,
+              "points": 12,
+              "display": "18:04.51",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 20,
+              "points": 30,
+              "display": "03:09.48",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 20,
+              "points": 30,
+              "display": "05:56.21 (03:44.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 20,
+              "points": 12,
+              "display": "01:18.41",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 5,
+              "points": 84,
+              "display": "11:59.50 (06:30.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 10,
+              "points": 64,
+              "display": "3 (02:05.15)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 29,
+              "points": 3,
+              "display": "06:34.98 (04:17.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 26,
+              "points": 12,
+              "display": "04:44.64 (04:01.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 26,
+              "points": 12,
+              "display": "26:34.76",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 13,
+              "points": 26,
+              "display": "13 (04:38.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 24,
+              "points": 18,
+              "display": "09:34.77",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "843041",
+          "name": "Nick Mathew",
+          "country": "United States",
+          "countryCode": "US",
+          "affiliate": "Tonka CrossFit",
+          "age": 32,
+          "heightIn": 69,
+          "weightLb": 200,
+          "overallRank": 28,
+          "overallPoints": 479,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 29,
+              "points": 3,
+              "display": "09:39.00 (03:32)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 24,
+              "points": 18,
+              "display": "47:51",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 4,
+              "points": 44,
+              "display": "520 (1320)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 18,
+              "points": 16,
+              "display": "215 (1320)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 3,
+              "points": 46,
+              "display": "585 (1320)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 21,
+              "points": 27,
+              "display": "19:29.68",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 28,
+              "points": 6,
+              "display": "15:05.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 28,
+              "points": 6,
+              "display": "09:35.99",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 27,
+              "points": 3,
+              "display": "98' 11\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 20,
+              "points": 30,
+              "display": "16:57.01",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 21,
+              "points": 27,
+              "display": "03:14.43",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 23,
+              "points": 21,
+              "display": "CAP+2 (03:56.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 24,
+              "points": 6,
+              "display": "01:20.81",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 18,
+              "points": 36,
+              "display": "CAP+1 (08:54.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 13,
+              "points": 52,
+              "display": "2 (00:31.90)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 25,
+              "points": 15,
+              "display": "06:15.92 (04:11.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 9,
+              "points": 68,
+              "display": "03:58.48 (03:25.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 25,
+              "points": 15,
+              "display": "26:24.75",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 12,
+              "points": 28,
+              "display": "14 (04:25.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 26,
+              "points": 12,
+              "display": "09:50.62",
+              "valid": true
+            }
+          ]
+        },
+        {
+          "competitorId": "1774373",
+          "name": "Luis Cuellar",
+          "country": "Spain",
+          "countryCode": "ES",
+          "affiliate": null,
+          "age": 24,
+          "heightIn": 0,
+          "weightLb": 0,
+          "overallRank": 29,
+          "overallPoints": 456,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 24,
+              "points": 18,
+              "display": "08:24.62 (08:25)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 14,
+              "points": 48,
+              "display": "43:30",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 22,
+              "points": 8,
+              "display": "475 (1175)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 29,
+              "points": 1,
+              "display": "185 (1175)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 22,
+              "points": 8,
+              "display": "515 (1175)",
+              "valid": true
+            },
+            {
+              "ordinal": 6,
+              "rank": 10,
+              "points": 64,
+              "display": "18:28.14",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 5,
+              "points": 84,
+              "display": "12:04.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 21,
+              "points": 27,
+              "display": "07:51.43",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 14,
+              "points": 24,
+              "display": "111' 3\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 25,
+              "points": 15,
+              "display": "17:49.10",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 29,
+              "points": 3,
+              "display": "CAP+1",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 26,
+              "points": 12,
+              "display": "CAP+5 (03:40.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 13,
+              "rank": 26,
+              "points": 4,
+              "display": "01:22.14",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 21,
+              "points": 27,
+              "display": "CAP+26 (09:01.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 21,
+              "points": 27,
+              "display": "1 (00:24.02)",
+              "valid": true
+            },
+            {
+              "ordinal": 16,
+              "rank": 16,
+              "points": 42,
+              "display": "05:57.60 (03:49.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 17,
+              "rank": 30,
+              "points": 0,
+              "display": "CAP+3 (05:11.00)",
+              "valid": false
+            },
+            {
+              "ordinal": 18,
+              "rank": 17,
+              "points": 39,
+              "display": "25:46.66",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 25,
+              "points": 5,
+              "display": "5 (02:54.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 30,
+              "points": 0,
+              "display": "CAP+29",
+              "valid": false
+            }
+          ]
+        },
+        {
+          "competitorId": "1398324",
+          "name": "Benjamin Reyes",
+          "country": "Chile",
+          "countryCode": "CL",
+          "affiliate": null,
+          "age": 21,
+          "heightIn": 178,
+          "weightLb": 91,
+          "overallRank": 30,
+          "overallPoints": 160,
+          "status": "ACT",
+          "scores": [
+            {
+              "ordinal": 1,
+              "rank": 28,
+              "points": 6,
+              "display": "09:31.40 (09:30)",
+              "valid": true
+            },
+            {
+              "ordinal": 2,
+              "rank": 27,
+              "points": 9,
+              "display": "50:13",
+              "valid": true
+            },
+            {
+              "ordinal": 3,
+              "rank": 28,
+              "points": 2,
+              "display": "440 (1055)",
+              "valid": true
+            },
+            {
+              "ordinal": 4,
+              "rank": 25,
+              "points": 5,
+              "display": "210 (1055)",
+              "valid": true
+            },
+            {
+              "ordinal": 5,
+              "rank": 30,
+              "points": 0,
+              "display": "405 (1055)",
+              "valid": false
+            },
+            {
+              "ordinal": 6,
+              "rank": 28,
+              "points": 6,
+              "display": "20:35.40",
+              "valid": true
+            },
+            {
+              "ordinal": 7,
+              "rank": 23,
+              "points": 21,
+              "display": "14:00.00",
+              "valid": true
+            },
+            {
+              "ordinal": 8,
+              "rank": 27,
+              "points": 9,
+              "display": "08:58.27",
+              "valid": true
+            },
+            {
+              "ordinal": 9,
+              "rank": 28,
+              "points": 2,
+              "display": "90' 3.50\"",
+              "valid": true
+            },
+            {
+              "ordinal": 10,
+              "rank": 28,
+              "points": 6,
+              "display": "18:33.33",
+              "valid": true
+            },
+            {
+              "ordinal": 11,
+              "rank": 15,
+              "points": 45,
+              "display": "02:38.43",
+              "valid": true
+            },
+            {
+              "ordinal": 12,
+              "rank": 30,
+              "points": 0,
+              "display": "CAP+8 (04:21.00)",
+              "valid": false
+            },
+            {
+              "ordinal": 13,
+              "rank": 29,
+              "points": 1,
+              "display": "01:28.68",
+              "valid": true
+            },
+            {
+              "ordinal": 14,
+              "rank": 19,
+              "points": 33,
+              "display": "CAP+3 (08:51.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 15,
+              "rank": 30,
+              "points": 0,
+              "display": "1 (01:01.47)",
+              "valid": false
+            },
+            {
+              "ordinal": 16,
+              "rank": 30,
+              "points": 0,
+              "display": "06:39.71 (04:30.00)",
+              "valid": false
+            },
+            {
+              "ordinal": 17,
+              "rank": 28,
+              "points": 6,
+              "display": "05:20.49 (01:44.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 18,
+              "rank": 29,
+              "points": 3,
+              "display": "26:49.79",
+              "valid": true
+            },
+            {
+              "ordinal": 19,
+              "rank": 27,
+              "points": 3,
+              "display": "4 (00:29.00)",
+              "valid": true
+            },
+            {
+              "ordinal": 20,
+              "rank": 29,
+              "points": 3,
+              "display": "CAP+15",
               "valid": true
             }
           ]
