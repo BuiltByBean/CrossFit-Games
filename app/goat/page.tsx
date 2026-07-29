@@ -7,8 +7,13 @@ export default async function GoatPage() {
   const a = await getAnalysis();
   const { weights, minAppearances } = a.methodology;
 
-  // Where the three models disagree most — the genuinely contested careers
-  const contested = [...a.goat].sort((x, y) => y.consensus!.spread - x.consensus!.spread).slice(0, 5);
+  // Where the three models disagree most, among careers with a real claim to
+  // the top. Spread across the whole field is dominated by mid-pack athletes
+  // with two appearances, which is noise rather than a contested verdict.
+  const contested = [...a.goat]
+    .slice(0, 30)
+    .sort((x, y) => y.consensus!.spread - x.consensus!.spread)
+    .slice(0, 5);
 
   return (
     <>

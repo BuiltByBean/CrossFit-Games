@@ -16,9 +16,14 @@
     "db:setup": "npm run db:push && npm run db:seed"
   },
   "dependencies": {
-    "next": "15.1.6",
+    "next": "^15.5.22",
     "react": "19.0.0",
     "react-dom": "19.0.0"
+  },
+  "//overrides": "Both are transitives of next that ship versions with advisories Railway's scanner blocks on. sharp is an optional dep and unused here (no next/image); postcss is pinned by next to 8.4.31 but 8.x is API-stable, so forcing the patched line is safe. Drop these once next ships them itself.",
+  "overrides": {
+    "sharp": "^0.35.3",
+    "postcss": "^8.5.25"
   },
   "devDependencies": {
     "@prisma/client": "6.3.1",
