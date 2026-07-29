@@ -13,7 +13,7 @@ all 16 Games ever held and win 10 of them. Rich Froning is the only athlete clos
 |---|---|
 | **16** Games | 2011–2026 |
 | **218** events | 217 domain-tagged, 1 excluded (an aggregate column, not a real event) |
-| **347** athletes | 136 with enough appearances to rank |
+| **342** athletes | 136 with enough appearances to rank |
 | **7,625** event results | every man, every event, every year |
 | **11** fitness domains | endurance, running, swimming, machines, sprint, max strength, weightlifting, gymnastics, odd object, skill, grip |
 
@@ -56,6 +56,19 @@ The one genuinely subjective input lives in a single file:
 Weights are normalised to sum to 1.0, so write them as rough proportions. Anything not listed
 falls through to the automatic classifier in `scripts/lib/domains.mjs` and is flagged
 `inferred` in the UI. Edit, run `npm run build:data`, and the whole analysis regenerates.
+
+### Split athlete identities
+
+CrossFit occasionally reissues an athlete a new `competitorId`, which splits one career
+across several records — and because short fragments fall below the minimum-appearances
+threshold, the athlete's best season can vanish from the ranking entirely. Josh Bridges'
+2011 runner-up finish was recorded under a different id from the rest of his career.
+
+[`data/athlete-aliases.json`](data/athlete-aliases.json) maps duplicates onto a canonical id,
+with the evidence for each merge. `npm run fetch` reports any suspected split not listed
+there — same name, different ids, no overlapping years — so new ones surface instead of
+sitting unnoticed. The fetch also aborts if merging ever puts one athlete in a year twice,
+which would mean two different people were being collapsed into one.
 
 ## Railway Postgres
 

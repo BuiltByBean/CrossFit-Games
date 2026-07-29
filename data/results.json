@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T17:46:07.472Z",
+  "generatedAt": "2026-07-29T18:07:52.553Z",
   "seasons": [
     {
       "competitorId": "11435",
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "competitorId": "3180",
+      "competitorId": "124483",
       "year": 2011,
       "finish": 2,
       "fieldSize": 49,
@@ -9963,7 +9963,7 @@
       ]
     },
     {
-      "competitorId": "163784",
+      "competitorId": "11451",
       "year": 2013,
       "finish": 14,
       "fieldSize": 47,
@@ -10403,7 +10403,7 @@
       ]
     },
     {
-      "competitorId": "99039",
+      "competitorId": "1690",
       "year": 2013,
       "finish": 18,
       "fieldSize": 47,
@@ -11393,7 +11393,7 @@
       ]
     },
     {
-      "competitorId": "145925",
+      "competitorId": "36154",
       "year": 2013,
       "finish": 27,
       "fieldSize": 47,
@@ -20813,7 +20813,7 @@
       ]
     },
     {
-      "competitorId": "262945",
+      "competitorId": "11451",
       "year": 2015,
       "finish": 24,
       "fieldSize": 40,

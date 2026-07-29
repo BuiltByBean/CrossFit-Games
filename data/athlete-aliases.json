@@ -1,0 +1,41 @@
+{
+  "$comment": [
+    "CrossFit sometimes issues an athlete a new competitorId, which splits one",
+    "career across several records and silently drops the shorter fragments below",
+    "the minimum-appearances threshold. This maps duplicate ids onto a canonical",
+    "one (normally the id with the most appearances).",
+    "",
+    "Only merge when the evidence is strong: the years must not overlap (nobody",
+    "competes twice in the same year), and height, age progression and affiliate",
+    "should line up. `npm run fetch` reports any suspected split that is not",
+    "listed here, so new ones surface rather than sitting unnoticed."
+  ],
+
+  "aliases": {
+    "3180": {
+      "canonical": "124483",
+      "athlete": "Josh Bridges",
+      "why": "2011 (2nd, 3 event wins) was recorded under a separate id. Age 28 in 2011 fits 30 in 2013. The 2011 profile's 71 in / 215 lb is bad data — the later record's 65 in / 173 lb matches him."
+    },
+    "163784": {
+      "canonical": "11451",
+      "athlete": "Graham Holmberg",
+      "why": "2013 fragment. Same 71 in height and CrossFit Grandview affiliate as 2011-12; age 26 in 2012 to 28 in 2013 fits."
+    },
+    "262945": {
+      "canonical": "11451",
+      "athlete": "Graham Holmberg",
+      "why": "2015 fragment, third id for the same athlete. Same 71 in height, age 30 in 2015 fits, affiliate moved Grandview to Hilliard (both Ohio)."
+    },
+    "145925": {
+      "canonical": "36154",
+      "athlete": "Aja Barto",
+      "why": "2013 fragment. Identical 77 in height and Behemoth CrossFit affiliate; age 24 in 2012 to 26 in 2013 fits."
+    },
+    "99039": {
+      "canonical": "1690",
+      "athlete": "Travis Mayer",
+      "why": "2013 fragment. Age 22 in 2013 to 23 in 2014 fits. The 2013 record's 6 in height is a data-entry error."
+    }
+  }
+}

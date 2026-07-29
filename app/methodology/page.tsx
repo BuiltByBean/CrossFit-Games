@@ -149,6 +149,12 @@ export default async function MethodologyPage() {
               year was actually ranked.
             </li>
             <li>
+              CrossFit sometimes reissues an athlete a new competitor id, splitting one career across
+              several records. Five such duplicates are merged from a curated alias file, and the
+              fetch reports any new suspect — same name, different ids, no overlapping years — rather
+              than silently dropping a fragment below the ranking threshold.
+            </li>
+            <li>
               Only Individual Men are analysed, as scoped. The pipeline takes a division id, so women
               and teams are a one-line change.
             </li>

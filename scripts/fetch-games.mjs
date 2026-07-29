@@ -12,7 +12,7 @@
  * division. After filtering, its order matches the leaderboard `ordinals`
  * 1:1 for all years 2011-2025 (verified by assertion below).
  */
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -125,9 +125,69 @@ function normaliseAthlete(row) {
   };
 }
 
+/**
+ * Flags athletes who look like one career split across several competitorIds:
+ * same name (allowing for nickname forms), different ids, no overlapping years.
+ * Anything already merged via the alias file is ignored.
+ */
+const NICKNAMES = {
+  josh: 'joshua', rich: 'richard', ricky: 'richard', matt: 'mathew', mike: 'michael',
+  dan: 'daniel', alex: 'alexander', ben: 'benjamin', tim: 'timothy', nick: 'nicholas',
+  chris: 'christopher', sam: 'samuel', jon: 'jonathan', tom: 'thomas', rob: 'robert',
+  pat: 'patrick', dave: 'david', joe: 'joseph', andy: 'andrew', zach: 'zachary',
+  jake: 'jacob', will: 'william', tony: 'anthony', greg: 'gregory', jeff: 'jeffrey',
+};
+
+function reportSuspectedSplits(years) {
+  const byId = new Map();
+  for (const y of years) {
+    for (const a of y.athletes) {
+      if (!byId.has(a.competitorId)) byId.set(a.competitorId, { id: a.competitorId, name: a.name, years: [] });
+      byId.get(a.competitorId).years.push(y.year);
+    }
+  }
+
+  const normalise = (s) =>
+    s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/[^a-z ]/g, '').replace(/\b(jr|sr|ii|iii)\b/g, '').trim().replace(/\s+/g, ' ');
+
+  const groups = new Map();
+  for (const a of byId.values()) {
+    const parts = normalise(a.name).split(' ');
+    if (parts.length < 2) continue;
+    const first = parts[0];
+    const key = `${NICKNAMES[first] ?? first}|${parts[parts.length - 1]}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(a);
+  }
+
+  const suspects = [];
+  for (const list of groups.values()) {
+    if (list.length < 2) continue;
+    // two people of the same name in the same year are two people, not one split
+    const allYears = list.flatMap((a) => a.years);
+    if (new Set(allYears).size !== allYears.length) continue;
+    suspects.push(list);
+  }
+
+  if (suspects.length) {
+    console.log('\n⚠ Suspected split identities not covered by data/athlete-aliases.json:');
+    for (const list of suspects) {
+      console.log(`   ${list[0].name}`);
+      for (const a of list) console.log(`     id ${a.id} — ${a.years.join(', ')}`);
+    }
+    console.log('   Verify against height/age/affiliate, then add to the alias file.\n');
+  }
+}
+
 async function main() {
   await mkdir(join(ROOT, 'data', 'raw'), { recursive: true });
   const years = [];
+
+  const { aliases } = JSON.parse(
+    await readFile(join(ROOT, 'data', 'athlete-aliases.json'), 'utf8'),
+  );
+  const canonicalId = (id) => aliases[id]?.canonical ?? id;
 
   const lastYear = await discoverLastYear();
   console.log(`Latest Games with results: ${lastYear}\n`);
@@ -143,7 +203,21 @@ async function main() {
       );
     }
 
-    const athletes = rows.map(normaliseAthlete).filter((a) => a.competitorId);
+    const athletes = rows
+      .map(normaliseAthlete)
+      .filter((a) => a.competitorId)
+      .map((a) => ({ ...a, competitorId: canonicalId(a.competitorId) }));
+
+    const seen = new Set();
+    for (const a of athletes) {
+      if (seen.has(a.competitorId)) {
+        throw new Error(
+          `${year}: ${a.name} (${a.competitorId}) appears twice after alias merging — ` +
+            `two different athletes are being merged, check data/athlete-aliases.json.`,
+        );
+      }
+      seen.add(a.competitorId);
+    }
 
     years.push({
       year,
@@ -172,10 +246,13 @@ async function main() {
 
   const totalEvents = years.reduce((n, y) => n + y.events.length, 0);
   const athleteIds = new Set(years.flatMap((y) => y.athletes.map((a) => a.competitorId)));
+  const merged = Object.keys(aliases).length;
   console.log(
     `\nWrote data/games.json — ${years.length} years, ${totalEvents} events, ` +
-      `${athleteIds.size} unique athletes.`,
+      `${athleteIds.size} unique athletes (${merged} duplicate ids merged).`,
   );
+
+  reportSuspectedSplits(years);
 }
 
 main().catch((err) => {
