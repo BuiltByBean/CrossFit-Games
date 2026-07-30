@@ -158,6 +158,30 @@ export interface AthleteIndexEntry {
   goatRank: number | null;
 }
 
+export interface MovementLeader {
+  competitorId: string;
+  name: string;
+  events: number;
+  eventWins: number;
+  meanPercentile: number;
+}
+
+export interface Movement {
+  key: string;
+  label: string;
+  category: string;
+  eventCount: number;
+  firstYear: number;
+  lastYear: number;
+  yearsSeen: number;
+  byYear: Record<number, number>;
+  domainMix: DomainWeights;
+  events: { year: number; ordinal: number; name: string }[];
+  leaders: MovementLeader[];
+  laggards: MovementLeader[];
+  rankedCount: number;
+}
+
 export interface Analysis {
   generatedAt: string;
   source: string;
@@ -173,6 +197,10 @@ export interface Analysis {
     transplant: { cohort: number; solo: string; headToHead: string };
   };
   years: YearSummary[];
+  movements: Movement[];
+  movementCategories: Record<string, { label: string; color: string }>;
+  movementMixByYear: { year: number; total: number; mix: Record<string, number> }[];
+  movementMinEvents: number;
   goat: Career[];
   allAthletes: AthleteIndexEntry[];
 }

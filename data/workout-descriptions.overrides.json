@@ -1,0 +1,9 @@
+{
+  "$comment": [
+    "Descriptions for events whose games.crossfit.com workout page renders empty.",
+    "Keyed '<year>|<leaderboard event name>'. Sourced from the published workout",
+    "page for that event and used verbatim by scripts/tag-movements.mjs."
+  ],
+
+  "2026|The Hopper 2026": "3 rounds for time of:\n21 toes-to-bars\n7 unbroken power snatches\n7 unbroken hang snatches\n7 unbroken squat snatches\nMen: 95 lb"
+}

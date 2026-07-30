@@ -8,9 +8,11 @@
     "build": "next build",
     "start": "next start",
     "fetch": "node scripts/fetch-games.mjs",
+    "fetch:workouts": "node scripts/fetch-workouts.mjs",
     "tag": "node scripts/tag-domains.mjs",
+    "tag:movements": "node scripts/tag-movements.mjs",
     "analyze": "node scripts/analyze.mjs",
-    "build:data": "npm run fetch && npm run tag && npm run analyze",
+    "build:data": "npm run fetch && npm run fetch:workouts && npm run tag && npm run tag:movements && npm run analyze",
     "db:push": "prisma db push",
     "db:seed": "node scripts/seed.mjs",
     "db:setup": "npm run db:push && npm run db:seed"

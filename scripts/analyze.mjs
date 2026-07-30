@@ -20,6 +20,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DOMAINS, DOMAIN_KEYS, parseSeconds } from './lib/domains.mjs';
 import { adjustProbability, estimateFieldStrength } from './lib/field-strength.mjs';
+import { MOVEMENT_CATEGORIES, MOVEMENTS } from './lib/movements.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CLAMP_Z = 3;
@@ -571,6 +572,107 @@ async function main() {
     };
   });
 
+  // ---- movement analysis -------------------------------------------------
+  // Every event carries the movements parsed from its published description.
+  // An athlete's standing in a movement is their mean percentile across the
+  // events that contained it, era-adjusted like everything else.
+  const MIN_MOVEMENT_EVENTS = 4;
+  const movementIndex = new Map();
+  // Season rows carry that year's spelling ("Rich Froning"); careers hold the
+  // canonical one, so movement tables agree with the rest of the site.
+  const canonicalName = new Map([...careers.values()].map((c) => [c.competitorId, c.name]));
+
+  for (const y of dataset.years) {
+    const s = strength.get(y.year) ?? 0;
+    for (const ev of y.events) {
+      if (ev.exclude) continue;
+      for (const key of ev.movements ?? []) {
+        if (!movementIndex.has(key)) {
+          movementIndex.set(key, { key, events: [], byYear: new Map(), domains: {}, athletes: new Map() });
+        }
+        const m = movementIndex.get(key);
+        m.events.push({ year: y.year, ordinal: ev.ordinal, name: ev.name });
+        m.byYear.set(y.year, (m.byYear.get(y.year) ?? 0) + 1);
+        for (const [d, w] of Object.entries(ev.domains ?? {})) {
+          m.domains[d] = (m.domains[d] ?? 0) + w;
+        }
+
+        for (const [, r] of yearResults.get(y.year) ?? []) {
+          const hit = r.events.find((e) => e.ordinal === ev.ordinal);
+          if (!hit || hit.percentile == null) continue;
+          if (!m.athletes.has(r.competitorId)) {
+            m.athletes.set(r.competitorId, {
+              name: canonicalName.get(r.competitorId) ?? r.name,
+              scores: [],
+              wins: 0,
+            });
+          }
+          const rec = m.athletes.get(r.competitorId);
+          rec.scores.push(adjustProbability(hit.percentile, s));
+          if (hit.rank === 1) rec.wins += 1;
+        }
+      }
+    }
+  }
+
+  const movements = [...movementIndex.values()]
+    .map((m) => {
+      const meta = MOVEMENTS.find((x) => x.key === m.key);
+      const totalWeight = Object.values(m.domains).reduce((a, b) => a + b, 0) || 1;
+      const ranked = [...m.athletes.entries()]
+        .map(([competitorId, rec]) => ({
+          competitorId,
+          name: rec.name,
+          events: rec.scores.length,
+          eventWins: rec.wins,
+          meanPercentile: round(mean(rec.scores)),
+        }))
+        .filter((r) => r.events >= MIN_MOVEMENT_EVENTS)
+        .sort((a, b) => b.meanPercentile - a.meanPercentile);
+
+      const years = [...m.byYear.keys()].sort((a, b) => a - b);
+      return {
+        key: m.key,
+        label: meta?.label ?? m.key,
+        category: meta?.category ?? 'other',
+        eventCount: m.events.length,
+        firstYear: years[0],
+        lastYear: years[years.length - 1],
+        yearsSeen: years.length,
+        byYear: Object.fromEntries([...m.byYear.entries()].sort((a, b) => a[0] - b[0])),
+        domainMix: Object.fromEntries(
+          Object.entries(m.domains)
+            .map(([d, w]) => [d, round(w / totalWeight)])
+            .filter(([, w]) => w > 0)
+            .sort((a, b) => b[1] - a[1]),
+        ),
+        events: m.events,
+        leaders: ranked.slice(0, 8),
+        laggards: ranked.slice(-5).reverse(),
+        rankedCount: ranked.length,
+      };
+    })
+    .sort((a, b) => b.eventCount - a.eventCount);
+
+  // Movement-category mix per year, for the stacked chart
+  const movementMixByYear = dataset.years.map((y) => {
+    const counts = {};
+    let total = 0;
+    for (const ev of y.events) {
+      if (ev.exclude) continue;
+      for (const key of ev.movements ?? []) {
+        const cat = MOVEMENTS.find((x) => x.key === key)?.category ?? 'other';
+        counts[cat] = (counts[cat] ?? 0) + 1;
+        total += 1;
+      }
+    }
+    return {
+      year: y.year,
+      total,
+      mix: Object.fromEntries(Object.entries(counts).map(([k, v]) => [k, round(v / (total || 1))])),
+    };
+  });
+
   const out = {
     generatedAt: new Date().toISOString(),
     source: dataset.source,
@@ -601,6 +703,10 @@ async function main() {
       },
     },
     years: yearSummaries,
+    movements,
+    movementCategories: MOVEMENT_CATEGORIES,
+    movementMixByYear,
+    movementMinEvents: MIN_MOVEMENT_EVENTS,
     goat: eligible,
     allAthletes: [...careers.values()].map((c) => ({
       competitorId: c.competitorId,

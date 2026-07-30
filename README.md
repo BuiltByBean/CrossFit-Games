@@ -16,6 +16,7 @@ all 16 Games ever held and win 10 of them. Rich Froning is the only athlete clos
 | **342** athletes | 136 with enough appearances to rank |
 | **7,625** event results | every man, every event, every year |
 | **11** fitness domains | endurance, running, swimming, machines, sprint, max strength, weightlifting, gymnastics, odd object, skill, grip |
+| **74** movements | parsed from the published workout descriptions, 607 appearances |
 
 ## Quick start
 
@@ -38,8 +39,10 @@ Runs three steps, each independently re-runnable:
 | Script | Does |
 |---|---|
 | `npm run fetch` | Pulls every year from the public games.crossfit.com API into `data/games.json`. Discovers the latest completed Games automatically — set `LAST_YEAR` to pin it |
-| `npm run tag` | Applies fitness-domain weights to all 198 events |
-| `npm run analyze` | Computes the three models, consensus GOAT ranking and era transplants |
+| `npm run fetch:workouts` | Scrapes the published workout descriptions, which the API never exposes |
+| `npm run tag` | Applies fitness-domain weights to every event |
+| `npm run tag:movements` | Matches descriptions to events and extracts the movements in each |
+| `npm run analyze` | Computes the three models, consensus GOAT ranking, era transplants and movement analysis |
 
 `fetch` asserts that each year's event count matches its leaderboard score columns and aborts
 if they ever disagree — without that check, every score would silently attach to the wrong event.
@@ -69,6 +72,29 @@ with the evidence for each merge. `npm run fetch` reports any suspected split no
 there — same name, different ids, no overlapping years — so new ones surface instead of
 sitting unnoticed. The fetch also aborts if merging ever puts one athlete in a year twice,
 which would mean two different people were being collapsed into one.
+
+## Movements
+
+The leaderboard API exposes event names but never the workouts, so movements come from scraping
+the public workout pages — one `<li id="eventRow…>` per event, description included. All 217
+events match a description, and every one yields at least one movement.
+
+Two traps worth knowing if you extend the vocabulary in
+[`scripts/lib/movements.mjs`](scripts/lib/movements.mjs):
+
+- **Order matters.** Matching runs top to bottom and blanks out the text it consumes, so specific
+  variants must precede generic ones — otherwise `chest-to-bar pull-up` also registers a plain
+  `pull-up`, and `dumbbell snatch` registers a barbell `snatch`.
+- **The pages are full of non-breaking spaces.** A literal `" "` in a pattern does not match
+  U+00A0, which silently hid `overhead·squat` until it was traced by character code. Input is
+  now whitespace-normalised first.
+
+Some events name their movement only in the title — "2020 Speed Snatch" and "Cyclocross" describe
+the format and course but never the movement — so the event name is scanned alongside the
+description.
+
+An athlete's standing in a movement is their mean percentile across every event containing it,
+era-adjusted, with a four-event minimum to be ranked.
 
 ## Railway Postgres
 

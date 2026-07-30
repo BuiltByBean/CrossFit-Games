@@ -15,6 +15,7 @@ const LINKS = [
   ['/transplant', 'Era Transplant'],
   ['/athletes', 'Athletes'],
   ['/events', 'Events'],
+  ['/movements', 'Movements'],
   ['/domains', 'Domains'],
   ['/methodology', 'Methodology'],
 ];

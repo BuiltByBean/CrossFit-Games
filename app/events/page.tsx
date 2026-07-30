@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getAnalysis } from '@/lib/data';
 import { DomainBar, DOMAIN_ORDER, domainColor } from '@/components/Domain';
+import { StackedBars, domainSeries } from '@/components/StackedBars';
 
 export const metadata = { title: 'Events — CrossFit Games' };
 
@@ -23,8 +24,8 @@ export default async function EventsPage() {
           <h1>Every event, {a.years[0].year}–{a.years[a.years.length - 1].year}</h1>
           <p className="lede">
             {totalEvents} individual men&apos;s events, each tagged with the fitness domains it
-            actually tested. The coloured bar shows the mix. Tags are hand-curated from the workout
-            descriptions; the few derived automatically are marked.
+            actually tested and the movements named in its published description. The coloured bar
+            shows the domain mix; anything not hand-curated is flagged as inferred.
           </p>
           <p className="faint">
             <strong>In</strong> is how many athletes were still in the competition for that event,
@@ -32,16 +33,29 @@ export default async function EventsPage() {
             and the 2020 Games, where all 30 men contested the seven online Stage 1 events and only
             the top five went on to the twelve at the Ranch.
           </p>
-          <div className="pill-row" style={{ marginTop: '1rem' }}>
-            {DOMAIN_ORDER.map((d) => (
-              <span className="pill" key={d}>
-                <span
-                  className="dot"
-                  style={{ background: domainColor(d), display: 'inline-block', marginRight: 6 }}
-                />
-                {a.domains[d]?.label}
-              </span>
-            ))}
+        </div>
+      </section>
+
+      <section>
+        <div className="wrap">
+          <div className="eyebrow">Composition by year</div>
+          <h2>How the test changed</h2>
+          <p className="lede">
+            Each column is one Games, split by the share of that year&apos;s events drawn from each
+            domain. Columns are the same height on purpose — this is what the test was made of, not
+            how many events it had.
+          </p>
+          <div style={{ marginTop: '1.4rem' }}>
+            <StackedBars
+              columns={a.years.map((y) => ({
+                label: String(y.year),
+                sublabel: `${y.eventCount} ev`,
+                mix: y.domainMix as Record<string, number>,
+              }))}
+              series={domainSeries(a.domains, DOMAIN_ORDER)}
+              height={260}
+              caption="Hover any segment for its exact share. Weights per event sum to 1.0, so a year with more events is not over-represented."
+            />
           </div>
         </div>
       </section>
