@@ -107,14 +107,52 @@ different information, so agreement means something and disagreement is displaye
 | **Official** | CrossFit's own points and finish | Matches the record books |
 | **Z-score** | Standardised margin on the raw score, clamped to ±3 SD | Rewards *how much* you won by |
 
-Each blends career quality (45%), accumulated volume (35%) and hardware — titles, podiums,
-event wins (20%). Volume stops one brilliant season outranking a decade; hardware stops a
-metronomic fourth-place career outranking a champion. The headline ranking is the mean of the
-three model ranks.
+Each scores a career on the same four axes, so no single one can carry it:
+
+| Axis | Weight | What it measures |
+|---|---|---|
+| Quality | 30% | Average season |
+| Peak | 20% | Mean of their best three years |
+| Volume | 20% | Accumulated, damped by a square root |
+| Hardware | 30% | Title 10, non-title podium 3, non-podium top ten 1, event win 0.5 |
+
+A title counts *separately* from a podium rather than as a bonus on top of one — winning the
+Games is categorical, not just a very good placing. Volume is damped so an eleventh appearance
+cannot outweigh winning twice; an earlier version of this model had exactly that failure,
+ranking a title-less ten-appearance career above a two-time champion.
+
+The headline ranking is the mean of the three model ranks.
 
 Because Games points events have scored both high-is-good (skills tests) and low-is-good
 (speed ladders), the z-score model **infers scoring direction per event** from how raw scores
 track against finishing rank rather than assuming it.
+
+## Strength of field
+
+A percentile only means something relative to whoever turned up. The correction comes from
+athletes who competed in more than one year: if the same competitors score consistently lower
+in one year than another, the difference is the field, not them.
+
+Fitting `season = ability − strength(year)` across every athlete-season by alternating least
+squares — the bridging idea used to carry chess or baseball ratings across eras — gives each
+year a depth rating in SD units, and every season score is adjusted by it before the models run.
+
+The trend is upward, which is the expected result and a reasonable check that the method works:
+2011 and 2012 are the shallowest fields, 2026 the strongest. **2019 is an extreme outlier at
+−0.77 and it is not an error** — that year every national champion qualified, so 144 men started
+against a normal field of about 40, and beating 90% of that field was genuinely easier.
+
+## Cut formats and the 2020 two-stage Games
+
+Most Games since 2019 eliminate athletes partway through, and 2020 ran an online Stage 1 for all
+30 men before sending only the top five to the Ranch (all of it is in the dataset — the events
+page shows how many were still in for each event).
+
+Scoring an event against only the athletes still in it turns surviving a cut into a punishment:
+fifth of the five 2020 finalists scored a percentile of zero, identical to finishing last of 144.
+Events are therefore scored against the **year's full starting field**, with eliminated athletes
+treated as behind everyone still competing — which is what the cut itself asserts. The 2020
+runner-up went from a season percentile of 52 to 83.
 
 ## The era transplant
 
@@ -128,7 +166,12 @@ formats that ended some athletes' competitions early.
 
 ## Limitations
 
-- Field depth is not equalised — a p90 in 2011 came against a shallower field than a p90 in 2026.
+- Field strength is estimated, not measured. It assumes a returning athlete's ability is roughly
+  stable year to year, which is untrue for anyone improving fast or declining, and
+  single-appearance athletes contribute nothing to the bridge.
+- The era transplant runs on *unadjusted* percentiles (it asks how an athlete fits a year's test
+  against the men actually there); the GOAT table runs on adjusted ones. They answer different
+  questions and will not always agree.
 - Domain weights are informed judgement, not measurement. That's why they're isolated in one file.
 - An athlete with no exposure to a domain has no score in it; transplants into years leaning on
   that domain rest on their other domains and are less certain.

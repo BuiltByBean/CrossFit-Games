@@ -42,12 +42,23 @@ export default async function MethodologyPage() {
         <div className="wrap">
           <h2>2. Domain tagging</h2>
           <p className="muted" style={{ maxWidth: '70ch' }}>
-            The API gives event names but not workout descriptions, so tagging is a hybrid.{' '}
-            <strong>{curated}</strong> of {curated + inferred} events are hand-curated from the published
-            workout descriptions and stored in a single editable file;{' '}
-            <strong>{inferred}</strong> fall through to an automatic classifier that reads the event name
-            and score format. Every event on the <Link href="/events">events page</Link> shows which it
-            is.
+            The API gives event names but not workout descriptions, so tagging is a hybrid. Curated
+            weights live in a single editable file; anything absent from it falls through to an
+            automatic classifier that reads the event name and score format, and is flagged as
+            inferred.{' '}
+            {inferred === 0 ? (
+              <>
+                All <strong>{curated}</strong> scored events are currently hand-curated from the
+                published workout descriptions, so nothing is running on the classifier — but the
+                fallback stays, because a new Games arrives before anyone has tagged it.
+              </>
+            ) : (
+              <>
+                <strong>{curated}</strong> of {curated + inferred} are hand-curated and{' '}
+                <strong>{inferred}</strong> are inferred.
+              </>
+            )}{' '}
+            Every event on the <Link href="/events">events page</Link> shows which it is.
           </p>
           <div className="card" style={{ maxWidth: 640, marginTop: '1rem' }}>
             <div className="faint" style={{ marginBottom: '0.5rem' }}>
@@ -94,11 +105,21 @@ export default async function MethodologyPage() {
             ))}
           </div>
           <p className="muted" style={{ maxWidth: '70ch', marginTop: '1.2rem' }}>
-            Each model blends quality ({Math.round(a.methodology.weights.quality * 100)}%), accumulated
-            volume ({Math.round(a.methodology.weights.volume * 100)}%) and hardware —titles, podiums and
-            event wins— ({Math.round(a.methodology.weights.hardware * 100)}%). Volume is what stops a
-            single brilliant season outranking a decade; hardware is what stops a metronomic
-            fourth-place career outranking a champion. {a.methodology.consensus}
+            Each model scores a career on the same four axes, so no single one can carry it:{' '}
+            <strong>quality</strong> ({Math.round(a.methodology.weights.quality * 100)}%, average
+            season), <strong>peak</strong> ({Math.round(a.methodology.weights.peak * 100)}%, mean of
+            their best three), <strong>volume</strong> (
+            {Math.round(a.methodology.weights.volume * 100)}%, accumulated with diminishing returns)
+            and <strong>hardware</strong> ({Math.round(a.methodology.weights.hardware * 100)}%, what
+            they actually won). {a.methodology.consensus}
+          </p>
+          <p className="muted" style={{ maxWidth: '70ch' }}>
+            Hardware is scored {a.methodology.hardwareScale.toLowerCase()} A title counts separately
+            from a podium rather than as a bonus on top of one, because winning the Games is a
+            categorical achievement and not just a very good placing. Volume is damped by a square
+            root so that turning up an eleventh time cannot outweigh winning twice — an earlier
+            version of this model had exactly that failure, ranking a title-less ten-appearance career
+            above a two-time champion.
           </p>
           <div className="callout" style={{ marginTop: '1rem' }}>
             One subtlety worth knowing: the z-score model measures margin on the raw score, so it
@@ -111,7 +132,105 @@ export default async function MethodologyPage() {
 
       <section>
         <div className="wrap">
-          <h2>4. The era transplant</h2>
+          <h2>4. Strength of field</h2>
+          <p className="muted" style={{ maxWidth: '70ch' }}>
+            A percentile only means something relative to whoever turned up. Finishing p90 against the{' '}
+            {a.years[0].year} field is not the same achievement as p90 against the{' '}
+            {a.years[a.years.length - 1].year} field, so raw percentiles cannot be compared across eras.
+          </p>
+          <p className="muted" style={{ maxWidth: '70ch' }}>
+            The correction comes from athletes who competed in more than one year. If the same
+            competitors score consistently lower in one year than another, the difference is the field,
+            not them. Fitting <code>season = ability − strength(year)</code> across every athlete-season
+            by alternating least squares — the same bridging idea used to carry chess or baseball
+            ratings across eras — gives each year a depth rating, and every season score is adjusted by
+            it before the models run.
+          </p>
+
+          <div className="table-scroll" style={{ marginTop: '1.2rem', maxWidth: 620 }}>
+            <table>
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>Field</th>
+                  <th>Strength</th>
+                  <th style={{ width: '45%' }}></th>
+                </tr>
+              </thead>
+              <tbody>
+                {a.years.map((y) => (
+                  <tr key={y.year}>
+                    <td className="num">{y.year}</td>
+                    <td className="num faint">{y.fieldSize}</td>
+                    <td className="num" style={{ color: y.fieldStrength >= 0 ? 'var(--good)' : 'var(--gold)' }}>
+                      {y.fieldStrength > 0 ? '+' : ''}
+                      {y.fieldStrength.toFixed(2)}
+                    </td>
+                    <td>
+                      <div style={{ position: 'relative', height: 8 }}>
+                        <div
+                          style={{
+                            position: 'absolute',
+                            left: '50%',
+                            top: 0,
+                            bottom: 0,
+                            width: 1,
+                            background: 'var(--line)',
+                          }}
+                        />
+                        <div
+                          style={{
+                            position: 'absolute',
+                            top: 0,
+                            height: 8,
+                            borderRadius: 2,
+                            background: y.fieldStrength >= 0 ? 'var(--good)' : 'var(--gold)',
+                            left: y.fieldStrength >= 0 ? '50%' : `${50 - Math.abs(y.fieldStrength) * 50}%`,
+                            width: `${Math.abs(y.fieldStrength) * 50}%`,
+                          }}
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <p className="muted" style={{ maxWidth: '70ch', marginTop: '1.2rem' }}>
+            The trend is upward, which is the expected result and a decent check that the method
+            works: the sport got deeper. {a.years[0].year} and {a.years[1].year} rate as the shallowest
+            fields, {a.years[a.years.length - 1].year} the strongest.
+          </p>
+          <div className="callout">
+            2019 is the outlier at {a.years.find((y) => y.year === 2019)?.fieldStrength.toFixed(2)}, and
+            it is not an error. That year every national champion qualified, so 144 men started against
+            a normal field of about 40. Most were nowhere near Games standard, which makes beating 90%
+            of that field a genuinely easier thing to do — and the model discounts it accordingly.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="wrap">
+          <h2>5. Cut formats and the 2020 two-stage Games</h2>
+          <p className="muted" style={{ maxWidth: '70ch' }}>
+            Most Games since 2019 eliminate athletes partway through, and 2020 ran an online Stage 1
+            for all 30 men before sending only the top five to the Ranch. Scoring an event against
+            just the athletes still in it turns surviving a cut into a punishment: fifth of the five
+            2020 finalists would score a percentile of zero, identical to finishing last of 144.
+          </p>
+          <p className="muted" style={{ maxWidth: '70ch' }}>
+            {a.methodology.percentileBasis} Athletes already eliminated are treated as behind everyone
+            still competing, which is exactly what the cut itself asserts. Before this fix the 2020
+            runner-up scored a season percentile of 52; he now scores 83.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div className="wrap">
+          <h2>6. The era transplant</h2>
           <p className="muted" style={{ maxWidth: '70ch' }}>
             An athlete&apos;s career gives a percentile in each domain. For any target year, each event
             is scored by combining that athlete&apos;s domain percentiles in the proportions the event
@@ -140,8 +259,16 @@ export default async function MethodologyPage() {
           <h2>Known limitations</h2>
           <ul className="muted" style={{ maxWidth: '70ch', paddingLeft: '1.1rem' }}>
             <li>
-              Field depth is not equalised. A p90 in 2011 came against a shallower field than a p90 in
-              2024; the models measure position within the field of the day, not absolute standard.
+              Field strength is estimated, not measured. It rests on the assumption that a returning
+              athlete&apos;s underlying ability is roughly stable year to year, which is untrue for
+              anyone improving fast or declining — and single-appearance athletes contribute nothing
+              to the bridge at all.
+            </li>
+            <li>
+              The era transplant deliberately runs on <em>unadjusted</em> percentiles, because it asks
+              how an athlete fits a year&apos;s test against the men who were actually there. The GOAT
+              table runs on adjusted ones. The two answer different questions and will not always
+              agree.
             </li>
             <li>
               Domain weights are informed judgement, not measurement. They are the single largest

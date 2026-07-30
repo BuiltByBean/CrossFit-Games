@@ -19,6 +19,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DOMAINS, DOMAIN_KEYS, parseSeconds } from './lib/domains.mjs';
+import { adjustProbability, estimateFieldStrength } from './lib/field-strength.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CLAMP_Z = 3;
@@ -61,6 +62,13 @@ function higherIsBetter(pairs) {
 
 function buildEventStats(year) {
   const stats = new Map();
+  // Cut formats shrink the field as the competition goes on. Scoring an event
+  // against only the athletes still in it makes surviving a cut a penalty:
+  // 5th of the 5 finalists at the 2020 Games would score 0, the same as last
+  // of 144 in 2019. Events are therefore scored against the year's full field,
+  // with already-eliminated athletes treated as behind everyone still
+  // competing — which is exactly what the cut itself asserts.
+  const yearField = year.athletes.length;
 
   for (const ev of year.events) {
     if (ev.exclude) continue;
@@ -105,10 +113,20 @@ function buildEventStats(year) {
     }
 
     const pctById = new Map(
-      entries.map((e) => [e.athlete.competitorId, N > 1 ? 1 - (e.score.rank - 1) / (N - 1) : 1]),
+      entries.map((e) => [
+        e.athlete.competitorId,
+        yearField > 1 ? 1 - (e.score.rank - 1) / (yearField - 1) : 1,
+      ]),
     );
 
-    stats.set(ev.ordinal, { event: ev, fieldSize: N, pctById, zById, zBasis: useValues ? 'margin' : 'rank' });
+    stats.set(ev.ordinal, {
+      event: ev,
+      fieldSize: N, // athletes still in the competition for this event
+      yearField, // everyone who started the year
+      pctById,
+      zById,
+      zBasis: useValues ? 'margin' : 'rank',
+    });
   }
 
   return stats;
@@ -273,28 +291,59 @@ function buildCareers(yearResults, dataset) {
 /**
  * Rank careers under each model, then take the consensus.
  *
- * Every model blends three things in the same proportions, so the only
- * difference between them is the underlying rating of an athlete-year:
- *   quality (how good they were when they showed up)
- *   volume  (how much of that they accumulated)
- *   hardware (titles, podiums, event wins)
+ * Greatness is scored on four separate axes, so that no single one can carry a
+ * career on its own. Every model uses the same four in the same proportions;
+ * the only difference between models is how an individual season is rated.
+ *
+ *   quality  how good they were, on average, when they showed up
+ *   peak     how high they climbed at their best (mean of their best 3 years)
+ *   volume   how much they accumulated, with diminishing returns
+ *   hardware what they actually won
  */
-const W_QUALITY = 0.45;
-const W_VOLUME = 0.35;
-const W_HARDWARE = 0.2;
+const W_QUALITY = 0.3;
+const W_PEAK = 0.2;
+const W_VOLUME = 0.2;
+const W_HARDWARE = 0.3;
 
-function scoreModel(careers, qualityOf, volumeOf) {
+/**
+ * Championship points.
+ *
+ * Titles are counted separately from podiums rather than as a bonus on top of
+ * them, because winning the Games is a categorical achievement rather than a
+ * very good placing. The earlier scale made two titles worth about the same as
+ * five podiums, and then min-max normalising against the all-time leader
+ * squashed that difference to almost nothing before the weight was applied.
+ */
+function hardwarePoints(c) {
+  const nonTitlePodiums = c.podiums - c.titles;
+  const nonPodiumTopTens = c.topTens - c.podiums;
+  return c.titles * 10 + nonTitlePodiums * 3 + nonPodiumTopTens * 1 + c.eventWins * 0.5;
+}
+
+/** Diminishing returns on accumulation, sign-preserving so z-scores survive. */
+const damp = (v) => Math.sign(v) * Math.sqrt(Math.abs(v));
+
+function scoreModel(careers, rate) {
   const list = [...careers];
+  const qualityOf = (c) => mean(c.seasons.map(rate));
+  const peakOf = (c) => {
+    const best = c.seasons.map(rate).sort((a, b) => b - a).slice(0, 3);
+    return mean(best);
+  };
+  const volumeOf = (c) => damp(c.seasons.reduce((n, s) => n + rate(s), 0));
+
   const qn = minmax(list.map(qualityOf));
+  const pn = minmax(list.map(peakOf));
   const vn = minmax(list.map(volumeOf));
-  const hn = minmax(list.map((c) => c.titles * 3 + c.podiums * 1.5 + c.eventWins * 0.25));
+  const hn = minmax(list.map(hardwarePoints));
 
   return new Map(
     list.map((c) => [
       c.competitorId,
       W_QUALITY * qn(qualityOf(c)) +
+        W_PEAK * pn(peakOf(c)) +
         W_VOLUME * vn(volumeOf(c)) +
-        W_HARDWARE * hn(c.titles * 3 + c.podiums * 1.5 + c.eventWins * 0.25),
+        W_HARDWARE * hn(hardwarePoints(c)),
     ]),
   );
 }
@@ -331,7 +380,12 @@ function transplant(career, year, yearResults) {
   if (!perEvent.length) return null;
 
   const projectedScore = mean(perEvent.map((e) => e.projected));
-  const fieldScores = [...actual.values()].map((r) => r.percentileScore).sort((a, b) => b - a);
+  // Raw, field-relative scores: the transplant asks how an athlete fits that
+  // year's test against the men who were actually there, so it deliberately
+  // does not use the era-adjusted numbers the GOAT models run on.
+  const fieldScores = [...actual.values()]
+    .map((r) => r.rawPercentileScore ?? r.percentileScore)
+    .sort((a, b) => b - a);
   // finishing place = how many of that year's field would still have beaten them, plus one
   const projectedFinish = fieldScores.filter((s) => s > projectedScore).length + 1;
 
@@ -358,6 +412,30 @@ async function main() {
   const yearResults = new Map();
   for (const y of dataset.years) yearResults.set(y.year, analyseYear(y));
 
+  // Strength of field, fitted from athletes who span more than one year, then
+  // applied to every season score so the models compare eras on equal terms.
+  const flat = [];
+  for (const [, byAthlete] of yearResults) {
+    for (const [, r] of byAthlete) {
+      flat.push({ competitorId: r.competitorId, year: r.year, score: r.percentileScore });
+    }
+  }
+  const { strength } = estimateFieldStrength(flat);
+
+  for (const [year, byAthlete] of yearResults) {
+    const s = strength.get(year) ?? 0;
+    for (const [, r] of byAthlete) {
+      r.fieldStrength = round(s, 4);
+      r.rawPercentileScore = r.percentileScore;
+      r.rawOfficialScore = r.officialScore;
+      r.rawZScore = r.zScore;
+      // percentile and official live on (0,1); z is already in SD units
+      r.percentileScore = round(adjustProbability(r.percentileScore, s));
+      r.officialScore = round(adjustProbability(r.officialScore, s));
+      r.zScore = round(r.zScore + s);
+    }
+  }
+
   const careers = buildCareers(yearResults, dataset);
 
   // Only athletes with a real body of work can be ranked as the GOAT; the rest
@@ -366,9 +444,9 @@ async function main() {
   const eligible = [...careers.values()].filter((c) => c.appearances >= MIN_APPEARANCES);
 
   const models = {
-    percentile: scoreModel(eligible, (c) => c.meanPercentile, (c) => c.totalPercentile),
-    official: scoreModel(eligible, (c) => c.meanOfficial, (c) => c.meanOfficial * c.appearances),
-    zscore: scoreModel(eligible, (c) => c.meanZ, (c) => c.totalZ),
+    percentile: scoreModel(eligible, (s) => s.percentileScore),
+    official: scoreModel(eligible, (s) => s.officialScore),
+    zscore: scoreModel(eligible, (s) => s.zScore),
   };
   const ranks = Object.fromEntries(Object.entries(models).map(([k, m]) => [k, rankFrom(m)]));
 
@@ -415,7 +493,7 @@ async function main() {
 
     const pool = [];
     for (const [id, r] of actual) {
-      if (!cohortIds.has(id)) pool.push({ id, score: r.percentileScore });
+      if (!cohortIds.has(id)) pool.push({ id, score: r.rawPercentileScore ?? r.percentileScore });
     }
     for (const c of topForTransplant) {
       const t = c.transplants.find((x) => x.year === y.year);
@@ -463,6 +541,7 @@ async function main() {
       year: y.year,
       eventCount: n,
       fieldSize: y.fieldSize,
+      fieldStrength: round(strength.get(y.year) ?? 0, 3),
       champion: champion ? { name: champion.name, competitorId: champion.competitorId } : null,
       domainMix: Object.fromEntries(
         Object.entries(totals)
@@ -472,6 +551,12 @@ async function main() {
       events: y.events.map((ev) => ({
         ordinal: ev.ordinal,
         name: ev.name,
+        // how many were still in the competition for this event — makes cut
+        // formats and the 2020 two-stage Games legible without hardcoding
+        participants: y.athletes.filter((a) => {
+          const s = a.scores.find((x) => x.ordinal === ev.ordinal);
+          return s && s.rank != null && s.rank > 0;
+        }).length,
         scoreFormat: ev.scoreFormat,
         medianSeconds: ev.medianSeconds,
         domains: ev.domains,
@@ -497,7 +582,15 @@ async function main() {
         official: "CrossFit's own finishing position and points total for the season.",
         zscore: 'Standardised margin against the field on the raw score, clamped to ±3 SD.',
       },
-      weights: { quality: W_QUALITY, volume: W_VOLUME, hardware: W_HARDWARE },
+      weights: {
+        quality: W_QUALITY,
+        peak: W_PEAK,
+        volume: W_VOLUME,
+        hardware: W_HARDWARE,
+      },
+      hardwareScale: 'Title 10, non-title podium 3, non-podium top ten 1, event win 0.5.',
+      percentileBasis:
+        "Each event is scored against the year's full starting field, not just the athletes still in it, so surviving a cut is never a penalty.",
       minAppearances: MIN_APPEARANCES,
       consensus: 'Mean of the three model ranks; ties broken by mean model score.',
       transplant: {

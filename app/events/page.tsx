@@ -26,6 +26,12 @@ export default async function EventsPage() {
             actually tested. The coloured bar shows the mix. Tags are hand-curated from the workout
             descriptions; the few derived automatically are marked.
           </p>
+          <p className="faint">
+            <strong>In</strong> is how many athletes were still in the competition for that event,
+            highlighted when it is fewer than the field that started. It makes cut formats visible —
+            and the 2020 Games, where all 30 men contested the seven online Stage 1 events and only
+            the top five went on to the twelve at the Ranch.
+          </p>
           <div className="pill-row" style={{ marginTop: '1rem' }}>
             {DOMAIN_ORDER.map((d) => (
               <span className="pill" key={d}>
@@ -46,7 +52,9 @@ export default async function EventsPage() {
             <h2 style={{ display: 'flex', alignItems: 'baseline', gap: '0.8rem', flexWrap: 'wrap' }}>
               {y.year}
               <span className="faint" style={{ fontWeight: 400, fontSize: '0.85rem' }}>
-                {y.eventCount} events · {y.fieldSize} men
+                {y.eventCount} events · {y.fieldSize} men · field strength{' '}
+                {y.fieldStrength > 0 ? '+' : ''}
+                {y.fieldStrength.toFixed(2)}
                 {y.champion && (
                   <>
                     {' '}
@@ -72,6 +80,7 @@ export default async function EventsPage() {
                   <tr>
                     <th>#</th>
                     <th>Event</th>
+                    <th>In</th>
                     <th>Scored</th>
                     <th>Median</th>
                     <th>Winner</th>
@@ -93,6 +102,13 @@ export default async function EventsPage() {
                             {e.note}
                           </div>
                         )}
+                      </td>
+                      <td
+                        className="num faint"
+                        title={`${e.participants} of ${y.fieldSize} still in the competition`}
+                        style={e.participants < y.fieldSize ? { color: 'var(--gold)' } : undefined}
+                      >
+                        {e.participants}
                       </td>
                       <td className="faint">{e.exclude ? '—' : e.scoreFormat}</td>
                       <td className="num faint">{e.exclude ? '—' : duration(e.medianSeconds)}</td>

@@ -23,10 +23,11 @@ export default async function GoatPage() {
           <h1>The GOAT table</h1>
           <p className="lede">
             {a.goat.length} men with at least {minAppearances} Games appearances, rated by three
-            independent models and ranked by their consensus. Each model blends quality (
-            {Math.round(weights.quality * 100)}%), accumulated volume ({Math.round(weights.volume * 100)}
-            %) and hardware ({Math.round(weights.hardware * 100)}%) — they differ only in how an
-            individual season is rated.
+            independent models and ranked by their consensus. Each scores a career on the same four
+            axes — quality {Math.round(weights.quality * 100)}%, peak {Math.round(weights.peak * 100)}%,
+            volume {Math.round(weights.volume * 100)}% and hardware{' '}
+            {Math.round(weights.hardware * 100)}% — and differs only in how an individual season is
+            rated. Every season score is adjusted for the strength of that year&apos;s field first.
           </p>
         </div>
       </section>

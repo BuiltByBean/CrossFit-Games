@@ -21,6 +21,8 @@ export interface DomainMeta {
 export interface EventSummary {
   ordinal: number;
   name: string;
+  /** Athletes still in the competition for this event — reveals cuts and stages. */
+  participants: number;
   scoreFormat: 'time' | 'load' | 'reps' | 'points' | 'calories' | 'other';
   medianSeconds: number | null;
   domains: DomainWeights;
@@ -34,6 +36,8 @@ export interface YearSummary {
   year: number;
   eventCount: number;
   fieldSize: number;
+  /** Depth of the field in SD units, 0 = all-time average. */
+  fieldStrength: number;
   champion: { name: string; competitorId: string } | null;
   domainMix: DomainWeights;
   events: EventSummary[];
@@ -57,6 +61,8 @@ export interface Season {
   finish: number | null;
   /** ACT competed · CUT eliminated at a cut · WD withdrew · DQ disqualified */
   status: 'ACT' | 'CUT' | 'WD' | 'DQ' | null;
+  fieldStrength: number;
+  rawPercentileScore: number;
   fieldSize: number;
   officialPoints: number | null;
   percentileScore: number;
@@ -159,7 +165,9 @@ export interface Analysis {
   domains: Record<DomainKey, DomainMeta>;
   methodology: {
     models: Record<'percentile' | 'official' | 'zscore', string>;
-    weights: { quality: number; volume: number; hardware: number };
+    weights: { quality: number; peak: number; volume: number; hardware: number };
+    hardwareScale: string;
+    percentileBasis: string;
     minAppearances: number;
     consensus: string;
     transplant: { cohort: number; solo: string; headToHead: string };
