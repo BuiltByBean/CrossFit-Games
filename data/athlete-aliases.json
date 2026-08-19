@@ -37,5 +37,18 @@
       "athlete": "Travis Mayer",
       "why": "2013 fragment. Age 22 in 2013 to 23 in 2014 fits. The 2013 record's 6 in height is a data-entry error."
     }
+  },
+
+  "$nameComment": [
+    "The API occasionally scrubs an athlete's name to 'Anonymous Anonymous'",
+    "while keeping the competitorId intact. These restore the display name;",
+    "they do not merge ids."
+  ],
+
+  "nameOverrides": {
+    "21292": {
+      "name": "Garret Fisher",
+      "why": "games.crossfit.com/athlete/21292 resolves to Garret Fisher, and the profile's 2013 (5th) and 2016 (20th) finishes match his published results. The leaderboard payload anonymised the name but kept the id."
+    }
   }
 }

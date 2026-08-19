@@ -89,6 +89,31 @@ function findDescription(event, candidates) {
   return best?.c ?? null;
 }
 
+/**
+ * The 2024 workout page packs both finals into one row ("Event 9: Final 2421
+ * ... Event 10: Final 1815"). When a description covers multiple events like
+ * that, each event only gets its own segment — otherwise every final is
+ * credited with the other's movements.
+ */
+function eventSegment(description, event) {
+  const headings = [...String(description).matchAll(/\bEvent\s+(\d+)\s*:/gi)];
+  if (headings.length < 2) return description;
+
+  const segments = headings.map((m, i) => ({
+    num: Number(m[1]),
+    text: description.slice(m.index, i + 1 < headings.length ? headings[i + 1].index : undefined),
+  }));
+
+  const target = normalise(event.name);
+  const byName = target
+    ? segments.find((s) => normalise(s.text.split('\n')[0]).includes(target))
+    : null;
+  if (byName) return byName.text;
+
+  const byNumber = segments.find((s) => s.num === event.ordinal);
+  return byNumber ? byNumber.text : description;
+}
+
 async function main() {
   const dataset = JSON.parse(await readFile(join(ROOT, 'data', 'games.json'), 'utf8'));
   const descriptions = JSON.parse(
@@ -114,7 +139,7 @@ async function main() {
       if (supplement) {
         matched += 1;
         ev.description = supplement;
-        ev.movements = extractMovements(`${ev.name}. ${supplement}`);
+        ev.movements = extractMovements(supplement, ev.name);
         if (ev.movements.length) withMovements += 1;
         continue;
       }
@@ -127,10 +152,11 @@ async function main() {
         continue;
       }
       matched += 1;
-      ev.description = hit.description;
+      const description = eventSegment(hit.description, ev);
+      ev.description = description;
       // Some events only name the movement in the title — "2020 Speed Snatch"
       // and "Cyclocross" describe format and course but never the movement.
-      ev.movements = extractMovements(`${ev.name}. ${hit.description}`);
+      ev.movements = extractMovements(description, ev.name);
       if (ev.movements.length) withMovements += 1;
     }
   }

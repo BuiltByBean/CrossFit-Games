@@ -73,7 +73,7 @@ export default async function GoatPage() {
                   <th>Titles</th>
                   <th>Pod</th>
                   <th>Ev wins</th>
-                  <th>Mean pct</th>
+                  <th title="Mean season percentile, adjusted for the strength of each year's field">Mean pct*</th>
                   <th>Peak pct</th>
                   <th>Pct #</th>
                   <th>Off #</th>

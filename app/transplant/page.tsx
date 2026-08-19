@@ -3,18 +3,38 @@ import { getAnalysis } from '@/lib/data';
 
 export const metadata = { title: 'Era Transplant — CrossFit Games' };
 
-/** Green for a win, fading to grey the further down the field they land. */
-function finishColor(finish: number, fieldSize: number) {
-  const t = Math.min(1, (finish - 1) / Math.max(1, Math.min(fieldSize, 20) - 1));
+/**
+ * Green for a win, fading through amber to red the further down the field
+ * they land. The ramp runs to place 40 (places 20-38 used to share one
+ * identical color), and dark cells get light text — the old fixed near-black
+ * text sat at 2.5:1 contrast on every cell from place 17 down.
+ */
+function finishStyle(finish: number) {
+  const t = Math.min(1, (finish - 1) / 39);
   const hue = 152 - t * 152; // teal -> red
-  const light = 62 - t * 24;
-  return `hsl(${hue} 42% ${light}%)`;
+  const light = 62 - t * 30;
+  return {
+    background: `hsl(${hue} 42% ${light}%)`,
+    color: light < 48 ? '#f3f4f6' : '#0b0d10',
+  };
 }
 
 export default async function TransplantPage() {
   const a = await getAnalysis();
   const years = a.years.map((y) => y.year);
-  const athletes = a.goat.filter((c) => c.transplants?.length).slice(0, 25);
+  const athletes = a.goat
+    .filter((c) => c.transplants?.length)
+    .slice(0, a.methodology.transplant.cohort);
+  const top = athletes[0];
+  const runnerUp = athletes[1];
+  const topAlwaysAhead =
+    top && runnerUp
+      ? years.every((y) => {
+          const t1 = top.transplants!.find((t) => t.year === y)?.headToHeadFinish ?? 99;
+          const t2 = runnerUp.transplants!.find((t) => t.year === y)?.headToHeadFinish ?? 99;
+          return t1 < t2;
+        })
+      : false;
 
   return (
     <>
@@ -89,6 +109,12 @@ export default async function TransplantPage() {
                       return (
                         <td key={y} style={{ padding: '0.28rem 0.2rem', textAlign: 'center' }}>
                           <span
+                            tabIndex={0}
+                            aria-label={
+                              `${c.name}, ${y}: head-to-head ${place} of ${t.poolSize ?? t.fieldSize}; ` +
+                              `solo ${t.projectedFinish} of ${t.fieldSize}` +
+                              (competed && t.actualFinish != null ? `; actually finished ${t.actualFinish}` : '')
+                            }
                             title={
                               `${c.name} — ${y}\n` +
                               `Head-to-head: ${place} of ${t.poolSize ?? t.fieldSize}\n` +
@@ -108,8 +134,7 @@ export default async function TransplantPage() {
                               width: 30,
                               height: 26,
                               borderRadius: 5,
-                              background: finishColor(place, 20),
-                              color: '#0b0d10',
+                              ...finishStyle(place),
                               fontWeight: 700,
                               fontSize: '0.76rem',
                               fontVariantNumeric: 'tabular-nums',
@@ -138,9 +163,10 @@ export default async function TransplantPage() {
             <div className="card">
               <h3>Two ways to ask the question</h3>
               <p className="muted" style={{ marginBottom: 0 }}>
-                <strong>Solo</strong> swaps one athlete into a year&apos;s real field on their own. It
-                is the better measure of era fit, but it is computed per athlete, so two men who would
-                both have beaten everyone who actually competed each come out first — they are never
+                <strong>Solo</strong> swaps one athlete into a year&apos;s real field on their own,
+                with their own actual season removed so no one competes against themselves. It is the
+                better measure of era fit, but it is computed per athlete, so two men who would both
+                have beaten everyone who actually competed each come out first — they are never
                 measured against each other. <strong>Head-to-head</strong>, shown in the grid, runs the
                 whole cohort in the same year at once, so exactly one athlete wins.
               </p>
@@ -155,15 +181,24 @@ export default async function TransplantPage() {
               </p>
             </div>
             <div className="card">
-              <h3>Why the top two rows are flat</h3>
+              <h3>{topAlwaysAhead ? 'Why the top rows are flat' : 'How to read the top rows'}</h3>
               <p className="muted" style={{ marginBottom: 0 }}>
-                That is the result, not a rounding artefact. {a.goat[0].name.split(' ')[0]} out-projects{' '}
-                {a.goat[1].name.split(' ')[0]} in all {a.years.length} years, and the pair sit far
-                enough clear of everyone else that no era&apos;s event mix reorders them. Era fit bites
-                hard further down: {a.goat[2].name} swings between{' '}
+                {topAlwaysAhead ? (
+                  <>
+                    That is the result, not a rounding artefact. {top.name.split(' ')[0]} out-projects{' '}
+                    {runnerUp.name.split(' ')[0]} in every year, and the pair sit far enough clear of
+                    everyone else that no era&apos;s event mix reorders them.
+                  </>
+                ) : (
+                  <>
+                    Even the top pair trade places as the event mix changes — era fit is doing real
+                    work at the very top of the table.
+                  </>
+                )}{' '}
+                Era fit bites harder further down: {a.goat[2].name} swings between{' '}
                 {Math.min(...a.goat[2].transplants!.map((t) => t.headToHeadFinish ?? 99))} and{' '}
                 {Math.max(...a.goat[2].transplants!.map((t) => t.headToHeadFinish ?? 0))} depending on
-                how much water and endurance the year demanded.
+                the year&apos;s event mix.
               </p>
             </div>
             <div className="card">
@@ -171,10 +206,11 @@ export default async function TransplantPage() {
               <p className="muted" style={{ marginBottom: 0 }}>
                 A career profile is built from the events an athlete actually faced. Someone who never
                 swam at the Games has no swimming record, so their projection into a swim-heavy year
-                leans on their other domains and is less certain. Coverage is reported per projection in
-                the underlying data. Head-to-head places also depend on who is in the cohort — it is the
-                top {a.methodology.transplant.cohort} careers, so a 26th man entering would shift places
-                below him.
+                leans on their other domains and counts for less in the projected score. Head-to-head
+                places also depend on who is in the cohort — it is the top{' '}
+                {a.methodology.transplant.cohort} careers, and the rest of each field keeps its real
+                season scores, so a career-smoothed projection is always racing someone&apos;s best
+                actual year. The model is checked against reality on the methodology page.
               </p>
             </div>
           </div>

@@ -35,9 +35,14 @@ export interface EventSummary {
 export interface YearSummary {
   year: number;
   eventCount: number;
+  /** Athletes who recorded at least one event result — the true starting field. */
   fieldSize: number;
-  /** Depth of the field in SD units, 0 = all-time average. */
+  /** Everyone on the entry list, including athletes who never started. */
+  entrants: number;
+  /** Depth of the field in SD units on the percentile scale, 0 = all-time average. */
   fieldStrength: number;
+  /** Strength fitted separately on each model's own scale. */
+  strengths: { percentile: number; official: number; zscore: number };
   champion: { name: string; competitorId: string } | null;
   domainMix: DomainWeights;
   events: EventSummary[];
@@ -69,7 +74,10 @@ export interface Season {
   officialScore: number;
   zScore: number;
   eventWins: number;
+  /** Era-adjusted domain profile, on the all-time scale. */
   domains: DomainWeights;
+  /** Raw within-year domain profile — same scale as events[].percentile. */
+  rawDomains: DomainWeights;
   exposure: DomainWeights;
   events: SeasonEvent[];
 }
@@ -133,6 +141,8 @@ export interface Career {
   transplants?: Transplant[];
   transplantSummary?: {
     meanFinish: number;
+    /** Mean projected finish as a fraction of the field (0 = winner). */
+    meanFinishPct: number;
     bestYear: number;
     worstYear: number;
     wouldWin: number;
@@ -178,8 +188,16 @@ export interface Movement {
   domainMix: DomainWeights;
   events: { year: number; ordinal: number; name: string }[];
   leaders: MovementLeader[];
-  laggards: MovementLeader[];
   rankedCount: number;
+}
+
+export interface TransplantCalibration {
+  n: number;
+  meanAbsError: number;
+  meanSignedError: number;
+  /** Mean |error| as a fraction of the field size. */
+  meanRelError: number;
+  byYear: Record<string, { n: number; meanSignedError: number }>;
 }
 
 export interface Analysis {
@@ -189,6 +207,7 @@ export interface Analysis {
   domains: Record<DomainKey, DomainMeta>;
   methodology: {
     models: Record<'percentile' | 'official' | 'zscore', string>;
+    adjustment: string;
     weights: { quality: number; peak: number; volume: number; hardware: number };
     hardwareScale: string;
     percentileBasis: string;
@@ -198,14 +217,10 @@ export interface Analysis {
       cohort: number;
       solo: string;
       headToHead: string;
-      scale?: string;
-      calibration?: {
-        n: number;
-        meanAbsError: number;
-        meanSignedError: number;
-        byYear: Record<string, { n: number; meanSignedError: number }>;
-      };
+      scale: string;
+      calibration: TransplantCalibration & { basis: string; inSample: TransplantCalibration };
     };
+    movements: { minEvents: number; fieldMinimum: number; basis: string };
   };
   years: YearSummary[];
   movements: Movement[];

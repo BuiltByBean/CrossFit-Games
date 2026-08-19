@@ -23,8 +23,16 @@ export default async function MovementsPage() {
     items: a.movements.filter((m) => m.category === cat),
   })).filter((g) => g.items.length);
 
-  const maxCount = Math.max(...a.movements.map((m) => m.eventCount));
+  // sparkline bars plot a single year's count, so they scale against the
+  // largest per-year count anywhere — not a movement's total career count,
+  // which flattened every bar to a 3%-tall sliver
+  const maxPerYear = Math.max(
+    ...a.movements.flatMap((m) => Object.values(m.byYear)),
+    1,
+  );
   const totalTags = a.movements.reduce((n, m) => n + m.eventCount, 0);
+  // athlete pages exist only for ranked (2+ appearance) careers
+  const linkable = new Set(a.goat.map((c) => c.competitorId));
 
   return (
     <>
@@ -39,10 +47,12 @@ export default async function MovementsPage() {
             has asked for it, what kind of test it belongs to, and which men were best at it.
           </p>
           <p className="faint">
-            An athlete&apos;s standing in a movement is their mean percentile across every event that
+            An athlete&apos;s standing in a movement is their mean percentile across the events that
             contained it, adjusted for the strength of each year&apos;s field. A minimum of{' '}
             {a.movementMinEvents} such events is required to be ranked, so a single good day cannot
-            make someone the all-time best.
+            make someone the all-time best — and only events where at least half the year&apos;s field
+            was still competing count, so a spot in a small post-cut final cannot buy an elite score
+            by attendance.
           </p>
         </div>
       </section>
@@ -106,7 +116,7 @@ export default async function MovementsPage() {
                           key={y}
                           title={`${y}: ${v} event${v === 1 ? '' : 's'}`}
                           style={{
-                            height: `${Math.max(3, (v / maxCount) * 100)}%`,
+                            height: `${Math.max(3, (v / maxPerYear) * 100)}%`,
                             background: group.meta.color,
                             opacity: v ? 0.9 : 0.14,
                           }}
@@ -135,9 +145,13 @@ export default async function MovementsPage() {
                         {m.leaders.slice(0, 5).map((l, i) => (
                           <div className="mv-leader" key={l.competitorId}>
                             <span className="mv-leader-rank">{i + 1}</span>
-                            <Link href={`/athletes/${l.competitorId}`} className="athlete-link">
-                              {l.name}
-                            </Link>
+                            {linkable.has(l.competitorId) ? (
+                              <Link href={`/athletes/${l.competitorId}`} className="athlete-link">
+                                {l.name}
+                              </Link>
+                            ) : (
+                              <span>{l.name}</span>
+                            )}
                             <span className="num" style={{ color: 'var(--text-dim)' }}>
                               p{Math.round(l.meanPercentile * 100)}
                               <span className="faint"> ·{l.events}</span>

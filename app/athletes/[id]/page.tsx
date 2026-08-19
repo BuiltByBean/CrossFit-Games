@@ -46,8 +46,8 @@ export default async function AthletePage({ params }: { params: Promise<{ id: st
           <div className="pill-row" style={{ marginTop: '0.7rem' }}>
             {c.bio?.country && <span className="pill">{c.bio.country}</span>}
             {c.bio?.affiliate && <span className="pill">{c.bio.affiliate}</span>}
-            {c.bio?.heightIn && <span className="pill">{c.bio.heightIn} in</span>}
-            {c.bio?.weightLb && <span className="pill">{c.bio.weightLb} lb</span>}
+            {(c.bio?.heightIn ?? 0) > 0 && <span className="pill">{c.bio!.heightIn} in</span>}
+            {(c.bio?.weightLb ?? 0) > 0 && <span className="pill">{c.bio!.weightLb} lb</span>}
             <span className="pill pill-strong">
               {c.years[0]}–{c.years[c.years.length - 1]}
             </span>
@@ -79,7 +79,7 @@ export default async function AthletePage({ params }: { params: Promise<{ id: st
             </div>
             <div className="stat">
               <div className="stat-value">p{Math.round(c.meanPercentile * 100)}</div>
-              <div className="stat-label">Mean percentile</div>
+              <div className="stat-label">Mean percentile, era-adjusted</div>
               <div className="stat-sub">peak season p{Math.round(c.peakPercentile * 100)}</div>
             </div>
           </div>
@@ -94,8 +94,9 @@ export default async function AthletePage({ params }: { params: Promise<{ id: st
             <div className="card">
               <DomainProfile domains={c.domains} meta={a.domains} exposure={c.domainExposure} />
               <p className="faint" style={{ marginTop: '1rem', marginBottom: 0 }}>
-                Career percentile vs the field in each domain. Hover a bar for how many events&apos;
-                worth of exposure it is based on — a thin record makes a number less trustworthy.
+                Career percentile in each domain, era-adjusted onto the all-time scale. Hover a bar for
+                how many events&apos; worth of exposure it is based on — a thin record makes a number
+                less trustworthy.
               </p>
             </div>
             <div className="card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -223,7 +224,10 @@ export default async function AthletePage({ params }: { params: Promise<{ id: st
                       : `did not place`}
                   {s.status === 'CUT' && ' (eliminated at a cut)'}
                   {s.status === 'WD' && ' (withdrew)'} · {s.eventWins} event win
-                  {s.eventWins === 1 ? '' : 's'} · mean p{Math.round(s.percentileScore * 100)}
+                  {s.eventWins === 1 ? '' : 's'} · mean p{Math.round(s.rawPercentileScore * 100)}{' '}
+                  <span title="This season's mean percentile translated onto the all-time scale by the strength-of-field model">
+                    (era-adjusted p{Math.round(s.percentileScore * 100)})
+                  </span>
                 </span>
                 {s.status === 'DQ' && (
                   <span className="badge badge-inferred" style={{ marginLeft: '0.5rem' }}>

@@ -121,11 +121,23 @@ export default async function MethodologyPage() {
             version of this model had exactly that failure, ranking a title-less ten-appearance career
             above a two-time champion.
           </p>
+          <p className="muted" style={{ maxWidth: '70ch' }}>
+            One honest caveat about independence: the hardware axis is <em>identical</em> in all three
+            models on purpose — what an athlete won is the record itself, not a model of it. The three
+            models genuinely disagree only about how good each season was. Axis scores are normalised
+            with a winsorised floor so a single fringe two-appearance career cannot compress every
+            contender&apos;s differences to a sliver, and exact ties share a rank instead of being
+            broken by data order.
+          </p>
           <div className="callout" style={{ marginTop: '1rem' }}>
-            One subtlety worth knowing: the z-score model measures margin on the raw score, so it
-            rewards winning by a minute rather than by a second. Because points events at the Games have
-            scored both high-is-good and low-is-good, the direction is inferred per event from how the
-            scores track against finishing rank, not assumed.
+            Two subtleties worth knowing. The z-score model measures margin on the raw score, so it
+            rewards winning by a minute rather than by a second; because points events at the Games
+            have scored both high-is-good and low-is-good, the direction is inferred per event from how
+            the scores track against finishing rank, not assumed. And each event&apos;s margins are
+            calibrated to where that event&apos;s field sits in the year&apos;s full starting field —
+            fifth of the five best men left standing is placed like a top-five athlete, not punished
+            like the last man in a five-man race. Capped athletes keep their leaderboard order rather
+            than being flattened to one floor value.
           </div>
         </div>
       </section>
@@ -141,20 +153,33 @@ export default async function MethodologyPage() {
           <p className="muted" style={{ maxWidth: '70ch' }}>
             The correction comes from athletes who competed in more than one year. If the same
             competitors score consistently lower in one year than another, the difference is the field,
-            not them. Fitting <code>season = ability − strength(year)</code> across every athlete-season
-            by alternating least squares — the same bridging idea used to carry chess or baseball
-            ratings across eras — gives each year a depth rating, and every season score is adjusted by
-            it before the models run.
+            not them. Fitting <code>season = α(year) + β(year) · ability</code> across every
+            multi-year athlete by alternating least squares — the same bridging idea used to carry
+            chess or baseball ratings across eras — gives each year a correction, and every season
+            score is adjusted by it before the models run. The per-year slope matters because 2019
+            inflated scores unevenly: elite returners gained about half an SD, midfield returners
+            three times that, and a single subtraction cannot fix both ends.
+          </p>
+          <p className="muted" style={{ maxWidth: '70ch' }}>
+            Each model gets its own fit, on its own scale. The 2019 inflation is mostly a property of
+            the <em>percentile definition</em> (beating 90% of 144 men is easier than beating 90% of
+            40); measured on the margin scale it barely exists. An earlier version applied the
+            percentile-fitted correction to all three models, which penalised 2019 z-scores about
+            twenty times harder than the drift actually measured on that scale.
           </p>
 
-          <div className="table-scroll" style={{ marginTop: '1.2rem', maxWidth: 620 }}>
+          <div className="table-scroll" style={{ marginTop: '1.2rem', maxWidth: 680 }}>
             <table>
               <thead>
                 <tr>
                   <th>Year</th>
                   <th>Field</th>
-                  <th>Strength</th>
-                  <th style={{ width: '45%' }}></th>
+                  <th title="Mean correction applied to that year's season scores on each model's scale — negative means the year's raw numbers were inflated">
+                    Percentile
+                  </th>
+                  <th>Official</th>
+                  <th>Z</th>
+                  <th style={{ width: '35%' }}></th>
                 </tr>
               </thead>
               <tbody>
@@ -162,9 +187,17 @@ export default async function MethodologyPage() {
                   <tr key={y.year}>
                     <td className="num">{y.year}</td>
                     <td className="num faint">{y.fieldSize}</td>
-                    <td className="num" style={{ color: y.fieldStrength >= 0 ? 'var(--good)' : 'var(--gold)' }}>
-                      {y.fieldStrength > 0 ? '+' : ''}
-                      {y.fieldStrength.toFixed(2)}
+                    <td className="num" style={{ color: y.strengths.percentile >= 0 ? 'var(--good)' : 'var(--gold)' }}>
+                      {y.strengths.percentile > 0 ? '+' : ''}
+                      {y.strengths.percentile.toFixed(2)}
+                    </td>
+                    <td className="num faint">
+                      {y.strengths.official > 0 ? '+' : ''}
+                      {y.strengths.official.toFixed(2)}
+                    </td>
+                    <td className="num faint">
+                      {y.strengths.zscore > 0 ? '+' : ''}
+                      {y.strengths.zscore.toFixed(2)}
                     </td>
                     <td>
                       <div style={{ position: 'relative', height: 8 }}>
@@ -184,9 +217,12 @@ export default async function MethodologyPage() {
                             top: 0,
                             height: 8,
                             borderRadius: 2,
-                            background: y.fieldStrength >= 0 ? 'var(--good)' : 'var(--gold)',
-                            left: y.fieldStrength >= 0 ? '50%' : `${50 - Math.abs(y.fieldStrength) * 50}%`,
-                            width: `${Math.abs(y.fieldStrength) * 50}%`,
+                            background: y.strengths.percentile >= 0 ? 'var(--good)' : 'var(--gold)',
+                            left:
+                              y.strengths.percentile >= 0
+                                ? '50%'
+                                : `${50 - Math.min(50, Math.abs(y.strengths.percentile) * 50)}%`,
+                            width: `${Math.min(50, Math.abs(y.strengths.percentile) * 50)}%`,
                           }}
                         />
                       </div>
@@ -199,14 +235,16 @@ export default async function MethodologyPage() {
 
           <p className="muted" style={{ maxWidth: '70ch', marginTop: '1.2rem' }}>
             The trend is upward, which is the expected result and a decent check that the method
-            works: the sport got deeper. {a.years[0].year} and {a.years[1].year} rate as the shallowest
-            fields, {a.years[a.years.length - 1].year} the strongest.
+            works: the sport got deeper. Setting aside 2019 (see below), the earliest fields rate as
+            the shallowest and the most recent among the strongest.
           </p>
           <div className="callout">
-            2019 is the outlier at {a.years.find((y) => y.year === 2019)?.fieldStrength.toFixed(2)}, and
-            it is not an error. That year every national champion qualified, so 144 men started against
-            a normal field of about 40. Most were nowhere near Games standard, which makes beating 90%
-            of that field a genuinely easier thing to do — and the model discounts it accordingly.
+            2019 is the outlier on the percentile scale at{' '}
+            {a.years.find((y) => y.year === 2019)?.strengths.percentile.toFixed(2)}, and it is not an
+            error. That year every national champion qualified, so 144 men started against a normal
+            field of about 40. Most were nowhere near Games standard, which makes beating 90% of that
+            field a genuinely easier thing to do — and the model discounts it accordingly, more for
+            the midfield (where the dilution helped most) than for the podium.
           </div>
         </div>
       </section>
@@ -223,7 +261,15 @@ export default async function MethodologyPage() {
           <p className="muted" style={{ maxWidth: '70ch' }}>
             {a.methodology.percentileBasis} Athletes already eliminated are treated as behind everyone
             still competing, which is exactly what the cut itself asserts. Before this fix the 2020
-            runner-up scored a season percentile of 52; he now scores 83.
+            runner-up scored a season percentile of 52; he now scores 83. The z-score model shares the
+            same frame — margins measured among the survivors are placed where that group sits in the
+            full field, so fifth of the five finalists is a top-five result, not a last-place one.
+          </p>
+          <p className="muted" style={{ maxWidth: '70ch' }}>
+            One data trap worth naming: from 2021 the API emits placeholder score rows for athletes
+            who were cut or withdrew — tied ranks with no result, for events they never contested.
+            Those rows are dropped. An earlier version ingested them as real performances, which
+            fabricated last-place event results for athletes who never took the floor.
           </p>
         </div>
       </section>
@@ -250,21 +296,47 @@ export default async function MethodologyPage() {
             ninth into 2019, a year he won. Era-adjusting the career profile and the field it is
             ranked against removes the bias without touching the real field&apos;s internal order.
           </p>
-          {a.methodology.transplant.calibration && (
-            <div className="callout" style={{ marginTop: '1rem' }}>
-              The model is checked against reality: projecting each of the top{' '}
-              {a.methodology.transplant.cohort} athletes into the years they actually competed
-              reproduces their real finish to a mean absolute error of{' '}
-              {a.methodology.transplant.calibration.meanAbsError} places across{' '}
-              {a.methodology.transplant.calibration.n} athlete-years, with no year systematically
-              biased. The residual disagreements are the point — they mark seasons where an athlete
-              out- or under-performed the shape of their career.
-            </div>
-          )}
+          <div className="callout" style={{ marginTop: '1rem' }}>
+            The model is checked against reality, out of sample: each of the top{' '}
+            {a.methodology.transplant.cohort} athletes is projected into the seasons they actually
+            finished with a profile rebuilt <em>without</em> that season, so the projection never
+            contains the year it predicts. It reproduces real finishes to a mean absolute error of{' '}
+            {a.methodology.transplant.calibration.meanAbsError} places (
+            {(a.methodology.transplant.calibration.meanRelError * 100).toFixed(1)}% of the field)
+            across {a.methodology.transplant.calibration.n} athlete-years. The residual
+            disagreements are the point — they mark seasons where an athlete out- or under-performed
+            the shape of their career.
+          </div>
+          <div className="table-scroll" style={{ marginTop: '1rem', maxWidth: 560 }}>
+            <table>
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th title="Positive: the model projected worse finishes than reality; negative: better">
+                    Mean bias (places)
+                  </th>
+                  <th>Seasons checked</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.entries(a.methodology.transplant.calibration.byYear).map(([year, v]) => (
+                  <tr key={year}>
+                    <td className="num">{year}</td>
+                    <td className="num" style={{ color: Math.abs(v.meanSignedError) > 4 ? 'var(--gold)' : undefined }}>
+                      {v.meanSignedError > 0 ? '+' : ''}
+                      {v.meanSignedError}
+                    </td>
+                    <td className="num faint">{v.n}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <p className="muted" style={{ maxWidth: '70ch' }}>
-            That projection is computed <strong>one athlete at a time</strong>, which means two men who
-            would each have beaten everyone who actually competed both come out first — they are never
-            measured against each other. To rank them properly, a second pass puts the top{' '}
+            That projection is computed <strong>one athlete at a time</strong> — with the athlete&apos;s
+            own real season removed from the field, so nobody competes against themselves — which means
+            two men who would each have beaten everyone who actually competed both come out first: they
+            are never measured against each other. To rank them properly, a second pass puts the top{' '}
             {a.methodology.transplant.cohort} careers in the same year simultaneously, against whatever
             remains of that year&apos;s real field, so exactly one athlete can win it. Both numbers are
             shown; the solo one is the better read on era fit, the head-to-head the better read on who

@@ -69,6 +69,21 @@ export function DomainProfile({
   );
 }
 
+/** Short axis labels for the radar, matching the meta labels used site-wide. */
+const RADAR_LABELS: Record<string, string> = {
+  running: 'Running',
+  swimming: 'Swim',
+  machine: 'Machines',
+  endurance: 'Endurance',
+  sprint: 'Sprint',
+  strength: 'Max Str.',
+  weightlifting: 'Weightlifting',
+  gymnastics: 'Gymnastics',
+  strongman: 'Odd Object',
+  skill: 'Skill',
+  grip: 'Grip',
+};
+
 /** Server-rendered radar, no charting dependency. */
 export function DomainRadar({
   domains,
@@ -126,7 +141,7 @@ export function DomainRadar({
             textAnchor={Math.abs(x - cx) < 6 ? 'middle' : x > cx ? 'start' : 'end'}
             dominantBaseline="middle"
           >
-            {d}
+            {RADAR_LABELS[d] ?? d}
           </text>
         );
       })}

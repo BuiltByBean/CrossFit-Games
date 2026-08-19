@@ -37,7 +37,10 @@ async function main() {
       data: {
         year: y.year,
         fieldSize: y.fieldSize,
-        eventCount: y.eventCount,
+        // one Event row is created per entry in y.events below, including the
+        // excluded aggregate, so the count must match that — y.eventCount is
+        // the scoreable count and left the 2020 join off by one
+        eventCount: y.events.length,
         champion: y.champion?.name ?? null,
         domainMix: y.domainMix,
       },

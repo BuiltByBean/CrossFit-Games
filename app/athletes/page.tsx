@@ -42,7 +42,7 @@ export default async function AthletesPage() {
                   <th>Best</th>
                   <th>Titles</th>
                   <th>Ev wins</th>
-                  <th>Mean pct</th>
+                  <th title="Mean season percentile, adjusted for the strength of each year's field">Mean pct*</th>
                   <th>Strongest</th>
                 </tr>
               </thead>
@@ -91,6 +91,10 @@ export default async function AthletesPage() {
               </tbody>
             </table>
           </div>
+          <p className="faint" style={{ marginTop: '0.7rem' }}>
+            * Mean season percentile, adjusted for the strength of each year&apos;s field — see the{' '}
+            <Link href="/methodology">methodology</Link>.
+          </p>
         </div>
       </section>
     </>

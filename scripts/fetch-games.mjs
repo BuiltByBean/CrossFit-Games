@@ -14,7 +14,7 @@
  */
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const API = 'https://c3po.crossfit.com/api';
@@ -62,14 +62,31 @@ async function discoverLastYear() {
 /** Event names for a year, filtered to the division and in competition order. */
 async function fetchEvents(year) {
   const workouts = await getJSON(`${API}/competitions/v1/competitions/games/${year}/workouts`);
-  return workouts
+  const events = workouts
     .filter((w) => (w.divisions ?? []).includes(DIVISION.id))
     .map((w, i) => ({
       ordinal: i + 1,
       name: w.leaderboard_display || w.name || w.internal_name,
       internalName: w.internal_name,
       identifier: w.identifier,
+      startDate: w.start_date ?? null,
     }));
+
+  // Scores attach to events purely by position, and the count assertion below
+  // cannot catch a same-count reordering of the workouts feed. start_date is
+  // usually non-decreasing in feed order but not always (2022 has one genuine
+  // out-of-order pair), so a violation is surfaced for a human to eyeball
+  // rather than treated as proof of misordering.
+  const dates = events.map((e) => e.startDate).filter(Boolean);
+  for (let i = 1; i < dates.length; i += 1) {
+    if (dates[i] < dates[i - 1]) {
+      console.warn(
+        `⚠ ${year}: workouts feed start_dates out of order (${dates[i - 1]} then ${dates[i]}) — ` +
+          `spot-check that scores line up with event names for this year.`,
+      );
+    }
+  }
+  return events;
 }
 
 /** Every leaderboard row for a year, following pagination. */
@@ -97,6 +114,40 @@ const num = (v) => {
   return Number.isFinite(n) ? n : null;
 };
 
+/**
+ * The API reports height/weight as unit-tagged free text — "74 in"/"210 lb"
+ * for US athletes but "182 cm"/"93 kg" for most internationals, sometimes
+ * mixed within one athlete. Stripping the unit and storing the number under
+ * heightIn/weightLb put hundreds of athletes at "182 in" tall, so the unit is
+ * parsed and converted, and implausible results are rejected as null.
+ */
+export function parseHeightIn(v) {
+  const s = String(v ?? '');
+  const m = s.match(/([\d.]+)/);
+  if (!m) return null;
+  let val = Number(m[1]);
+  if (/cm/i.test(s)) val /= 2.54;
+  else if (!/in/i.test(s)) {
+    // untagged: infer the unit from the plausible range
+    if (val >= 120 && val <= 230) val /= 2.54;
+  }
+  val = Math.round(val);
+  return val >= 55 && val <= 90 ? val : null;
+}
+
+export function parseWeightLb(v) {
+  const s = String(v ?? '');
+  const m = s.match(/([\d.]+)/);
+  if (!m) return null;
+  let val = Number(m[1]);
+  if (/kg/i.test(s)) val *= 2.20462;
+  else if (!/lb/i.test(s)) {
+    if (val >= 45 && val <= 160) val *= 2.20462;
+  }
+  val = Math.round(val);
+  return val >= 100 && val <= 350 ? val : null;
+}
+
 function normaliseAthlete(row) {
   const e = row.entrant ?? {};
   return {
@@ -106,8 +157,8 @@ function normaliseAthlete(row) {
     countryCode: e.countryOfOriginCode || null,
     affiliate: e.affiliateName || null,
     age: num(e.age),
-    heightIn: num(e.height),
-    weightLb: num(e.weight),
+    heightIn: parseHeightIn(e.height),
+    weightLb: parseWeightLb(e.weight),
     // The API reports rank 0 for athletes stripped of their result (DQ), which
     // is not a finishing place — treat it as "no official finish" so it cannot
     // be mistaken for a win or a podium downstream.
@@ -184,7 +235,7 @@ async function main() {
   await mkdir(join(ROOT, 'data', 'raw'), { recursive: true });
   const years = [];
 
-  const { aliases } = JSON.parse(
+  const { aliases, nameOverrides = {} } = JSON.parse(
     await readFile(join(ROOT, 'data', 'athlete-aliases.json'), 'utf8'),
   );
   const canonicalId = (id) => aliases[id]?.canonical ?? id;
@@ -206,7 +257,10 @@ async function main() {
     const athletes = rows
       .map(normaliseAthlete)
       .filter((a) => a.competitorId)
-      .map((a) => ({ ...a, competitorId: canonicalId(a.competitorId) }));
+      .map((a) => ({ ...a, competitorId: canonicalId(a.competitorId) }))
+      // the API sometimes scrubs a name to "Anonymous Anonymous" but keeps
+      // the id; curated overrides restore the display name
+      .map((a) => ({ ...a, name: nameOverrides[a.competitorId]?.name ?? a.name }));
 
     const seen = new Set();
     for (const a of athletes) {
@@ -230,7 +284,9 @@ async function main() {
 
     await writeFile(
       join(ROOT, 'data', 'raw', `games-${year}.json`),
-      JSON.stringify({ events, leaderboard: rows }, null, 2),
+      // meta.ordinals is the assertion's other input, persisted so the
+      // event-to-score join can be re-audited offline.
+      JSON.stringify({ events, ordinals: meta.ordinals ?? [], leaderboard: rows }, null, 2),
     );
     console.log(`${year}: ${events.length} events, ${athletes.length} athletes`);
   }
@@ -255,7 +311,11 @@ async function main() {
   reportSuspectedSplits(years);
 }
 
-main().catch((err) => {
-  console.error(err.message);
-  process.exit(1);
-});
+// Only fetch when run directly — parseHeightIn/parseWeightLb are imported
+// elsewhere, and an import must never kick off a network crawl.
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((err) => {
+    console.error(err.message);
+    process.exit(1);
+  });
+}

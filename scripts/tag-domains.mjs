@@ -35,11 +35,13 @@ function representativeDisplay(year, ordinal) {
 
 function autoTag(name, display, seconds) {
   const hits = {};
+  let matchedRules = 0;
   for (const [re, weights] of NAME_RULES) {
     if (!re.test(name)) continue;
     for (const [k, v] of Object.entries(weights)) hits[k] = (hits[k] ?? 0) + v;
     // Two matching rules is enough signal; more just muddies the blend.
-    if (Object.keys(hits).length >= 4) break;
+    matchedRules += 1;
+    if (matchedRules >= 2) break;
   }
   if (Object.keys(hits).length) return { weights: normalise(hits), basis: 'name' };
 
@@ -56,6 +58,10 @@ async function main() {
   let curated = 0;
   let inferred = 0;
   let excluded = 0;
+  let classifierAgree = 0;
+
+  const topDomain = (weights) =>
+    Object.entries(weights).sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
 
   for (const year of dataset.years) {
     for (const ev of year.events) {
@@ -93,6 +99,10 @@ async function main() {
         ev.tagSource = 'curated';
         ev.note = note ?? null;
         curated += 1;
+        // Free validation for the auto classifier: every curated event is a
+        // labelled example it will never see in production.
+        const auto = autoTag(ev.name, display, seconds);
+        if (topDomain(auto.weights) === topDomain(ev.domains)) classifierAgree += 1;
       } else {
         const { weights, basis } = autoTag(ev.name, display, seconds);
         ev.domains = weights;
@@ -114,6 +124,12 @@ async function main() {
     `Tagged ${total} events: ${curated} curated (${Math.round((curated / total) * 100)}%), ` +
       `${inferred} inferred, ${excluded} excluded.`,
   );
+  if (curated) {
+    console.log(
+      `Auto classifier agrees with the curated top domain on ${classifierAgree}/${curated} ` +
+        `events (${Math.round((classifierAgree / curated) * 100)}%).`,
+    );
+  }
 
   const untagged = dataset.years.flatMap((y) =>
     y.events.filter((e) => e.tagSource === 'inferred').map((e) => `${y.year} ${e.name}`),

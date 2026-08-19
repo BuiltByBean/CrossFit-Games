@@ -55,8 +55,8 @@ export default async function Home() {
             </div>
             <div className="stat">
               <div className="stat-value">p{Math.round(goat.meanPercentile * 100)}</div>
-              <div className="stat-label">Mean event percentile</div>
-              <div className="stat-sub">career average vs the field</div>
+              <div className="stat-label">Mean percentile</div>
+              <div className="stat-sub">career average, era-adjusted</div>
             </div>
             <div className="stat">
               <div className="stat-value">
@@ -78,19 +78,26 @@ export default async function Home() {
               <p className="muted">
                 {second.name} is the only athlete close, and on raw dominance in his own era he is
                 arguably {goat.name.split(' ')[0]}&apos;s equal — {second.titles} straight titles, and
-                dropped alone into any era he projects to podium in all {a.years.length}. Head-to-head
-                he finishes second to {goat.name.split(' ')[0]} in every single year.
+                dropped alone into any era he projects to podium in{' '}
+                {second.transplantSummary!.wouldPodium === second.transplants!.length
+                  ? `all ${second.transplants!.length}`
+                  : `${second.transplantSummary!.wouldPodium} of ${second.transplants!.length}`}
+                . Head-to-head he finishes ahead of everyone except {goat.name.split(' ')[0]} in{' '}
+                {second.transplants!.filter((t) => t.headToHeadFinish === 2).length} of {a.years.length}{' '}
+                years.
               </p>
               <p className="muted">
                 The separation is breadth and depth of field. {goat.name.split(' ')[0]} competed{' '}
                 {goat.appearances} times against progressively deeper fields and has no domain below the{' '}
                 {Math.round(Math.min(...Object.values(goat.domains as Record<string, number>)) * 100)}th
-                percentile. His weakest discipline would be a top-quartile strength for most champions.
+                percentile — a floor most champions only reach in their better disciplines.
               </p>
               <div className="callout">
-                Both men are era-proof. The models disagree about the order only in how much they reward
-                longevity against peak dominance — see the{' '}
-                <Link href="/goat">full GOAT table</Link>.
+                {universal.some((c) => c.competitorId === second.competitorId)
+                  ? 'Both men are era-proof.'
+                  : `${goat.name.split(' ')[0]} projects to a podium in every era; ${second.name.split(' ')[0]} in nearly every one.`}{' '}
+                The models disagree about the order only in how much they reward longevity against peak
+                dominance — see the <Link href="/goat">full GOAT table</Link>.
               </div>
             </div>
             <div className="card">
@@ -171,8 +178,12 @@ export default async function Home() {
           <h2>Who was era-proof?</h2>
           <p className="lede">
             Each athlete&apos;s career domain profile is projected onto every other year&apos;s actual
-            event mix, then scored against that year&apos;s real field. Dropped in alone, these men
-            project to a podium in every Games ever held.
+            event mix, then scored against that year&apos;s real field.{' '}
+            {universal.length === 0
+              ? 'No career clears the bar of projecting to a podium in every Games ever held.'
+              : universal.length === 1
+                ? `Dropped in alone, exactly one man projects to a podium in every Games ever held.`
+                : `Dropped in alone, these ${universal.length} men project to a podium in every Games ever held.`}
           </p>
           <div className="grid grid-3" style={{ marginTop: '1.2rem' }}>
             {universal.map((c) => (
@@ -207,10 +218,10 @@ export default async function Home() {
               <div className="eyebrow">What the Games tested</div>
               <h2>The sport changed underneath them</h2>
               <p className="muted">
-                Every era weighted the domains differently — the {firstYear}s leaned on skills tests and
-                odd objects, the mid-2010s on swimming and long endurance, the {lastYear} format on
-                machines and heavy barbell. That drift is exactly why raw finishing places do not
-                compare across years, and why the analysis is built on domains.
+                Every era weighted the domains differently — the early years leaned on skills tests and
+                odd objects, the mid-2010s on swimming and long endurance, recent formats on machines
+                and heavy barbell. That drift is exactly why raw finishing places do not compare across
+                years, and why the analysis is built on domains.
               </p>
               <p>
                 <Link href="/events" className="back-link">
