@@ -5,7 +5,8 @@ with a three-model analysis of who the greatest of all time is — and whether t
 great dropped into any other era.
 
 **The answer: Mathew Fraser**, unanimously across all three models, projected to podium in
-all 16 Games ever held and win 10 of them. Rich Froning is the only athlete close.
+all 16 Games ever held and win 11 of them outright — all 16 with the rest of the top-25
+cohort dropped in beside him. Rich Froning is the only athlete close.
 
 ## What's here
 
@@ -186,6 +187,15 @@ Each athlete's career yields a percentile in each domain. For a target year, eve
 scored by combining those percentiles in the proportions that event tested, then the resulting
 season score is ranked against that year's real field.
 
+Both sides of that comparison are era-adjusted onto one all-time scale. An earlier version
+ranked the projection against *raw* season percentiles, whose scale swings with field size —
+in 2019's 144-man field, finishing tenth still meant beating 134 men, so sixteen season
+scores landed above Fraser's projection in the year he actually won. Because the adjustment
+is a monotone within-year transform, the real field's internal order is untouched; the fix
+only puts the projection on the same footing. Calibration is published in the output:
+projecting each top-25 athlete into the years they actually competed reproduces their real
+finish to a mean absolute error of about 5.6 places, with no year systematically biased.
+
 This answers *"does the shape of this athlete's fitness fit that year's test"* — not *"what
 would have happened on the day"*. There is no model of form, injury, tactics, or the cut
 formats that ended some athletes' competitions early.
@@ -195,9 +205,9 @@ formats that ended some athletes' competitions early.
 - Field strength is estimated, not measured. It assumes a returning athlete's ability is roughly
   stable year to year, which is untrue for anyone improving fast or declining, and
   single-appearance athletes contribute nothing to the bridge.
-- The era transplant runs on *unadjusted* percentiles (it asks how an athlete fits a year's test
-  against the men actually there); the GOAT table runs on adjusted ones. They answer different
-  questions and will not always agree.
+- The era transplant smooths a career into one domain profile, so it deliberately cannot see
+  a single season's form — an athlete's best year will beat their own projection. The GOAT
+  table scores seasons directly. They answer different questions and will not always agree.
 - Domain weights are informed judgement, not measurement. That's why they're isolated in one file.
 - An athlete with no exposure to a domain has no score in it; transplants into years leaning on
   that domain rest on their other domains and are less certain.

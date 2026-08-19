@@ -194,7 +194,18 @@ export interface Analysis {
     percentileBasis: string;
     minAppearances: number;
     consensus: string;
-    transplant: { cohort: number; solo: string; headToHead: string };
+    transplant: {
+      cohort: number;
+      solo: string;
+      headToHead: string;
+      scale?: string;
+      calibration?: {
+        n: number;
+        meanAbsError: number;
+        meanSignedError: number;
+        byYear: Record<string, { n: number; meanSignedError: number }>;
+      };
+    };
   };
   years: YearSummary[];
   movements: Movement[];

@@ -381,11 +381,15 @@ function transplant(career, year, yearResults) {
   if (!perEvent.length) return null;
 
   const projectedScore = mean(perEvent.map((e) => e.projected));
-  // Raw, field-relative scores: the transplant asks how an athlete fits that
-  // year's test against the men who were actually there, so it deliberately
-  // does not use the era-adjusted numbers the GOAT models run on.
+  // Era-adjusted scores on both sides. The career profile is built from
+  // adjusted per-event percentiles, so the field it is ranked against must be
+  // on the same scale — an earlier version compared the projection against
+  // *raw* season percentiles, whose scale swings with field size, and 2019's
+  // 144-man field inflated sixteen season scores above Fraser's projection in
+  // the year he actually won. Adjusting both sides is a monotone within-year
+  // transform, so the real field's internal order is untouched.
   const fieldScores = [...actual.values()]
-    .map((r) => r.rawPercentileScore ?? r.percentileScore)
+    .map((r) => r.percentileScore)
     .sort((a, b) => b - a);
   // finishing place = how many of that year's field would still have beaten them, plus one
   const projectedFinish = fieldScores.filter((s) => s > projectedScore).length + 1;
@@ -434,6 +438,27 @@ async function main() {
       r.percentileScore = round(adjustProbability(r.percentileScore, s));
       r.officialScore = round(adjustProbability(r.officialScore, s));
       r.zScore = round(r.zScore + s);
+
+      // Rebuild the season's domain profile on the era-adjusted scale. A raw
+      // percentile depends mechanically on field size — tenth of 2019's 144
+      // starters is p94, while second of 2018's 40 is p97.5 only for the
+      // winner's margin — so career profiles built from raw values inherit
+      // whatever field each season happened to have. Adjusting per event puts
+      // every profile on the all-time reference scale, the same one the
+      // movement tables already use.
+      const num = Object.fromEntries(DOMAIN_KEYS.map((k) => [k, 0]));
+      const den = Object.fromEntries(DOMAIN_KEYS.map((k) => [k, 0]));
+      for (const e of r.events) {
+        if (e.percentile == null) continue;
+        const adj = adjustProbability(e.percentile, s);
+        for (const [d, w] of Object.entries(e.domains)) {
+          num[d] += w * adj;
+          den[d] += w;
+        }
+      }
+      for (const d of DOMAIN_KEYS) {
+        if (den[d] > 0) r.domains[d] = round(num[d] / den[d]);
+      }
     }
   }
 
@@ -494,7 +519,7 @@ async function main() {
 
     const pool = [];
     for (const [id, r] of actual) {
-      if (!cohortIds.has(id)) pool.push({ id, score: r.rawPercentileScore ?? r.percentileScore });
+      if (!cohortIds.has(id)) pool.push({ id, score: r.percentileScore });
     }
     for (const c of topForTransplant) {
       const t = c.transplants.find((x) => x.year === y.year);
@@ -511,6 +536,33 @@ async function main() {
       t.poolSize = pool.length;
     }
   }
+
+  // Calibration: an athlete transplanted into a year they actually competed in
+  // should roughly reproduce their real finish — the deviation is career shape
+  // vs that season's form, which is the model's job to smooth. A systematic
+  // bias in one year means the scales don't line up (the bug that once put
+  // Fraser 9th in 2019, the year he won). Published so the site can show it.
+  const calibErrors = [];
+  const calibByYear = new Map();
+  for (const c of topForTransplant) {
+    for (const t of c.transplants) {
+      if (!t.competed || t.actualFinish == null) continue;
+      const err = t.projectedFinish - t.actualFinish;
+      calibErrors.push(err);
+      if (!calibByYear.has(t.year)) calibByYear.set(t.year, []);
+      calibByYear.get(t.year).push(err);
+    }
+  }
+  const transplantCalibration = {
+    n: calibErrors.length,
+    meanAbsError: round(mean(calibErrors.map(Math.abs)), 2),
+    meanSignedError: round(mean(calibErrors), 2),
+    byYear: Object.fromEntries(
+      [...calibByYear.entries()]
+        .sort((a, b) => a[0] - b[0])
+        .map(([y, errs]) => [y, { n: errs.length, meanSignedError: round(mean(errs), 1) }]),
+    ),
+  };
 
   for (const c of topForTransplant) {
     const h2h = c.transplants.map((t) => t.headToHeadFinish).filter((v) => v != null);
@@ -700,6 +752,9 @@ async function main() {
         solo: "One athlete swapped into that year's real field. Independent per athlete, so two who would both beat the actual field each show first.",
         headToHead:
           "The whole cohort competing in that year at once, against the remainder of the real field. Exactly one athlete wins each year.",
+        scale:
+          'Career domain profiles and the field they are ranked against are both era-adjusted, so the projection and the real season scores share one all-time scale regardless of how large or deep a given field was.',
+        calibration: transplantCalibration,
       },
     },
     years: yearSummaries,
@@ -758,6 +813,13 @@ async function main() {
   );
 
   console.log(`Analysed ${careers.size} athletes; ${eligible.length} eligible for the GOAT table.\n`);
+  console.log(
+    `Transplant calibration (cohort in years they competed): MAE ${transplantCalibration.meanAbsError} places over n=${transplantCalibration.n}; ` +
+      `worst year bias ${Object.entries(transplantCalibration.byYear)
+        .map(([y, v]) => [y, v.meanSignedError])
+        .sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]))[0]
+        .join(': ')}\n`,
+  );
   console.log('Consensus top 15:');
   console.log('  #   athlete                   apps  titles  pct  off    z   spread');
   for (const c of eligible.slice(0, 15)) {

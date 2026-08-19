@@ -243,6 +243,25 @@ export default async function MethodologyPage() {
             athletes&apos; competitions early.
           </p>
           <p className="muted" style={{ maxWidth: '70ch' }}>
+            Both sides of the comparison sit on one era-adjusted scale. A raw percentile depends
+            mechanically on how many men started — tenth of 2019&apos;s 144 still beat 134 of them —
+            so a projection ranked against raw season scores under-placed everyone in big-field
+            years. An earlier version of this model had exactly that failure, projecting Fraser
+            ninth into 2019, a year he won. Era-adjusting the career profile and the field it is
+            ranked against removes the bias without touching the real field&apos;s internal order.
+          </p>
+          {a.methodology.transplant.calibration && (
+            <div className="callout" style={{ marginTop: '1rem' }}>
+              The model is checked against reality: projecting each of the top{' '}
+              {a.methodology.transplant.cohort} athletes into the years they actually competed
+              reproduces their real finish to a mean absolute error of{' '}
+              {a.methodology.transplant.calibration.meanAbsError} places across{' '}
+              {a.methodology.transplant.calibration.n} athlete-years, with no year systematically
+              biased. The residual disagreements are the point — they mark seasons where an athlete
+              out- or under-performed the shape of their career.
+            </div>
+          )}
+          <p className="muted" style={{ maxWidth: '70ch' }}>
             That projection is computed <strong>one athlete at a time</strong>, which means two men who
             would each have beaten everyone who actually competed both come out first — they are never
             measured against each other. To rank them properly, a second pass puts the top{' '}
@@ -265,10 +284,10 @@ export default async function MethodologyPage() {
               to the bridge at all.
             </li>
             <li>
-              The era transplant deliberately runs on <em>unadjusted</em> percentiles, because it asks
-              how an athlete fits a year&apos;s test against the men who were actually there. The GOAT
-              table runs on adjusted ones. The two answer different questions and will not always
-              agree.
+              The era transplant smooths a whole career into one domain profile, so it cannot see a
+              single season&apos;s form — an athlete&apos;s best year will beat their own projection.
+              The GOAT table scores seasons directly. The two answer different questions and will
+              not always agree.
             </li>
             <li>
               Domain weights are informed judgement, not measurement. They are the single largest
